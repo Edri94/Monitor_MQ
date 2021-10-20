@@ -764,5 +764,9 @@ namespace MonitorMQTKT
             funcion.Escribe("salio bien de RevisaMQ");
         }
 
+        private void tmrRestar_Elapsed(object sender, System.Timers.ElapsedEventArgs e)
+        {
+
+        }
     }
 }

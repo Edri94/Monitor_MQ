@@ -43,6 +43,7 @@ namespace MonitorMQTKT
             // tmrRestar
             // 
             this.tmrRestar.AutoReset = false;
+            this.tmrRestar.Elapsed += new System.Timers.ElapsedEventHandler(this.tmrRestar_Elapsed);
             // 
             // MonitorMQTKT
             // 
