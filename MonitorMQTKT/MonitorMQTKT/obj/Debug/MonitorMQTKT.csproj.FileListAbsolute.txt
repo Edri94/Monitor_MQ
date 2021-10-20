@@ -1,0 +1,79 @@
+D:\Monitores_cSchar\MonitorMQTKT\MonitorMQTKT\bin\Debug\MonitorMQTKT.exe.config
+D:\Monitores_cSchar\MonitorMQTKT\MonitorMQTKT\bin\Debug\MonitorMQTKT.exe
+D:\Monitores_cSchar\MonitorMQTKT\MonitorMQTKT\bin\Debug\MonitorMQTKT.pdb
+D:\Monitores_cSchar\MonitorMQTKT\MonitorMQTKT\bin\Debug\amqmdnet.dll
+D:\Monitores_cSchar\MonitorMQTKT\MonitorMQTKT\bin\Debug\ConexionBDSQL.dll
+D:\Monitores_cSchar\MonitorMQTKT\MonitorMQTKT\bin\Debug\ConexionBDSQL.pdb
+D:\Monitores_cSchar\MonitorMQTKT\MonitorMQTKT\obj\Debug\MonitorMQTKT.csproj.AssemblyReference.cache
+D:\Monitores_cSchar\MonitorMQTKT\MonitorMQTKT\obj\Debug\MonitorMQTKT.csproj.CoreCompileInputs.cache
+D:\Monitores_cSchar\MonitorMQTKT\MonitorMQTKT\obj\Debug\MonitorMQTKT.csproj.CopyComplete
+D:\Monitores_cSchar\MonitorMQTKT\MonitorMQTKT\obj\Debug\MonitorMQTKT.exe
+D:\Monitores_cSchar\MonitorMQTKT\MonitorMQTKT\obj\Debug\MonitorMQTKT.pdb
+D:\Monitores_cSchar\MonitorMQTKT\MonitorMQTKT\obj\Debug\MonitorMQTKT.MonitorMQTKT.resources
+D:\Monitores_cSchar\MonitorMQTKT\MonitorMQTKT\obj\Debug\MonitorMQTKT.ProjectInstaller.resources
+D:\Monitores_cSchar\MonitorMQTKT\MonitorMQTKT\obj\Debug\MonitorMQTKT.csproj.GenerateResource.cache
+C:\Users\MI05332\Downloads\MonitorMQTKT\MonitorMQTKT\MonitorMQTKT\bin\Debug\MonitorMQTKT.exe.config
+C:\Users\MI05332\Downloads\MonitorMQTKT\MonitorMQTKT\MonitorMQTKT\bin\Debug\MonitorMQTKT.exe
+C:\Users\MI05332\Downloads\MonitorMQTKT\MonitorMQTKT\MonitorMQTKT\bin\Debug\MonitorMQTKT.pdb
+C:\Users\MI05332\Downloads\MonitorMQTKT\MonitorMQTKT\MonitorMQTKT\bin\Debug\amqmdnet.dll
+C:\Users\MI05332\Downloads\MonitorMQTKT\MonitorMQTKT\MonitorMQTKT\obj\Debug\MonitorMQTKT.MonitorMQTKT.resources
+C:\Users\MI05332\Downloads\MonitorMQTKT\MonitorMQTKT\MonitorMQTKT\obj\Debug\MonitorMQTKT.ProjectInstaller.resources
+C:\Users\MI05332\Downloads\MonitorMQTKT\MonitorMQTKT\MonitorMQTKT\obj\Debug\MonitorMQTKT.csproj.GenerateResource.cache
+C:\Users\MI05332\Downloads\MonitorMQTKT\MonitorMQTKT\MonitorMQTKT\obj\Debug\MonitorMQTKT.csproj.CoreCompileInputs.cache
+C:\Users\MI05332\Downloads\MonitorMQTKT\MonitorMQTKT\MonitorMQTKT\obj\Debug\MonitorMQTKT.csproj.CopyComplete
+C:\Users\MI05332\Downloads\MonitorMQTKT\MonitorMQTKT\MonitorMQTKT\obj\Debug\MonitorMQTKT.exe
+C:\Users\MI05332\Downloads\MonitorMQTKT\MonitorMQTKT\MonitorMQTKT\obj\Debug\MonitorMQTKT.pdb
+C:\Users\XM020QV_1\Downloads\MonitorMQTKT\MonitorMQTKT\bin\Debug\MonitorMQTKT.exe.config
+C:\Users\XM020QV_1\Downloads\MonitorMQTKT\MonitorMQTKT\bin\Debug\MonitorMQTKT.exe
+C:\Users\XM020QV_1\Downloads\MonitorMQTKT\MonitorMQTKT\bin\Debug\MonitorMQTKT.pdb
+C:\Users\XM020QV_1\Downloads\MonitorMQTKT\MonitorMQTKT\bin\Debug\amqmdnet.dll
+C:\Users\XM020QV_1\Downloads\MonitorMQTKT\MonitorMQTKT\bin\Debug\ConexionBDSQL.dll
+C:\Users\XM020QV_1\Downloads\MonitorMQTKT\MonitorMQTKT\bin\Debug\ConexionBDSQL.pdb
+C:\Users\XM020QV_1\Downloads\MonitorMQTKT\MonitorMQTKT\obj\Debug\MonitorMQTKT.csproj.AssemblyReference.cache
+C:\Users\XM020QV_1\Downloads\MonitorMQTKT\MonitorMQTKT\obj\Debug\MonitorMQTKT.MonitorMQTKT.resources
+C:\Users\XM020QV_1\Downloads\MonitorMQTKT\MonitorMQTKT\obj\Debug\MonitorMQTKT.ProjectInstaller.resources
+C:\Users\XM020QV_1\Downloads\MonitorMQTKT\MonitorMQTKT\obj\Debug\MonitorMQTKT.csproj.GenerateResource.cache
+C:\Users\XM020QV_1\Downloads\MonitorMQTKT\MonitorMQTKT\obj\Debug\MonitorMQTKT.csproj.CoreCompileInputs.cache
+C:\Users\XM020QV_1\Downloads\MonitorMQTKT\MonitorMQTKT\obj\Debug\MonitorMQTKT.csproj.CopyComplete
+C:\Users\XM020QV_1\Downloads\MonitorMQTKT\MonitorMQTKT\obj\Debug\MonitorMQTKT.exe
+C:\Users\XM020QV_1\Downloads\MonitorMQTKT\MonitorMQTKT\obj\Debug\MonitorMQTKT.pdb
+C:\Users\MI05332\Downloads\MonitorMQTKT (1)\MonitorMQTKT\MonitorMQTKT\bin\Debug\MonitorMQTKT.exe.config
+C:\Users\MI05332\Downloads\MonitorMQTKT (1)\MonitorMQTKT\MonitorMQTKT\bin\Debug\MonitorMQTKT.exe
+C:\Users\MI05332\Downloads\MonitorMQTKT (1)\MonitorMQTKT\MonitorMQTKT\bin\Debug\MonitorMQTKT.pdb
+C:\Users\MI05332\Downloads\MonitorMQTKT (1)\MonitorMQTKT\MonitorMQTKT\bin\Debug\amqmdnet.dll
+C:\Users\MI05332\Downloads\MonitorMQTKT (1)\MonitorMQTKT\MonitorMQTKT\obj\Debug\MonitorMQTKT.MonitorMQTKT.resources
+C:\Users\MI05332\Downloads\MonitorMQTKT (1)\MonitorMQTKT\MonitorMQTKT\obj\Debug\MonitorMQTKT.ProjectInstaller.resources
+C:\Users\MI05332\Downloads\MonitorMQTKT (1)\MonitorMQTKT\MonitorMQTKT\obj\Debug\MonitorMQTKT.csproj.GenerateResource.cache
+C:\Users\MI05332\Downloads\MonitorMQTKT (1)\MonitorMQTKT\MonitorMQTKT\obj\Debug\MonitorMQTKT.csproj.CoreCompileInputs.cache
+C:\Users\MI05332\Downloads\MonitorMQTKT (1)\MonitorMQTKT\MonitorMQTKT\obj\Debug\MonitorMQTKT.csproj.CopyComplete
+C:\Users\MI05332\Downloads\MonitorMQTKT (1)\MonitorMQTKT\MonitorMQTKT\obj\Debug\MonitorMQTKT.exe
+C:\Users\MI05332\Downloads\MonitorMQTKT (1)\MonitorMQTKT\MonitorMQTKT\obj\Debug\MonitorMQTKT.pdb
+C:\Users\MI05332\source\repos\MonitorMQTKT\MonitorMQTKT\bin\Debug\MonitorMQTKT.exe.config
+C:\Users\MI05332\source\repos\MonitorMQTKT\MonitorMQTKT\bin\Debug\MonitorMQTKT.exe
+C:\Users\MI05332\source\repos\MonitorMQTKT\MonitorMQTKT\bin\Debug\MonitorMQTKT.pdb
+C:\Users\MI05332\source\repos\MonitorMQTKT\MonitorMQTKT\bin\Debug\amqmdnet.dll
+C:\Users\MI05332\source\repos\MonitorMQTKT\MonitorMQTKT\bin\Debug\ServicioMonitor.dll
+C:\Users\MI05332\source\repos\MonitorMQTKT\MonitorMQTKT\bin\Debug\ServicioMonitor.pdb
+C:\Users\MI05332\source\repos\MonitorMQTKT\MonitorMQTKT\obj\Debug\MonitorMQTKT.csproj.AssemblyReference.cache
+C:\Users\MI05332\source\repos\MonitorMQTKT\MonitorMQTKT\obj\Debug\MonitorMQTKT.exe.config
+C:\Users\MI05332\source\repos\MonitorMQTKT\MonitorMQTKT\obj\Debug\MonitorMQTKT.MonitorMQTKT.resources
+C:\Users\MI05332\source\repos\MonitorMQTKT\MonitorMQTKT\obj\Debug\MonitorMQTKT.ProjectInstaller.resources
+C:\Users\MI05332\source\repos\MonitorMQTKT\MonitorMQTKT\obj\Debug\MonitorMQTKT.csproj.GenerateResource.cache
+C:\Users\MI05332\source\repos\MonitorMQTKT\MonitorMQTKT\obj\Debug\MonitorMQTKT.csproj.CoreCompileInputs.cache
+C:\Users\MI05332\source\repos\MonitorMQTKT\MonitorMQTKT\obj\Debug\MonitorMQTKT.csproj.CopyComplete
+C:\Users\MI05332\source\repos\MonitorMQTKT\MonitorMQTKT\obj\Debug\MonitorMQTKT.exe
+C:\Users\MI05332\source\repos\MonitorMQTKT\MonitorMQTKT\obj\Debug\MonitorMQTKT.pdb
+C:\Users\MI05332\source\repos\Monitor\MonitorMQTKT\MonitorMQTKT\bin\Debug\MonitorMQTKT.exe.config
+C:\Users\MI05332\source\repos\Monitor\MonitorMQTKT\MonitorMQTKT\bin\Debug\MonitorMQTKT.exe
+C:\Users\MI05332\source\repos\Monitor\MonitorMQTKT\MonitorMQTKT\bin\Debug\MonitorMQTKT.pdb
+C:\Users\MI05332\source\repos\Monitor\MonitorMQTKT\MonitorMQTKT\bin\Debug\amqmdnet.dll
+C:\Users\MI05332\source\repos\Monitor\MonitorMQTKT\MonitorMQTKT\bin\Debug\ServicioMonitor.dll
+C:\Users\MI05332\source\repos\Monitor\MonitorMQTKT\MonitorMQTKT\bin\Debug\ServicioMonitor.pdb
+C:\Users\MI05332\source\repos\Monitor\MonitorMQTKT\MonitorMQTKT\obj\Debug\MonitorMQTKT.csproj.AssemblyReference.cache
+C:\Users\MI05332\source\repos\Monitor\MonitorMQTKT\MonitorMQTKT\obj\Debug\MonitorMQTKT.MonitorMQTKT.resources
+C:\Users\MI05332\source\repos\Monitor\MonitorMQTKT\MonitorMQTKT\obj\Debug\MonitorMQTKT.ProjectInstaller.resources
+C:\Users\MI05332\source\repos\Monitor\MonitorMQTKT\MonitorMQTKT\obj\Debug\MonitorMQTKT.csproj.GenerateResource.cache
+C:\Users\MI05332\source\repos\Monitor\MonitorMQTKT\MonitorMQTKT\obj\Debug\MonitorMQTKT.csproj.CoreCompileInputs.cache
+C:\Users\MI05332\source\repos\Monitor\MonitorMQTKT\MonitorMQTKT\obj\Debug\MonitorMQTKT.csproj.CopyComplete
+C:\Users\MI05332\source\repos\Monitor\MonitorMQTKT\MonitorMQTKT\obj\Debug\MonitorMQTKT.exe
+C:\Users\MI05332\source\repos\Monitor\MonitorMQTKT\MonitorMQTKT\obj\Debug\MonitorMQTKT.pdb

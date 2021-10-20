@@ -1,0 +1,9 @@
+C:\Users\MI05332\source\repos\ServicioMonitor\ServicioMonitor\bin\Release\ServicioMonitor.dll
+C:\Users\MI05332\source\repos\ServicioMonitor\ServicioMonitor\bin\Release\ServicioMonitor.pdb
+C:\Users\MI05332\source\repos\ServicioMonitor\ServicioMonitor\bin\Release\amqmdnet.dll
+C:\Users\MI05332\source\repos\ServicioMonitor\ServicioMonitor\bin\Release\ConexionBDSQL.dll
+C:\Users\MI05332\source\repos\ServicioMonitor\ServicioMonitor\bin\Release\ConexionBDSQL.pdb
+C:\Users\MI05332\source\repos\ServicioMonitor\ServicioMonitor\obj\Release\ServicioMonitor.csproj.CoreCompileInputs.cache
+C:\Users\MI05332\source\repos\ServicioMonitor\ServicioMonitor\obj\Release\ServicioMonitor.csproj.CopyComplete
+C:\Users\MI05332\source\repos\ServicioMonitor\ServicioMonitor\obj\Release\ServicioMonitor.dll
+C:\Users\MI05332\source\repos\ServicioMonitor\ServicioMonitor\obj\Release\ServicioMonitor.pdb

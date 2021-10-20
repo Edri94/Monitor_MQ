@@ -1,0 +1,35 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.31424.327
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MonitorMQTKT", "MonitorMQTKT\MonitorMQTKT.csproj", "{444159FE-D76C-43E2-B175-89A7082BB411}"
+EndProject
+Project("{54435603-DBB4-11D2-8724-00A0C9A8B90C}") = "MonitorMQRKT.installer", "MonitorMQRKT.installer\MonitorMQRKT.installer.vdproj", "{972BBC33-FCCA-48D8-B6DE-699DEE0D9FED}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ServicioMonitor", "..\ServicioMonitor\ServicioMonitor\ServicioMonitor.csproj", "{94A3FB90-BE76-45A8-9315-7E5424EDBED3}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{444159FE-D76C-43E2-B175-89A7082BB411}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{444159FE-D76C-43E2-B175-89A7082BB411}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{444159FE-D76C-43E2-B175-89A7082BB411}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{444159FE-D76C-43E2-B175-89A7082BB411}.Release|Any CPU.Build.0 = Release|Any CPU
+		{972BBC33-FCCA-48D8-B6DE-699DEE0D9FED}.Debug|Any CPU.ActiveCfg = Debug
+		{972BBC33-FCCA-48D8-B6DE-699DEE0D9FED}.Release|Any CPU.ActiveCfg = Release
+		{94A3FB90-BE76-45A8-9315-7E5424EDBED3}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{94A3FB90-BE76-45A8-9315-7E5424EDBED3}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{94A3FB90-BE76-45A8-9315-7E5424EDBED3}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{94A3FB90-BE76-45A8-9315-7E5424EDBED3}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {F2F6A674-D724-4713-B217-442A3DA73383}
+	EndGlobalSection
+EndGlobal
