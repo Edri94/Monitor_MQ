@@ -91,3 +91,4 @@ D:\Proyectos_GIT\Monitor_MQ\MonitorMQTKT\MonitorMQTKT\bin\Debug\amqmdnet.dll
 D:\Proyectos_GIT\Monitor_MQ\MonitorMQTKT\MonitorMQTKT\bin\Debug\ServicioMonitor.dll
 D:\Proyectos_GIT\Monitor_MQ\MonitorMQTKT\MonitorMQTKT\bin\Debug\ServicioMonitor.pdb
 D:\Proyectos_GIT\Monitor_MQ\MonitorMQTKT\MonitorMQTKT\obj\Debug\MonitorMQTKT.csproj.CopyComplete
+C:\Users\MI05332\source\repos\Monitor\MonitorMQTKT\MonitorMQTKT\obj\Debug\MonitorMQTKT.exe.config

@@ -766,7 +766,29 @@ namespace MonitorMQTKT
 
         private void tmrRestar_Elapsed(object sender, System.Timers.ElapsedEventArgs e)
         {
+            tmrRestar.Enabled = false;
 
+            funcion.Escribe("****************************************************");
+            funcion.Escribe("****************************************************");
+            funcion.Escribe("Ejecución del Timer tmrRestar : " + monitorTicket.currentDate.ToString());
+            funcion.Escribe("valor de Modfunciones.date: " + monitorTicket.date.ToString());
+            funcion.Escribe("valor de ModFunciones.FechaRestar: " + monitorTicket.FechaRestar.ToString());
+            funcion.Escribe("valor de Convert.ToDateTime(ModFunciones.FechaRestar: " + Convert.ToDateTime(monitorTicket.FechaRestar.ToString()));
+            funcion.Escribe("****************************************************");
+            funcion.Escribe("****************************************************");
+            if (monitorTicket.date > Convert.ToDateTime(monitorTicket.FechaRestar))
+            {
+                ResetMonitor();
+
+                monitorTicket.FechaRestar = monitorTicket.date.ToString();
+
+                funcion.UpdateAppSettings("RestarMonitor", monitorTicket.FechaRestar);
+
+                funcion.Escribe("Aplicación Monitor iniciado : " + monitorTicket.currentDate, "Mensaje");
+                funcion.Escribe("Monitor iniciado en modo de procesamiento: " + monitorTicket.currentDate, "Mensaje");
+            }
+
+            tmrRestar.Enabled = true;
         }
     }
 }
