@@ -201,7 +201,7 @@ namespace ServicioMonitor.Processes
                 }
 
                 sFechaEnvio = funcion.Left(DateTime.Now.ToString("yyyymmddhhmmss") + funcion.Space(26), 26);
-                sEnvioConse = funcion.Left(funcion.getValueAppConfig("valorTk14", "TKCONSECUTIVO") + funcion.Space(1), 1);
+                sEnvioConse = funcion.Left(funcion.getValueAppConfig("TKCONSECUTIVO", "valorTk14") + funcion.Space(1), 1);
 
                 Ls_MsgColector = (strFuncionSQL + funcion.Space(8)).Substring(0, 8) + sFechaEnvio;
 

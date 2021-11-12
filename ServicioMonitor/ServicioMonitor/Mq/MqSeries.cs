@@ -123,6 +123,7 @@ namespace ServicioMonitor.Mq
         /// <returns></returns>
         public bool ConectarMQ(string strQueueManagerName)
         {
+            //return true; //pruebas
             try
             {
                 QMGR = new MQQueueManager(strQueueManagerName);
@@ -149,6 +150,7 @@ namespace ServicioMonitor.Mq
         /// <returns></returns>
         public bool EnviarMensajeMQ(string strMQCola)
         {
+            //return true; // pruebas
             long lngMqOpen;
             bool EnviarMensajeMQ = false;
             try

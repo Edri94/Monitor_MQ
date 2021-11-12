@@ -5,6 +5,7 @@ using ServicioMonitor.Processes;
 using System;
 using System.Collections.Generic;
 using System.Diagnostics;
+using System.Linq;
 using System.ServiceProcess;
 
 namespace MonitorMQTKT
@@ -630,7 +631,7 @@ namespace MonitorMQTKT
             string EjecutableMSG;
             int icont;
             string Ejecutable;
-            List<string> Parametro = new List<string>(); ;
+            List<string> Parametro = new List<string>();
             int intlBitacoras;
             string sValor;
             string[] vntBitacora;
@@ -640,37 +641,41 @@ namespace MonitorMQTKT
                 sValor = funcion.getValueAppConfig("PARAMETRO" + intlBitacoras);
                 vntBitacora = sValor.Split(',');
 
+
                 if (Int32.Parse(vntBitacora[0]) == 1)
                 {
-                    Parametro.AddRange(funcion.getValueAppConfig(vntBitacora[1]).Split(','));
-                    Ejecutable = Parametro[0];
-
-                    if (Ejecutable == "M")
+                    if (fValidaEjecucion(vntBitacora[1]))
                     {
-                        //Dim MensajesMQ As Object
-                        //Set MensajesMQ = CreateObject("MensajesMQ.cMensajes")
-                        Mensaje mensajes_MQ = new Mensaje();
+                        Parametro = funcion.getValueAppConfig(vntBitacora[1]).Split(',').ToList();
+                        Ejecutable = Parametro[0];
 
-                        //MensajesMQ.ProcesarMensajes App.Path, strMQManager & "-" & strMQQMonitorEscritura & "-" & "1" & "-" & Parametro(1)
-                        //mensajes_MQ.ProcesarMensajes("D:\\TEMPORAL\\", "QMDCEDTK-QRT.CEDTK.ENVIO.MQD8-F-INAUTPU");
-                        mensajes_MQ.ProcesarMensajes("D:\\TEMPORAL\\", monitorTicket.strMQManager + "-" + monitorTicket.strMQQMonitorEscritura + "-1-" + Parametro[1]);
+                        if (Ejecutable == "M")
+                        {
+                            //Dim MensajesMQ As Object
+                            //Set MensajesMQ = CreateObject("MensajesMQ.cMensajes")
+                            Mensaje mensajes_MQ = new Mensaje();
 
+                            //MensajesMQ.ProcesarMensajes App.Path, strMQManager & "-" & strMQQMonitorEscritura & "-" & "1" & "-" & Parametro(1)
+                            //mensajes_MQ.ProcesarMensajes("D:\\TEMPORAL\\", "QMDCEDTK-QRT.CEDTK.ENVIO.MQD8-F-INAUTPU");
+                            mensajes_MQ.ProcesarMensajes("D:\\TEMPORAL\\", monitorTicket.strMQManager + "-" + monitorTicket.strMQQMonitorEscritura + "-1-" + Parametro[1]);
+
+                        }
+                        else
+                        {
+                            //Dim MensajesMQ As Object
+                            //Set MensajesMQ = CreateObject("MensajesMQ.cMensajes")
+
+                            Bitacora bitacoras_MQ = new Bitacora();
+
+                            //Bitacoras.ProcesarBitacora App.Path, strMQManager & "-" & strMQQMonitorEscritura & "-" & "1" & "-" & Parametro(1)
+                            bitacoras_MQ.ProcesarBitacora("D:\\TEMPORAL\\", monitorTicket.strMQManager + "-" + monitorTicket.strMQQMonitorEscritura + "-1-" + Parametro[1]);
+
+                        }
                     }
                     else
                     {
-                        //Dim MensajesMQ As Object
-                        //Set MensajesMQ = CreateObject("MensajesMQ.cMensajes")
-
-                        Bitacora bitacoras_MQ = new Bitacora();
-
-                        //Bitacoras.ProcesarBitacora App.Path, strMQManager & "-" & strMQQMonitorEscritura & "-" & "1" & "-" & Parametro(1)
-                        bitacoras_MQ.ProcesarBitacora("D:\\TEMPORAL\\", monitorTicket.strMQManager + "-" + monitorTicket.strMQQMonitorEscritura + "-1-" + Parametro[1]);
-
+                        funcion.Escribe("La operación: " + vntBitacora[1] + " no esta habilitada para este día " + funcion.ObtenFechaFormato(1));
                     }
-                }
-                else
-                {
-                    funcion.Escribe("La operación: " + vntBitacora[1] + " no esta habilitada para este día " + funcion.ObtenFechaFormato(1));
                 }
             }
         }
