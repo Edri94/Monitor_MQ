@@ -9,6 +9,16 @@ namespace ServicioMonitor.Helpers
 {
     public class Funcion
     {
+        public string strLogPath;
+        public Funcion()
+        {
+            String CadenaRsultante, strPathServicio;
+            strPathServicio = System.Reflection.Assembly.GetEntryAssembly().Location;
+            CadenaRsultante = strPathServicio.Substring(strPathServicio.LastIndexOf("\\", strPathServicio.Length) + 1);
+
+            strLogPath = strPathServicio.Substring(0, strPathServicio.Length - CadenaRsultante.Length) + "\\Logs\\";
+        }
+        
         /// <summary>
         /// escribe en el log
         /// </summary>
@@ -22,20 +32,13 @@ namespace ServicioMonitor.Helpers
             string clase = caller.ReflectedType.Name;
             string funcion = caller.Name;
 
-            string seccion = "escribeArchivoLOG";
-            string strLogPath;
+            string seccion = "escribeArchivoLOG";       
             string nombre_archivo = DateTime.Now.ToString("ddMMyyyy") + "-" + getValueAppConfig("logFileName", seccion);
             nombre_archivo = nombre_archivo.Replace("@clase", clase);
 
             if (true)
             {
-                String CadenaRsultante, strPathServicio;
-                strPathServicio = System.Reflection.Assembly.GetEntryAssembly().Location;
-                CadenaRsultante = strPathServicio.Substring(strPathServicio.LastIndexOf("\\", strPathServicio.Length) + 1);
-
-                strLogPath = strPathServicio.Substring(0, strPathServicio.Length - CadenaRsultante.Length) + "\\Logs\\";
-
-                using (StreamWriter outputFile = new StreamWriter(Path.Combine(getValueAppConfig("logFilePath", seccion), nombre_archivo), append: true))
+                using (StreamWriter outputFile = new StreamWriter(Path.Combine(getValueAppConfig(strLogPath, seccion), nombre_archivo), append: true))
                 {
                     vData = $"[{DateTime.Now.ToString("dd-MM-yyyy hh:mm:ss")}]  {tipo} desde {funcion}:  {vData}";
                     Console.WriteLine(vData);
@@ -59,20 +62,13 @@ namespace ServicioMonitor.Helpers
             string funcion = caller.Name;
 
             string vData;
-            string seccion = "escribeArchivoLOG";
-            string strLogPath;
+            string seccion = "escribeArchivoLOG";         
             string nombre_archivo = DateTime.Now.ToString("ddMMyyyy") + "-" + getValueAppConfig("logFileName", seccion);
             nombre_archivo = nombre_archivo.Replace("@clase", clase);
 
             if (true)
             {
-                String CadenaRsultante, strPathServicio;
-                strPathServicio = System.Reflection.Assembly.GetEntryAssembly().Location;
-                CadenaRsultante = strPathServicio.Substring(strPathServicio.LastIndexOf("\\", strPathServicio.Length) + 1);
-
-                strLogPath = strPathServicio.Substring(0, strPathServicio.Length - CadenaRsultante.Length) + "\\Logs\\";
-
-                using (StreamWriter outputFile = new StreamWriter(Path.Combine(getValueAppConfig("logFilePath", seccion), nombre_archivo), append: true))
+                using (StreamWriter outputFile = new StreamWriter(Path.Combine(getValueAppConfig(strLogPath, seccion), nombre_archivo), append: true))
                 {
                     vData = $"[{DateTime.Now.ToString("dd-MM-yyyy hh:mm:ss")}] {(char)13}" +
                         $"*{tipo} desde {funcion}:  {ex.Message} {(char)13}" +
