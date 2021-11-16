@@ -26,7 +26,7 @@ namespace ServicioMonitor.Helpers
 
             if (true)
             {
-                using (StreamWriter outputFile = new StreamWriter(Path.Combine(getValueAppConfig(strLogPath, seccion), nombre_archivo), append: true))
+                using (StreamWriter outputFile = new StreamWriter(Path.Combine(strLogPath, nombre_archivo), append: true))
                 {
                     vData = $"[{DateTime.Now.ToString("dd-MM-yyyy hh:mm:ss")}]  {tipo} desde {funcion}:  {vData}";
                     Console.WriteLine(vData);
@@ -56,7 +56,7 @@ namespace ServicioMonitor.Helpers
 
             if (true)
             {
-                using (StreamWriter outputFile = new StreamWriter(Path.Combine(getValueAppConfig(strLogPath, seccion), nombre_archivo), append: true))
+                using (StreamWriter outputFile = new StreamWriter(Path.Combine(strLogPath, nombre_archivo), append: true))
                 {
                     vData = $"[{DateTime.Now.ToString("dd-MM-yyyy hh:mm:ss")}] {(char)13}" +
                         $"*{tipo} desde {funcion}:  {ex.Message} {(char)13}" +
