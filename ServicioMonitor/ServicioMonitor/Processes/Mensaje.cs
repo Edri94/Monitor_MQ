@@ -394,7 +394,14 @@ namespace ServicioMonitor.Processes
                 {
                     funcion.Escribe("No existen registros en la consulta de los datos de tabla TMP_FUNCIONARIOS_PU. ProcesoBDtoMQQUEUEFunc", "Mensaje");
                 }
-                mQ.DesconectarMQ();
+
+
+                if (mQ.blnConectado)
+                {
+                    funcion.Escribe(" mQ.DesconectarMQ(); Inicio", "Mensaje");
+                    mQ.DesconectarMQ();
+                    funcion.Escribe(" mQ.DesconectarMQ(); Fin", "Mensaje");
+                }
 
                 if (NumeroMsgEnviados > 0)
                 {
@@ -575,9 +582,14 @@ namespace ServicioMonitor.Processes
                 {
                     funcion.Escribe("Cero registros en la consulta de los datos, tabla TMP_AUTORIZACIONES_PU. ProcesoBDtoMQQUEUEAuto", "Mensaje");
                 }
-                funcion.Escribe(" mQ.DesconectarMQ(); Inicio", "Mensaje");
-                mQ.DesconectarMQ();
-                funcion.Escribe(" mQ.DesconectarMQ(); Fin", "Mensaje");
+               
+                if (mQ.blnConectado)
+                {
+                    funcion.Escribe(" mQ.DesconectarMQ(); Inicio", "Mensaje");
+                    mQ.DesconectarMQ();
+                    funcion.Escribe(" mQ.DesconectarMQ(); Fin", "Mensaje");
+                }
+                
 
                 if (NumeroMsgEnviados > 0)
                 {
@@ -646,7 +658,7 @@ namespace ServicioMonitor.Processes
 
                     } while (ln_AccTerminal > 0 && ln_AccTerminal < 2000);
 
-                    ASTA_ENTRADA = ASTA_ENTRADA + funcion.Left(ln_AccTerminal.ToString("D4") + "        ", 8);
+                    ASTA_ENTRADA = ASTA_ENTRADA + funcion.Left(ln_AccTerminal.ToString("D4") + "        ", 8);                
                 }
                 else
                 {
