@@ -237,7 +237,13 @@ namespace ServicioMonitor.Processes
                     funcion.Escribe("Se ha presentado un error al armar el Layout TKT14. No existe longitud en el Colector", "Mensaje");
                 }
 
-                mqSeries.DesconectarMQ();
+
+                if (mqSeries.blnConectado)
+                {
+                    funcion.Escribe(" mQ.DesconectarMQ(); Inicio", "Mensaje");
+                    mqSeries.DesconectarMQ();
+                    funcion.Escribe(" mQ.DesconectarMQ(); Fin", "Mensaje");
+                }
 
                 funcion.Escribe("Envio de solicitures TKT -> Host Terminado", "Mensaje");
                 funcion.Escribe("Solicitudes enviadas a MQ: " + sMensajeEnvio, "Mensaje");
