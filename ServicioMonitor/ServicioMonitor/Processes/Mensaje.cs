@@ -640,9 +640,12 @@ namespace ServicioMonitor.Processes
                     ln_AccTerminal = 0;
                     do
                     {
-                        var Rnd = new Random(DateTime.Now.Second * 1000);
-                        ln_AccTerminal = Rnd.Next();
+                        string s = DateTime.Now.Second.ToString();
+                        Random rnd = new Random();
+                        ln_AccTerminal = (rnd.Next(Convert.ToInt32(s))) * 1000;
+
                     } while (ln_AccTerminal > 0 && ln_AccTerminal < 2000);
+
                     ASTA_ENTRADA = ASTA_ENTRADA + funcion.Left(ln_AccTerminal.ToString("D4") + "        ", 8);
                 }
                 else
