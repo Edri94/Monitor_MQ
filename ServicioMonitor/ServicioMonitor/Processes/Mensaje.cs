@@ -394,7 +394,9 @@ namespace ServicioMonitor.Processes
                 {
                     funcion.Escribe("No existen registros en la consulta de los datos de tabla TMP_FUNCIONARIOS_PU. ProcesoBDtoMQQUEUEFunc", "Mensaje");
                 }
-                mQ.DesconectarMQ();
+
+                if(!mQ.blnConectado)
+                    mQ.DesconectarMQ();
 
                 if (NumeroMsgEnviados > 0)
                 {
@@ -646,7 +648,7 @@ namespace ServicioMonitor.Processes
 
                     } while (ln_AccTerminal > 0 && ln_AccTerminal < 2000);
 
-                    ASTA_ENTRADA = ASTA_ENTRADA + funcion.Left(ln_AccTerminal.ToString("D4") + "        ", 8);
+                    ASTA_ENTRADA = ASTA_ENTRADA + funcion.Left(ln_AccTerminal.ToString("D4") + "        ", 8);                
                 }
                 else
                 {

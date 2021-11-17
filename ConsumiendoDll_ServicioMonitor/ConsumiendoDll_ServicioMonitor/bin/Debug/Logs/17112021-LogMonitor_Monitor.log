@@ -338,3 +338,344 @@
 [17-11-2021 12:51:09]  Mensaje desde OnTick:  valor de dblCiclosBitacoras : 60
 [17-11-2021 12:51:09]  Mensaje desde OnTick:  Valor de intTiempoBitacoras : 1
 [17-11-2021 12:51:09]  Mensaje desde OnTick:  Ejecutando TmrBitacora()... 
+[17-11-2021 03:42:44]  Mensaje desde OnLoad:  Carga de formulario FrmMonitor_Load
+[17-11-2021 03:42:44]  entro a Inicia desde Form1_Load:  
+[17-11-2021 03:42:44]  Mensaje desde OnLoad:  Entro al IF FrmMonitor_Load
+[17-11-2021 03:42:44]  Mensaje desde OnLoad:  Aplicación Monitor iniciado : 01/01/0001
+[17-11-2021 03:42:44]  Mensaje desde Form1_Load:  Seguimiento: funcion Iniciar() 
+[17-11-2021 03:42:45]  Mensaje desde Form1_Load:  Falla en Monitor < Falla en el cierre de MQ-Series > : 01/01/0001
+[17-11-2021 03:42:45]  Mensaje desde OnTick:  Ejecución del Timer tmrMonitorMQTKT_Tick : 17/11/2021 03:42:44 p. m.
+[17-11-2021 03:42:45]  Mensaje desde OnTick:  Valor de intgMonitor : 1
+[17-11-2021 03:42:45]  Mensaje desde OnTick:  Valor de strFormatoTiempoBitacoras : M
+[17-11-2021 03:42:45]  Mensaje desde OnTick:  valor de dblCiclosBitacoras : 10
+[17-11-2021 03:42:45]  Mensaje desde OnTick:  Valor de intTiempoBitacoras : 1
+[17-11-2021 03:42:45]  Mensaje desde OnTick:  Ejecución del Timer tmrMonitorMQTKT_Tick : 17/11/2021 03:42:44 p. m.
+[17-11-2021 03:42:45]  Mensaje desde OnTick:  Valor de intgMonitor : 1
+[17-11-2021 03:42:45]  Mensaje desde OnTick:  Valor de strFormatoTiempoBitacoras : M
+[17-11-2021 03:42:45]  Mensaje desde OnTick:  valor de dblCiclosBitacoras : 20
+[17-11-2021 03:42:45]  Mensaje desde OnTick:  Valor de intTiempoBitacoras : 1
+[17-11-2021 03:42:45]  Mensaje desde OnTick:  Ejecución del Timer tmrMonitorMQTKT_Tick : 17/11/2021 03:42:44 p. m.
+[17-11-2021 03:42:45]  Mensaje desde OnTick:  Valor de intgMonitor : 1
+[17-11-2021 03:42:45]  Mensaje desde OnTick:  Valor de strFormatoTiempoBitacoras : M
+[17-11-2021 03:42:45]  Mensaje desde OnTick:  valor de dblCiclosBitacoras : 30
+[17-11-2021 03:42:45]  Mensaje desde OnTick:  Valor de intTiempoBitacoras : 1
+[17-11-2021 03:42:45]  Mensaje desde OnTick:  Ejecución del Timer tmrMonitorMQTKT_Tick : 17/11/2021 03:42:44 p. m.
+[17-11-2021 03:42:45]  Mensaje desde OnTick:  Valor de intgMonitor : 1
+[17-11-2021 03:42:45]  Mensaje desde OnTick:  Valor de strFormatoTiempoBitacoras : M
+[17-11-2021 03:42:45]  Mensaje desde OnTick:  valor de dblCiclosBitacoras : 40
+[17-11-2021 03:42:45]  Mensaje desde OnTick:  Valor de intTiempoBitacoras : 1
+[17-11-2021 03:42:46]  Mensaje desde OnTick:  Ejecución del Timer tmrMonitorMQTKT_Tick : 17/11/2021 03:42:44 p. m.
+[17-11-2021 03:42:46]  Mensaje desde OnTick:  Valor de intgMonitor : 1
+[17-11-2021 03:42:46]  Mensaje desde OnTick:  Valor de strFormatoTiempoBitacoras : M
+[17-11-2021 03:42:46]  Mensaje desde OnTick:  valor de dblCiclosBitacoras : 50
+[17-11-2021 03:42:46]  Mensaje desde OnTick:  Valor de intTiempoBitacoras : 1
+[17-11-2021 03:42:46]  Mensaje desde OnTick:  Ejecución del Timer tmrMonitorMQTKT_Tick : 17/11/2021 03:42:44 p. m.
+[17-11-2021 03:42:46]  Mensaje desde OnTick:  Valor de intgMonitor : 1
+[17-11-2021 03:42:46]  Mensaje desde OnTick:  Valor de strFormatoTiempoBitacoras : M
+[17-11-2021 03:42:46]  Mensaje desde OnTick:  valor de dblCiclosBitacoras : 60
+[17-11-2021 03:42:46]  Mensaje desde OnTick:  Valor de intTiempoBitacoras : 1
+[17-11-2021 03:42:46]  Mensaje desde OnTick:  Ejecutando TmrBitacora()... 
+[17-11-2021 03:43:09]  Mensaje desde OnLoad:  Carga de formulario FrmMonitor_Load
+[17-11-2021 03:43:09]  entro a Inicia desde Form1_Load:  
+[17-11-2021 03:43:09]  Mensaje desde OnLoad:  Entro al IF FrmMonitor_Load
+[17-11-2021 03:43:09]  Mensaje desde OnLoad:  Aplicación Monitor iniciado : 01/01/0001
+[17-11-2021 03:43:09]  Mensaje desde Form1_Load:  Seguimiento: funcion Iniciar() 
+[17-11-2021 03:43:09]  Mensaje desde Form1_Load:  Monitor iniciado en modo de procesamiento: 01/01/0001
+[17-11-2021 03:43:09]  Mensaje desde Form1_Load:  (2)Escribiendo en AppSettings: 18/11/2021 03:43:09 p. m.
+[17-11-2021 03:43:09]  Mensaje desde OnTick:  Ejecución del Timer tmrMonitorMQTKT_Tick : 17/11/2021 03:43:09 p. m.
+[17-11-2021 03:43:09]  Mensaje desde OnTick:  Valor de intgMonitor : 1
+[17-11-2021 03:43:09]  Mensaje desde OnTick:  Valor de strFormatoTiempoBitacoras : M
+[17-11-2021 03:43:09]  Mensaje desde OnTick:  valor de dblCiclosBitacoras : 10
+[17-11-2021 03:43:09]  Mensaje desde OnTick:  Valor de intTiempoBitacoras : 1
+[17-11-2021 03:43:09]  Mensaje desde OnTick:  Ejecución del Timer tmrMonitorMQTKT_Tick : 17/11/2021 03:43:09 p. m.
+[17-11-2021 03:43:09]  Mensaje desde OnTick:  Valor de intgMonitor : 1
+[17-11-2021 03:43:09]  Mensaje desde OnTick:  Valor de strFormatoTiempoBitacoras : M
+[17-11-2021 03:43:09]  Mensaje desde OnTick:  valor de dblCiclosBitacoras : 20
+[17-11-2021 03:43:09]  Mensaje desde OnTick:  Valor de intTiempoBitacoras : 1
+[17-11-2021 03:43:09]  Mensaje desde OnTick:  Ejecución del Timer tmrMonitorMQTKT_Tick : 17/11/2021 03:43:09 p. m.
+[17-11-2021 03:43:09]  Mensaje desde OnTick:  Valor de intgMonitor : 1
+[17-11-2021 03:43:09]  Mensaje desde OnTick:  Valor de strFormatoTiempoBitacoras : M
+[17-11-2021 03:43:09]  Mensaje desde OnTick:  valor de dblCiclosBitacoras : 30
+[17-11-2021 03:43:09]  Mensaje desde OnTick:  Valor de intTiempoBitacoras : 1
+[17-11-2021 03:43:09]  Mensaje desde OnTick:  Ejecución del Timer tmrMonitorMQTKT_Tick : 17/11/2021 03:43:09 p. m.
+[17-11-2021 03:43:09]  Mensaje desde OnTick:  Valor de intgMonitor : 1
+[17-11-2021 03:43:09]  Mensaje desde OnTick:  Valor de strFormatoTiempoBitacoras : M
+[17-11-2021 03:43:09]  Mensaje desde OnTick:  valor de dblCiclosBitacoras : 40
+[17-11-2021 03:43:09]  Mensaje desde OnTick:  Valor de intTiempoBitacoras : 1
+[17-11-2021 03:43:09]  Mensaje desde OnTick:  Ejecución del Timer tmrMonitorMQTKT_Tick : 17/11/2021 03:43:09 p. m.
+[17-11-2021 03:43:09]  Mensaje desde OnTick:  Valor de intgMonitor : 1
+[17-11-2021 03:43:09]  Mensaje desde OnTick:  Valor de strFormatoTiempoBitacoras : M
+[17-11-2021 03:43:09]  Mensaje desde OnTick:  valor de dblCiclosBitacoras : 50
+[17-11-2021 03:43:09]  Mensaje desde OnTick:  Valor de intTiempoBitacoras : 1
+[17-11-2021 03:43:09]  Mensaje desde OnTick:  Ejecución del Timer tmrMonitorMQTKT_Tick : 17/11/2021 03:43:09 p. m.
+[17-11-2021 03:43:09]  Mensaje desde OnTick:  Valor de intgMonitor : 1
+[17-11-2021 03:43:09]  Mensaje desde OnTick:  Valor de strFormatoTiempoBitacoras : M
+[17-11-2021 03:43:09]  Mensaje desde OnTick:  valor de dblCiclosBitacoras : 60
+[17-11-2021 03:43:09]  Mensaje desde OnTick:  Valor de intTiempoBitacoras : 1
+[17-11-2021 03:43:09]  Mensaje desde OnTick:  Ejecutando TmrBitacora()... 
+[17-11-2021 03:44:52]  Mensaje desde OnLoad:  Carga de formulario FrmMonitor_Load
+[17-11-2021 03:44:52]  entro a Inicia desde Form1_Load:  
+[17-11-2021 03:44:52]  Mensaje desde OnLoad:  Entro al IF FrmMonitor_Load
+[17-11-2021 03:44:52]  Mensaje desde OnLoad:  Aplicación Monitor iniciado : 01/01/0001
+[17-11-2021 03:44:52]  Mensaje desde Form1_Load:  Seguimiento: funcion Iniciar() 
+[17-11-2021 03:44:52]  Mensaje desde Form1_Load:  Monitor iniciado en modo de procesamiento: 01/01/0001
+[17-11-2021 03:44:52]  Mensaje desde Form1_Load:  (2)Escribiendo en AppSettings: 18/11/2021 03:44:52 p. m.
+[17-11-2021 03:44:52]  Mensaje desde OnTick:  Ejecución del Timer tmrMonitorMQTKT_Tick : 17/11/2021 03:44:52 p. m.
+[17-11-2021 03:44:52]  Mensaje desde OnTick:  Valor de intgMonitor : 1
+[17-11-2021 03:44:52]  Mensaje desde OnTick:  Valor de strFormatoTiempoBitacoras : M
+[17-11-2021 03:44:52]  Mensaje desde OnTick:  valor de dblCiclosBitacoras : 10
+[17-11-2021 03:44:52]  Mensaje desde OnTick:  Valor de intTiempoBitacoras : 1
+[17-11-2021 03:44:52]  Mensaje desde OnTick:  Ejecución del Timer tmrMonitorMQTKT_Tick : 17/11/2021 03:44:52 p. m.
+[17-11-2021 03:44:52]  Mensaje desde OnTick:  Valor de intgMonitor : 1
+[17-11-2021 03:44:52]  Mensaje desde OnTick:  Valor de strFormatoTiempoBitacoras : M
+[17-11-2021 03:44:52]  Mensaje desde OnTick:  valor de dblCiclosBitacoras : 20
+[17-11-2021 03:44:52]  Mensaje desde OnTick:  Valor de intTiempoBitacoras : 1
+[17-11-2021 03:44:52]  Mensaje desde OnTick:  Ejecución del Timer tmrMonitorMQTKT_Tick : 17/11/2021 03:44:52 p. m.
+[17-11-2021 03:44:52]  Mensaje desde OnTick:  Valor de intgMonitor : 1
+[17-11-2021 03:44:52]  Mensaje desde OnTick:  Valor de strFormatoTiempoBitacoras : M
+[17-11-2021 03:44:52]  Mensaje desde OnTick:  valor de dblCiclosBitacoras : 30
+[17-11-2021 03:44:52]  Mensaje desde OnTick:  Valor de intTiempoBitacoras : 1
+[17-11-2021 03:44:53]  Mensaje desde OnTick:  Ejecución del Timer tmrMonitorMQTKT_Tick : 17/11/2021 03:44:52 p. m.
+[17-11-2021 03:44:53]  Mensaje desde OnTick:  Valor de intgMonitor : 1
+[17-11-2021 03:44:53]  Mensaje desde OnTick:  Valor de strFormatoTiempoBitacoras : M
+[17-11-2021 03:44:53]  Mensaje desde OnTick:  valor de dblCiclosBitacoras : 40
+[17-11-2021 03:44:53]  Mensaje desde OnTick:  Valor de intTiempoBitacoras : 1
+[17-11-2021 03:44:53]  Mensaje desde OnTick:  Ejecución del Timer tmrMonitorMQTKT_Tick : 17/11/2021 03:44:52 p. m.
+[17-11-2021 03:44:53]  Mensaje desde OnTick:  Valor de intgMonitor : 1
+[17-11-2021 03:44:53]  Mensaje desde OnTick:  Valor de strFormatoTiempoBitacoras : M
+[17-11-2021 03:44:53]  Mensaje desde OnTick:  valor de dblCiclosBitacoras : 50
+[17-11-2021 03:44:53]  Mensaje desde OnTick:  Valor de intTiempoBitacoras : 1
+[17-11-2021 03:44:53]  Mensaje desde OnTick:  Ejecución del Timer tmrMonitorMQTKT_Tick : 17/11/2021 03:44:52 p. m.
+[17-11-2021 03:44:53]  Mensaje desde OnTick:  Valor de intgMonitor : 1
+[17-11-2021 03:44:53]  Mensaje desde OnTick:  Valor de strFormatoTiempoBitacoras : M
+[17-11-2021 03:44:53]  Mensaje desde OnTick:  valor de dblCiclosBitacoras : 60
+[17-11-2021 03:44:53]  Mensaje desde OnTick:  Valor de intTiempoBitacoras : 1
+[17-11-2021 03:44:53]  Mensaje desde OnTick:  Ejecutando TmrBitacora()... 
+[17-11-2021 03:46:16]  Mensaje desde OnLoad:  Carga de formulario FrmMonitor_Load
+[17-11-2021 03:46:16]  entro a Inicia desde Form1_Load:  
+[17-11-2021 03:46:16]  Mensaje desde OnLoad:  Entro al IF FrmMonitor_Load
+[17-11-2021 03:46:16]  Mensaje desde OnLoad:  Aplicación Monitor iniciado : 01/01/0001
+[17-11-2021 03:46:16]  Mensaje desde Form1_Load:  Seguimiento: funcion Iniciar() 
+[17-11-2021 03:46:16]  Mensaje desde Form1_Load:  Monitor iniciado en modo de procesamiento: 01/01/0001
+[17-11-2021 03:46:16]  Mensaje desde Form1_Load:  (2)Escribiendo en AppSettings: 18/11/2021 03:46:16 p. m.
+[17-11-2021 03:46:16]  Mensaje desde OnTick:  Ejecución del Timer tmrMonitorMQTKT_Tick : 17/11/2021 03:46:16 p. m.
+[17-11-2021 03:46:16]  Mensaje desde OnTick:  Valor de intgMonitor : 1
+[17-11-2021 03:46:16]  Mensaje desde OnTick:  Valor de strFormatoTiempoBitacoras : M
+[17-11-2021 03:46:16]  Mensaje desde OnTick:  valor de dblCiclosBitacoras : 10
+[17-11-2021 03:46:16]  Mensaje desde OnTick:  Valor de intTiempoBitacoras : 1
+[17-11-2021 03:46:17]  Mensaje desde OnTick:  Ejecución del Timer tmrMonitorMQTKT_Tick : 17/11/2021 03:46:16 p. m.
+[17-11-2021 03:46:17]  Mensaje desde OnTick:  Valor de intgMonitor : 1
+[17-11-2021 03:46:17]  Mensaje desde OnTick:  Valor de strFormatoTiempoBitacoras : M
+[17-11-2021 03:46:17]  Mensaje desde OnTick:  valor de dblCiclosBitacoras : 20
+[17-11-2021 03:46:17]  Mensaje desde OnTick:  Valor de intTiempoBitacoras : 1
+[17-11-2021 03:46:17]  Mensaje desde OnTick:  Ejecución del Timer tmrMonitorMQTKT_Tick : 17/11/2021 03:46:16 p. m.
+[17-11-2021 03:46:17]  Mensaje desde OnTick:  Valor de intgMonitor : 1
+[17-11-2021 03:46:17]  Mensaje desde OnTick:  Valor de strFormatoTiempoBitacoras : M
+[17-11-2021 03:46:17]  Mensaje desde OnTick:  valor de dblCiclosBitacoras : 30
+[17-11-2021 03:46:17]  Mensaje desde OnTick:  Valor de intTiempoBitacoras : 1
+[17-11-2021 03:46:17]  Mensaje desde OnTick:  Ejecución del Timer tmrMonitorMQTKT_Tick : 17/11/2021 03:46:16 p. m.
+[17-11-2021 03:46:17]  Mensaje desde OnTick:  Valor de intgMonitor : 1
+[17-11-2021 03:46:17]  Mensaje desde OnTick:  Valor de strFormatoTiempoBitacoras : M
+[17-11-2021 03:46:17]  Mensaje desde OnTick:  valor de dblCiclosBitacoras : 40
+[17-11-2021 03:46:17]  Mensaje desde OnTick:  Valor de intTiempoBitacoras : 1
+[17-11-2021 03:46:17]  Mensaje desde OnTick:  Ejecución del Timer tmrMonitorMQTKT_Tick : 17/11/2021 03:46:16 p. m.
+[17-11-2021 03:46:17]  Mensaje desde OnTick:  Valor de intgMonitor : 1
+[17-11-2021 03:46:17]  Mensaje desde OnTick:  Valor de strFormatoTiempoBitacoras : M
+[17-11-2021 03:46:17]  Mensaje desde OnTick:  valor de dblCiclosBitacoras : 50
+[17-11-2021 03:46:17]  Mensaje desde OnTick:  Valor de intTiempoBitacoras : 1
+[17-11-2021 03:46:17]  Mensaje desde OnTick:  Ejecución del Timer tmrMonitorMQTKT_Tick : 17/11/2021 03:46:16 p. m.
+[17-11-2021 03:46:17]  Mensaje desde OnTick:  Valor de intgMonitor : 1
+[17-11-2021 03:46:17]  Mensaje desde OnTick:  Valor de strFormatoTiempoBitacoras : M
+[17-11-2021 03:46:17]  Mensaje desde OnTick:  valor de dblCiclosBitacoras : 60
+[17-11-2021 03:46:17]  Mensaje desde OnTick:  Valor de intTiempoBitacoras : 1
+[17-11-2021 03:46:17]  Mensaje desde OnTick:  Ejecutando TmrBitacora()... 
+[17-11-2021 03:49:13]  Mensaje desde OnLoad:  Carga de formulario FrmMonitor_Load
+[17-11-2021 03:49:13]  entro a Inicia desde Form1_Load:  
+[17-11-2021 03:49:13]  Mensaje desde OnLoad:  Entro al IF FrmMonitor_Load
+[17-11-2021 03:49:13]  Mensaje desde OnLoad:  Aplicación Monitor iniciado : 01/01/0001
+[17-11-2021 03:49:13]  Mensaje desde Form1_Load:  Seguimiento: funcion Iniciar() 
+[17-11-2021 03:49:13]  Mensaje desde Form1_Load:  Monitor iniciado en modo de procesamiento: 01/01/0001
+[17-11-2021 03:49:13]  Mensaje desde Form1_Load:  (2)Escribiendo en AppSettings: 18/11/2021 03:49:13 p. m.
+[17-11-2021 03:49:13]  Mensaje desde OnTick:  Ejecución del Timer tmrMonitorMQTKT_Tick : 17/11/2021 03:49:13 p. m.
+[17-11-2021 03:49:13]  Mensaje desde OnTick:  Valor de intgMonitor : 1
+[17-11-2021 03:49:13]  Mensaje desde OnTick:  Valor de strFormatoTiempoBitacoras : M
+[17-11-2021 03:49:13]  Mensaje desde OnTick:  valor de dblCiclosBitacoras : 10
+[17-11-2021 03:49:13]  Mensaje desde OnTick:  Valor de intTiempoBitacoras : 1
+[17-11-2021 03:49:13]  Mensaje desde OnTick:  Ejecución del Timer tmrMonitorMQTKT_Tick : 17/11/2021 03:49:13 p. m.
+[17-11-2021 03:49:13]  Mensaje desde OnTick:  Valor de intgMonitor : 1
+[17-11-2021 03:49:13]  Mensaje desde OnTick:  Valor de strFormatoTiempoBitacoras : M
+[17-11-2021 03:49:13]  Mensaje desde OnTick:  valor de dblCiclosBitacoras : 20
+[17-11-2021 03:49:13]  Mensaje desde OnTick:  Valor de intTiempoBitacoras : 1
+[17-11-2021 03:49:13]  Mensaje desde OnTick:  Ejecución del Timer tmrMonitorMQTKT_Tick : 17/11/2021 03:49:13 p. m.
+[17-11-2021 03:49:13]  Mensaje desde OnTick:  Valor de intgMonitor : 1
+[17-11-2021 03:49:13]  Mensaje desde OnTick:  Valor de strFormatoTiempoBitacoras : M
+[17-11-2021 03:49:13]  Mensaje desde OnTick:  valor de dblCiclosBitacoras : 30
+[17-11-2021 03:49:13]  Mensaje desde OnTick:  Valor de intTiempoBitacoras : 1
+[17-11-2021 03:49:13]  Mensaje desde OnTick:  Ejecución del Timer tmrMonitorMQTKT_Tick : 17/11/2021 03:49:13 p. m.
+[17-11-2021 03:49:13]  Mensaje desde OnTick:  Valor de intgMonitor : 1
+[17-11-2021 03:49:13]  Mensaje desde OnTick:  Valor de strFormatoTiempoBitacoras : M
+[17-11-2021 03:49:13]  Mensaje desde OnTick:  valor de dblCiclosBitacoras : 40
+[17-11-2021 03:49:13]  Mensaje desde OnTick:  Valor de intTiempoBitacoras : 1
+[17-11-2021 03:49:13]  Mensaje desde OnTick:  Ejecución del Timer tmrMonitorMQTKT_Tick : 17/11/2021 03:49:13 p. m.
+[17-11-2021 03:49:13]  Mensaje desde OnTick:  Valor de intgMonitor : 1
+[17-11-2021 03:49:13]  Mensaje desde OnTick:  Valor de strFormatoTiempoBitacoras : M
+[17-11-2021 03:49:13]  Mensaje desde OnTick:  valor de dblCiclosBitacoras : 50
+[17-11-2021 03:49:13]  Mensaje desde OnTick:  Valor de intTiempoBitacoras : 1
+[17-11-2021 03:49:14]  Mensaje desde OnTick:  Ejecución del Timer tmrMonitorMQTKT_Tick : 17/11/2021 03:49:13 p. m.
+[17-11-2021 03:49:14]  Mensaje desde OnTick:  Valor de intgMonitor : 1
+[17-11-2021 03:49:14]  Mensaje desde OnTick:  Valor de strFormatoTiempoBitacoras : M
+[17-11-2021 03:49:14]  Mensaje desde OnTick:  valor de dblCiclosBitacoras : 60
+[17-11-2021 03:49:14]  Mensaje desde OnTick:  Valor de intTiempoBitacoras : 1
+[17-11-2021 03:49:14]  Mensaje desde OnTick:  Ejecutando TmrBitacora()... 
+[17-11-2021 03:52:13]  Mensaje desde OnLoad:  Carga de formulario FrmMonitor_Load
+[17-11-2021 03:52:13]  entro a Inicia desde Form1_Load:  
+[17-11-2021 03:52:13]  Mensaje desde OnLoad:  Entro al IF FrmMonitor_Load
+[17-11-2021 03:52:13]  Mensaje desde OnLoad:  Aplicación Monitor iniciado : 01/01/0001
+[17-11-2021 03:52:13]  Mensaje desde Form1_Load:  Seguimiento: funcion Iniciar() 
+[17-11-2021 03:52:13]  Mensaje desde Form1_Load:  Monitor iniciado en modo de procesamiento: 01/01/0001
+[17-11-2021 03:52:13]  Mensaje desde Form1_Load:  (2)Escribiendo en AppSettings: 18/11/2021 03:52:13 p. m.
+[17-11-2021 03:52:13]  Mensaje desde OnTick:  Ejecución del Timer tmrMonitorMQTKT_Tick : 17/11/2021 03:52:13 p. m.
+[17-11-2021 03:52:13]  Mensaje desde OnTick:  Valor de intgMonitor : 1
+[17-11-2021 03:52:13]  Mensaje desde OnTick:  Valor de strFormatoTiempoBitacoras : M
+[17-11-2021 03:52:13]  Mensaje desde OnTick:  valor de dblCiclosBitacoras : 10
+[17-11-2021 03:52:13]  Mensaje desde OnTick:  Valor de intTiempoBitacoras : 1
+[17-11-2021 03:52:13]  Mensaje desde OnTick:  Ejecución del Timer tmrMonitorMQTKT_Tick : 17/11/2021 03:52:13 p. m.
+[17-11-2021 03:52:13]  Mensaje desde OnTick:  Valor de intgMonitor : 1
+[17-11-2021 03:52:13]  Mensaje desde OnTick:  Valor de strFormatoTiempoBitacoras : M
+[17-11-2021 03:52:13]  Mensaje desde OnTick:  valor de dblCiclosBitacoras : 20
+[17-11-2021 03:52:13]  Mensaje desde OnTick:  Valor de intTiempoBitacoras : 1
+[17-11-2021 03:52:13]  Mensaje desde OnTick:  Ejecución del Timer tmrMonitorMQTKT_Tick : 17/11/2021 03:52:13 p. m.
+[17-11-2021 03:52:13]  Mensaje desde OnTick:  Valor de intgMonitor : 1
+[17-11-2021 03:52:13]  Mensaje desde OnTick:  Valor de strFormatoTiempoBitacoras : M
+[17-11-2021 03:52:13]  Mensaje desde OnTick:  valor de dblCiclosBitacoras : 30
+[17-11-2021 03:52:13]  Mensaje desde OnTick:  Valor de intTiempoBitacoras : 1
+[17-11-2021 03:52:14]  Mensaje desde OnTick:  Ejecución del Timer tmrMonitorMQTKT_Tick : 17/11/2021 03:52:13 p. m.
+[17-11-2021 03:52:14]  Mensaje desde OnTick:  Valor de intgMonitor : 1
+[17-11-2021 03:52:14]  Mensaje desde OnTick:  Valor de strFormatoTiempoBitacoras : M
+[17-11-2021 03:52:14]  Mensaje desde OnTick:  valor de dblCiclosBitacoras : 40
+[17-11-2021 03:52:14]  Mensaje desde OnTick:  Valor de intTiempoBitacoras : 1
+[17-11-2021 03:52:14]  Mensaje desde OnTick:  Ejecución del Timer tmrMonitorMQTKT_Tick : 17/11/2021 03:52:13 p. m.
+[17-11-2021 03:52:14]  Mensaje desde OnTick:  Valor de intgMonitor : 1
+[17-11-2021 03:52:14]  Mensaje desde OnTick:  Valor de strFormatoTiempoBitacoras : M
+[17-11-2021 03:52:14]  Mensaje desde OnTick:  valor de dblCiclosBitacoras : 50
+[17-11-2021 03:52:14]  Mensaje desde OnTick:  Valor de intTiempoBitacoras : 1
+[17-11-2021 03:52:14]  Mensaje desde OnTick:  Ejecución del Timer tmrMonitorMQTKT_Tick : 17/11/2021 03:52:13 p. m.
+[17-11-2021 03:52:14]  Mensaje desde OnTick:  Valor de intgMonitor : 1
+[17-11-2021 03:52:14]  Mensaje desde OnTick:  Valor de strFormatoTiempoBitacoras : M
+[17-11-2021 03:52:14]  Mensaje desde OnTick:  valor de dblCiclosBitacoras : 60
+[17-11-2021 03:52:14]  Mensaje desde OnTick:  Valor de intTiempoBitacoras : 1
+[17-11-2021 03:52:14]  Mensaje desde OnTick:  Ejecutando TmrBitacora()... 
+[17-11-2021 03:58:02]  Mensaje desde OnLoad:  Carga de formulario FrmMonitor_Load
+[17-11-2021 03:58:02]  entro a Inicia desde Form1_Load:  
+[17-11-2021 03:58:02]  Mensaje desde OnLoad:  Entro al IF FrmMonitor_Load
+[17-11-2021 03:58:02]  Mensaje desde OnLoad:  Aplicación Monitor iniciado : 01/01/0001
+[17-11-2021 03:58:02]  Mensaje desde Form1_Load:  Seguimiento: funcion Iniciar() 
+[17-11-2021 03:58:02]  Mensaje desde Form1_Load:  Monitor iniciado en modo de procesamiento: 01/01/0001
+[17-11-2021 03:58:02]  Mensaje desde Form1_Load:  (2)Escribiendo en AppSettings: 18/11/2021 03:58:02 p. m.
+[17-11-2021 03:58:02]  Mensaje desde OnTick:  Ejecución del Timer tmrMonitorMQTKT_Tick : 17/11/2021 03:58:02 p. m.
+[17-11-2021 03:58:02]  Mensaje desde OnTick:  Valor de intgMonitor : 1
+[17-11-2021 03:58:02]  Mensaje desde OnTick:  Valor de strFormatoTiempoBitacoras : M
+[17-11-2021 03:58:02]  Mensaje desde OnTick:  valor de dblCiclosBitacoras : 10
+[17-11-2021 03:58:02]  Mensaje desde OnTick:  Valor de intTiempoBitacoras : 1
+[17-11-2021 03:58:02]  Mensaje desde OnTick:  Ejecución del Timer tmrMonitorMQTKT_Tick : 17/11/2021 03:58:02 p. m.
+[17-11-2021 03:58:02]  Mensaje desde OnTick:  Valor de intgMonitor : 1
+[17-11-2021 03:58:02]  Mensaje desde OnTick:  Valor de strFormatoTiempoBitacoras : M
+[17-11-2021 03:58:02]  Mensaje desde OnTick:  valor de dblCiclosBitacoras : 20
+[17-11-2021 03:58:02]  Mensaje desde OnTick:  Valor de intTiempoBitacoras : 1
+[17-11-2021 03:58:02]  Mensaje desde OnTick:  Ejecución del Timer tmrMonitorMQTKT_Tick : 17/11/2021 03:58:02 p. m.
+[17-11-2021 03:58:02]  Mensaje desde OnTick:  Valor de intgMonitor : 1
+[17-11-2021 03:58:02]  Mensaje desde OnTick:  Valor de strFormatoTiempoBitacoras : M
+[17-11-2021 03:58:02]  Mensaje desde OnTick:  valor de dblCiclosBitacoras : 30
+[17-11-2021 03:58:02]  Mensaje desde OnTick:  Valor de intTiempoBitacoras : 1
+[17-11-2021 03:58:03]  Mensaje desde OnTick:  Ejecución del Timer tmrMonitorMQTKT_Tick : 17/11/2021 03:58:02 p. m.
+[17-11-2021 03:58:03]  Mensaje desde OnTick:  Valor de intgMonitor : 1
+[17-11-2021 03:58:03]  Mensaje desde OnTick:  Valor de strFormatoTiempoBitacoras : M
+[17-11-2021 03:58:03]  Mensaje desde OnTick:  valor de dblCiclosBitacoras : 40
+[17-11-2021 03:58:03]  Mensaje desde OnTick:  Valor de intTiempoBitacoras : 1
+[17-11-2021 03:58:03]  Mensaje desde OnTick:  Ejecución del Timer tmrMonitorMQTKT_Tick : 17/11/2021 03:58:02 p. m.
+[17-11-2021 03:58:03]  Mensaje desde OnTick:  Valor de intgMonitor : 1
+[17-11-2021 03:58:03]  Mensaje desde OnTick:  Valor de strFormatoTiempoBitacoras : M
+[17-11-2021 03:58:03]  Mensaje desde OnTick:  valor de dblCiclosBitacoras : 50
+[17-11-2021 03:58:03]  Mensaje desde OnTick:  Valor de intTiempoBitacoras : 1
+[17-11-2021 03:58:03]  Mensaje desde OnTick:  Ejecución del Timer tmrMonitorMQTKT_Tick : 17/11/2021 03:58:02 p. m.
+[17-11-2021 03:58:03]  Mensaje desde OnTick:  Valor de intgMonitor : 1
+[17-11-2021 03:58:03]  Mensaje desde OnTick:  Valor de strFormatoTiempoBitacoras : M
+[17-11-2021 03:58:03]  Mensaje desde OnTick:  valor de dblCiclosBitacoras : 60
+[17-11-2021 03:58:03]  Mensaje desde OnTick:  Valor de intTiempoBitacoras : 1
+[17-11-2021 03:58:03]  Mensaje desde OnTick:  Ejecutando TmrBitacora()... 
+[17-11-2021 04:00:01]  Mensaje desde OnLoad:  Carga de formulario FrmMonitor_Load
+[17-11-2021 04:00:01]  entro a Inicia desde Form1_Load:  
+[17-11-2021 04:00:01]  Mensaje desde OnLoad:  Entro al IF FrmMonitor_Load
+[17-11-2021 04:00:01]  Mensaje desde OnLoad:  Aplicación Monitor iniciado : 01/01/0001
+[17-11-2021 04:00:01]  Mensaje desde Form1_Load:  Seguimiento: funcion Iniciar() 
+[17-11-2021 04:00:01]  Mensaje desde Form1_Load:  Monitor iniciado en modo de procesamiento: 01/01/0001
+[17-11-2021 04:00:01]  Mensaje desde Form1_Load:  (2)Escribiendo en AppSettings: 18/11/2021 04:00:01 p. m.
+[17-11-2021 04:00:01]  Mensaje desde OnTick:  Ejecución del Timer tmrMonitorMQTKT_Tick : 17/11/2021 04:00:01 p. m.
+[17-11-2021 04:00:01]  Mensaje desde OnTick:  Valor de intgMonitor : 1
+[17-11-2021 04:00:01]  Mensaje desde OnTick:  Valor de strFormatoTiempoBitacoras : M
+[17-11-2021 04:00:01]  Mensaje desde OnTick:  valor de dblCiclosBitacoras : 10
+[17-11-2021 04:00:01]  Mensaje desde OnTick:  Valor de intTiempoBitacoras : 1
+[17-11-2021 04:00:01]  Mensaje desde OnTick:  Ejecución del Timer tmrMonitorMQTKT_Tick : 17/11/2021 04:00:01 p. m.
+[17-11-2021 04:00:01]  Mensaje desde OnTick:  Valor de intgMonitor : 1
+[17-11-2021 04:00:01]  Mensaje desde OnTick:  Valor de strFormatoTiempoBitacoras : M
+[17-11-2021 04:00:01]  Mensaje desde OnTick:  valor de dblCiclosBitacoras : 20
+[17-11-2021 04:00:01]  Mensaje desde OnTick:  Valor de intTiempoBitacoras : 1
+[17-11-2021 04:00:01]  Mensaje desde OnTick:  Ejecución del Timer tmrMonitorMQTKT_Tick : 17/11/2021 04:00:01 p. m.
+[17-11-2021 04:00:01]  Mensaje desde OnTick:  Valor de intgMonitor : 1
+[17-11-2021 04:00:01]  Mensaje desde OnTick:  Valor de strFormatoTiempoBitacoras : M
+[17-11-2021 04:00:01]  Mensaje desde OnTick:  valor de dblCiclosBitacoras : 30
+[17-11-2021 04:00:01]  Mensaje desde OnTick:  Valor de intTiempoBitacoras : 1
+[17-11-2021 04:00:01]  Mensaje desde OnTick:  Ejecución del Timer tmrMonitorMQTKT_Tick : 17/11/2021 04:00:01 p. m.
+[17-11-2021 04:00:01]  Mensaje desde OnTick:  Valor de intgMonitor : 1
+[17-11-2021 04:00:01]  Mensaje desde OnTick:  Valor de strFormatoTiempoBitacoras : M
+[17-11-2021 04:00:01]  Mensaje desde OnTick:  valor de dblCiclosBitacoras : 40
+[17-11-2021 04:00:01]  Mensaje desde OnTick:  Valor de intTiempoBitacoras : 1
+[17-11-2021 04:00:01]  Mensaje desde OnTick:  Ejecución del Timer tmrMonitorMQTKT_Tick : 17/11/2021 04:00:01 p. m.
+[17-11-2021 04:00:01]  Mensaje desde OnTick:  Valor de intgMonitor : 1
+[17-11-2021 04:00:01]  Mensaje desde OnTick:  Valor de strFormatoTiempoBitacoras : M
+[17-11-2021 04:00:01]  Mensaje desde OnTick:  valor de dblCiclosBitacoras : 50
+[17-11-2021 04:00:01]  Mensaje desde OnTick:  Valor de intTiempoBitacoras : 1
+[17-11-2021 04:00:01]  Mensaje desde OnTick:  Ejecución del Timer tmrMonitorMQTKT_Tick : 17/11/2021 04:00:01 p. m.
+[17-11-2021 04:00:01]  Mensaje desde OnTick:  Valor de intgMonitor : 1
+[17-11-2021 04:00:01]  Mensaje desde OnTick:  Valor de strFormatoTiempoBitacoras : M
+[17-11-2021 04:00:01]  Mensaje desde OnTick:  valor de dblCiclosBitacoras : 60
+[17-11-2021 04:00:01]  Mensaje desde OnTick:  Valor de intTiempoBitacoras : 1
+[17-11-2021 04:00:01]  Mensaje desde OnTick:  Ejecutando TmrBitacora()... 
+[17-11-2021 04:04:14]  Mensaje desde OnLoad:  Carga de formulario FrmMonitor_Load
+[17-11-2021 04:04:14]  entro a Inicia desde Form1_Load:  
+[17-11-2021 04:04:14]  Mensaje desde OnLoad:  Entro al IF FrmMonitor_Load
+[17-11-2021 04:04:14]  Mensaje desde OnLoad:  Aplicación Monitor iniciado : 01/01/0001
+[17-11-2021 04:04:14]  Mensaje desde Form1_Load:  Seguimiento: funcion Iniciar() 
+[17-11-2021 04:04:14]  Mensaje desde Form1_Load:  Monitor iniciado en modo de procesamiento: 01/01/0001
+[17-11-2021 04:04:14]  Mensaje desde Form1_Load:  (2)Escribiendo en AppSettings: 18/11/2021 04:04:14 p. m.
+[17-11-2021 04:04:14]  Mensaje desde OnTick:  Ejecución del Timer tmrMonitorMQTKT_Tick : 17/11/2021 04:04:14 p. m.
+[17-11-2021 04:04:14]  Mensaje desde OnTick:  Valor de intgMonitor : 1
+[17-11-2021 04:04:14]  Mensaje desde OnTick:  Valor de strFormatoTiempoBitacoras : M
+[17-11-2021 04:04:14]  Mensaje desde OnTick:  valor de dblCiclosBitacoras : 10
+[17-11-2021 04:04:14]  Mensaje desde OnTick:  Valor de intTiempoBitacoras : 1
+[17-11-2021 04:04:14]  Mensaje desde OnTick:  Ejecución del Timer tmrMonitorMQTKT_Tick : 17/11/2021 04:04:14 p. m.
+[17-11-2021 04:04:14]  Mensaje desde OnTick:  Valor de intgMonitor : 1
+[17-11-2021 04:04:14]  Mensaje desde OnTick:  Valor de strFormatoTiempoBitacoras : M
+[17-11-2021 04:04:14]  Mensaje desde OnTick:  valor de dblCiclosBitacoras : 20
+[17-11-2021 04:04:14]  Mensaje desde OnTick:  Valor de intTiempoBitacoras : 1
+[17-11-2021 04:04:14]  Mensaje desde OnTick:  Ejecución del Timer tmrMonitorMQTKT_Tick : 17/11/2021 04:04:14 p. m.
+[17-11-2021 04:04:14]  Mensaje desde OnTick:  Valor de intgMonitor : 1
+[17-11-2021 04:04:14]  Mensaje desde OnTick:  Valor de strFormatoTiempoBitacoras : M
+[17-11-2021 04:04:14]  Mensaje desde OnTick:  valor de dblCiclosBitacoras : 30
+[17-11-2021 04:04:14]  Mensaje desde OnTick:  Valor de intTiempoBitacoras : 1
+[17-11-2021 04:04:14]  Mensaje desde OnTick:  Ejecución del Timer tmrMonitorMQTKT_Tick : 17/11/2021 04:04:14 p. m.
+[17-11-2021 04:04:14]  Mensaje desde OnTick:  Valor de intgMonitor : 1
+[17-11-2021 04:04:14]  Mensaje desde OnTick:  Valor de strFormatoTiempoBitacoras : M
+[17-11-2021 04:04:14]  Mensaje desde OnTick:  valor de dblCiclosBitacoras : 40
+[17-11-2021 04:04:14]  Mensaje desde OnTick:  Valor de intTiempoBitacoras : 1
+[17-11-2021 04:04:14]  Mensaje desde OnTick:  Ejecución del Timer tmrMonitorMQTKT_Tick : 17/11/2021 04:04:14 p. m.
+[17-11-2021 04:04:14]  Mensaje desde OnTick:  Valor de intgMonitor : 1
+[17-11-2021 04:04:14]  Mensaje desde OnTick:  Valor de strFormatoTiempoBitacoras : M
+[17-11-2021 04:04:14]  Mensaje desde OnTick:  valor de dblCiclosBitacoras : 50
+[17-11-2021 04:04:14]  Mensaje desde OnTick:  Valor de intTiempoBitacoras : 1
+[17-11-2021 04:04:15]  Mensaje desde OnTick:  Ejecución del Timer tmrMonitorMQTKT_Tick : 17/11/2021 04:04:14 p. m.
+[17-11-2021 04:04:15]  Mensaje desde OnTick:  Valor de intgMonitor : 1
+[17-11-2021 04:04:15]  Mensaje desde OnTick:  Valor de strFormatoTiempoBitacoras : M
+[17-11-2021 04:04:15]  Mensaje desde OnTick:  valor de dblCiclosBitacoras : 60
+[17-11-2021 04:04:15]  Mensaje desde OnTick:  Valor de intTiempoBitacoras : 1
+[17-11-2021 04:04:15]  Mensaje desde OnTick:  Ejecutando TmrBitacora()... 

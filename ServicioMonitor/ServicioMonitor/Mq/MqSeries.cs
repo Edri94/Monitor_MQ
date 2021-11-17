@@ -123,7 +123,7 @@ namespace ServicioMonitor.Mq
         /// <returns></returns>
         public bool ConectarMQ(string strQueueManagerName)
         {
-            //return true; //pruebas
+            return true; //pruebas
             try
             {
                 QMGR = new MQQueueManager(strQueueManagerName);

@@ -41,3 +41,47 @@
 [17-11-2021 12:51:13]  Mensaje desde TmrBitacora:  Comienza la función MAIN de la aplicación MensajesMQ: 17/11/2021 Tipo Función: 'F'
 [17-11-2021 12:51:13]  Mensaje desde ProcesarMensajes:  ls_msg:  
 [17-11-2021 12:51:15]  Mensaje desde ProcesarMensajes:  Inicia el envío de mensajes a Host: 17/11/2021 12:51:13 p. m. Función: UPDFUNC
+[17-11-2021 03:42:50]  [INICIA PROGRAMA] desde TmrBitacora:  
+[17-11-2021 03:42:50]  Mensaje desde TmrBitacora:  Comienza la función MAIN de la aplicación MensajesMQ: 17/11/2021 Tipo Función: 'F'
+[17-11-2021 03:42:50]  Mensaje desde ProcesarMensajes:  ls_msg:  
+[17-11-2021 03:42:51]  Mensaje desde ProcesarMensajes:  Inicia el envío de mensajes a Host: 17/11/2021 03:42:50 p. m. Función: UPDFUNC
+[17-11-2021 03:42:52] *Error desde ProcesoBDtoMQQUEUEFunc:  MQRC_Q_MGR_NAME_ERROR *InnerException:  *Source: amqmdnet  *Data: System.Collections.ListDictionaryInternal  *HelpLink:   *StackTrace:    en IBM.WMQ.MQQueueManager.Connect(String queueManagerName)
+   en IBM.WMQ.MQQueueManager..ctor(String queueManagerName)
+   en ServicioMonitor.Mq.MqSeries.ConectarMQ(String strQueueManagerName) en C:\Users\MI05332\source\repos\Monitor\ServicioMonitor\ServicioMonitor\Mq\MqSeries.cs:línea 129  *HResult: -2146232832  *TargetSite: Void Connect(System.String)  
+[17-11-2021 03:42:52]  Mensaje desde TmrBitacora:  Termina el acceso a la aplicación MensajesMQ. Función SQL: UPDFUNC
+[17-11-2021 03:42:55]  [INICIA PROGRAMA] desde TmrBitacora:  
+[17-11-2021 03:42:55]  Mensaje desde TmrBitacora:  Comienza la función MAIN de la aplicación MensajesMQ: 17/11/2021 Tipo Función: 'F'
+[17-11-2021 03:42:55]  Mensaje desde ProcesarMensajes:  ls_msg:  
+[17-11-2021 03:43:04]  Mensaje desde ProcesarMensajes:  Inicia el envío de mensajes a Host: 17/11/2021 03:42:55 p. m. Función: UPDFUNC
+[17-11-2021 03:43:12]  [INICIA PROGRAMA] desde TmrBitacora:  
+[17-11-2021 03:43:12]  Mensaje desde TmrBitacora:  Comienza la función MAIN de la aplicación MensajesMQ: 17/11/2021 Tipo Función: 'F'
+[17-11-2021 03:43:12]  Mensaje desde ProcesarMensajes:  ls_msg:  
+[17-11-2021 03:43:13]  Mensaje desde ProcesarMensajes:  Inicia el envío de mensajes a Host: 17/11/2021 03:43:12 p. m. Función: UPDFUNC
+[17-11-2021 03:44:55]  [INICIA PROGRAMA] desde TmrBitacora:  
+[17-11-2021 03:44:55]  Mensaje desde TmrBitacora:  Comienza la función MAIN de la aplicación MensajesMQ: 17/11/2021 Tipo Función: 'F'
+[17-11-2021 03:44:55]  Mensaje desde ProcesarMensajes:  ls_msg:  
+[17-11-2021 03:44:56]  Mensaje desde ProcesarMensajes:  Inicia el envío de mensajes a Host: 17/11/2021 03:44:55 p. m. Función: UPDFUNC
+[17-11-2021 03:46:18]  [INICIA PROGRAMA] desde TmrBitacora:  
+[17-11-2021 03:46:18]  Mensaje desde TmrBitacora:  Comienza la función MAIN de la aplicación MensajesMQ: 17/11/2021 Tipo Función: 'F'
+[17-11-2021 03:46:18]  Mensaje desde ProcesarMensajes:  ls_msg:  
+[17-11-2021 03:46:19]  Mensaje desde ProcesarMensajes:  Inicia el envío de mensajes a Host: 17/11/2021 03:46:18 p. m. Función: UPDFUNC
+[17-11-2021 03:49:19]  [INICIA PROGRAMA] desde TmrBitacora:  
+[17-11-2021 03:49:19]  Mensaje desde TmrBitacora:  Comienza la función MAIN de la aplicación MensajesMQ: 17/11/2021 Tipo Función: 'F'
+[17-11-2021 03:49:19]  Mensaje desde ProcesarMensajes:  ls_msg:  
+[17-11-2021 03:49:19]  Mensaje desde ProcesarMensajes:  Inicia el envío de mensajes a Host: 17/11/2021 03:49:19 p. m. Función: UPDFUNC
+[17-11-2021 03:52:15]  [INICIA PROGRAMA] desde TmrBitacora:  
+[17-11-2021 03:52:15]  Mensaje desde TmrBitacora:  Comienza la función MAIN de la aplicación MensajesMQ: 17/11/2021 Tipo Función: 'F'
+[17-11-2021 03:52:15]  Mensaje desde ProcesarMensajes:  ls_msg:  
+[17-11-2021 03:52:16]  Mensaje desde ProcesarMensajes:  Inicia el envío de mensajes a Host: 17/11/2021 03:52:15 p. m. Función: UPDFUNC
+[17-11-2021 03:58:04]  [INICIA PROGRAMA] desde TmrBitacora:  
+[17-11-2021 03:58:04]  Mensaje desde TmrBitacora:  Comienza la función MAIN de la aplicación MensajesMQ: 17/11/2021 Tipo Función: 'F'
+[17-11-2021 03:58:04]  Mensaje desde ProcesarMensajes:  ls_msg:  
+[17-11-2021 03:58:05]  Mensaje desde ProcesarMensajes:  Inicia el envío de mensajes a Host: 17/11/2021 03:58:04 p. m. Función: UPDFUNC
+[17-11-2021 04:00:04]  [INICIA PROGRAMA] desde TmrBitacora:  
+[17-11-2021 04:00:04]  Mensaje desde TmrBitacora:  Comienza la función MAIN de la aplicación MensajesMQ: 17/11/2021 Tipo Función: 'F'
+[17-11-2021 04:00:04]  Mensaje desde ProcesarMensajes:  ls_msg:  
+[17-11-2021 04:00:04]  Mensaje desde ProcesarMensajes:  Inicia el envío de mensajes a Host: 17/11/2021 04:00:04 p. m. Función: UPDFUNC
+[17-11-2021 04:04:17]  [INICIA PROGRAMA] desde TmrBitacora:  
+[17-11-2021 04:04:17]  Mensaje desde TmrBitacora:  Comienza la función MAIN de la aplicación MensajesMQ: 17/11/2021 Tipo Función: 'F'
+[17-11-2021 04:04:17]  Mensaje desde ProcesarMensajes:  ls_msg:  
+[17-11-2021 04:04:18]  Mensaje desde ProcesarMensajes:  Inicia el envío de mensajes a Host: 17/11/2021 04:04:17 p. m. Función: UPDFUNC
