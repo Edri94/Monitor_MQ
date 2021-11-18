@@ -1,0 +1,4 @@
+[18-11-2021 10:19:57]  [INICIA PROGRAMA] desde TmrBitacora:  
+[18-11-2021 10:19:57]  Mensaje desde TmrBitacora:  Comienza la función MAIN de la aplicación MensajesMQ: 18/11/2021 Tipo Función: 'F'
+[18-11-2021 10:19:57]  Mensaje desde ProcesarMensajes:  ls_msg:  
+[18-11-2021 10:20:04]  Mensaje desde ProcesarMensajes:  Inicia el envío de mensajes a Host: 18/11/2021 10:19:57 a. m. Función: UPDFUNC
