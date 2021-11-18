@@ -395,6 +395,15 @@ namespace ServicioMonitor.Processes
                 else
                 {
                     funcion.Escribe("No existen registros en la consulta de los datos de tabla TMP_FUNCIONARIOS_PU. ProcesoBDtoMQQUEUEFunc", "Mensaje");
+                    bd.psInsertarSQL(
+                                       new Bitacora_Errores_Mensajes_Pu
+                                       {
+                                           fecha_hora = DateTime.Parse(mQ.gsAccesoActual),
+                                           error_numero = 4,
+                                           error_descripcion = "No existen registros en la consulta de los datos de tabla TMP_FUNCIONARIOS_PU. ProcesoBDtoMQQUEUEFunc",
+                                           aplicacion = "MSG"
+                                       }
+                                   );
                 }
 
 
