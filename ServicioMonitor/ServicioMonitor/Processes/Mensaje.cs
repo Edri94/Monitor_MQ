@@ -291,6 +291,8 @@ namespace ServicioMonitor.Processes
                 strQuery = strQuery + "WHERE status_envio = 0";
                 //strQuery = strQuery + "WHERE status_envio = 1 and CONVERT(DATETIME, fecha_ultimo_mant, 105) > '05-12-2016 00:00:00'"; //cambiar
 
+                funcion.Escribe("Ejecutando query: " + strQuery);
+
                 DataTable rssRegistro = bd.ConsultaMQQUEUEFunc(strQuery);
 
                 if (rssRegistro.Rows.Count > 0)
@@ -473,6 +475,8 @@ namespace ServicioMonitor.Processes
                 strQuery = strQuery + "TMP_AUTORIZACIONES_PU" + (char)13;
                 strQuery = strQuery + "WHERE status_envio = 0";
                 //strQuery = strQuery + "WHERE status_envio = 1 AND CONVERT(DATETIME, fecha_operacion, 12) > '2020-01-01 00:00:00'"; //cambiar
+
+                funcion.Escribe("Ejecutando query: " + strQuery);
 
                 DataTable rssRegistro = bd.ConsultaMQQUEUEAuto(strQuery);
 
