@@ -288,8 +288,8 @@ namespace ServicioMonitor.Processes
                 strQuery = strQuery + "tipo " + (char)13;                                  // 13  Tipo  A-Alta, B-Baja, M-Mantenimiento
                 strQuery = strQuery + "FROM" + (char)13;
                 strQuery = strQuery + mQ.gsNameDB + "..TMP_FUNCIONARIOS_PU" + (char)13;
-                //strQuery = strQuery + "WHERE status_envio = 0";
-                strQuery = strQuery + "WHERE status_envio = 1 and CONVERT(DATETIME, fecha_ultimo_mant, 105) > '05-12-2016 00:00:00'"; //cambiar
+                strQuery = strQuery + "WHERE status_envio = 0";
+                //strQuery = strQuery + "WHERE status_envio = 1 and CONVERT(DATETIME, fecha_ultimo_mant, 105) > '05-12-2016 00:00:00'"; //cambiar
 
                 DataTable rssRegistro = bd.ConsultaMQQUEUEFunc(strQuery);
 
@@ -471,8 +471,8 @@ namespace ServicioMonitor.Processes
                 strQuery = strQuery + "CONVERT(char(5),getdate(),108) [hora]" + (char)13;
                 strQuery = strQuery + "FROM " + (char)13;
                 strQuery = strQuery + "TMP_AUTORIZACIONES_PU" + (char)13;
-                //strQuery = strQuery + "WHERE status_envio = 0";
-                strQuery = strQuery + "WHERE status_envio = 1 AND CONVERT(DATETIME, fecha_operacion, 12) > '2020-01-01 00:00:00'"; //cambiar
+                strQuery = strQuery + "WHERE status_envio = 0";
+                //strQuery = strQuery + "WHERE status_envio = 1 AND CONVERT(DATETIME, fecha_operacion, 12) > '2020-01-01 00:00:00'"; //cambiar
 
                 DataTable rssRegistro = bd.ConsultaMQQUEUEAuto(strQuery);
 
