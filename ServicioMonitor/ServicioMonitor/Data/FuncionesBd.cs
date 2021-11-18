@@ -98,7 +98,7 @@ namespace ServicioMonitor.Data
         {
             strQuery = "Insert into BITACORA_ERRORES_MENSAJES_PU ";
             strQuery += "(fecha_hora, error_numero, error_descripcion, aplicacion) ";
-            strQuery += $"Values ('{bitacora.fecha_hora}', {bitacora.error_numero}, '{bitacora.error_descripcion}', '{bitacora.aplicacion}')";
+            strQuery += $"Values ('{bitacora.fecha_hora.ToString("yyyy-MM-dd hh:mm:ss")}', {bitacora.error_numero}, '{bitacora.error_descripcion}', '{bitacora.aplicacion}')";
 
             return $"Se afectaron {ejecutarInsert(strQuery)} fila(s)";
         }
@@ -168,6 +168,7 @@ namespace ServicioMonitor.Data
             }
             catch (Exception ex)
             {
+                funcion.Escribe(ex);
                 return -1;
             }
         }
@@ -226,6 +227,7 @@ namespace ServicioMonitor.Data
 
                         dt.Rows.Add(_row);
                     }
+                    dr.Close();
                     return dt;
                 }
             }
