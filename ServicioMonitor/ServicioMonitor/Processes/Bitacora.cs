@@ -240,9 +240,8 @@ namespace ServicioMonitor.Processes
 
                 if (mqSeries.blnConectado)
                 {
-                    funcion.Escribe(" mQ.DesconectarMQ(); Inicio", "Mensaje");
+                    funcion.Escribe("Desconectando MQ", "Mensaje");
                     mqSeries.DesconectarMQ();
-                    funcion.Escribe(" mQ.DesconectarMQ(); Fin", "Mensaje");
                 }
 
                 funcion.Escribe("Envio de solicitures TKT -> Host Terminado", "Mensaje");
@@ -267,9 +266,6 @@ namespace ServicioMonitor.Processes
             try
             {
                 ls_TempColectorMsg = strMsgColector;
-                funcion.Escribe("Entre a  funcion: ASTA_ENTRADA");
-                funcion.Escribe("ls_TempColectorMsg: " + ls_TempColectorMsg);
-                funcion.Escribe("strColectorMaxLeng: " + strColectorMaxLeng);
 
                 if (ls_TempColectorMsg.Length > Int32.Parse(strColectorMaxLeng))
                 {
