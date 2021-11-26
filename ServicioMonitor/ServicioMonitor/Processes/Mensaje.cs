@@ -225,17 +225,14 @@ namespace ServicioMonitor.Processes
 
             if (Gs_MQManager.Trim() == "")
             {
-                funcion.Escribe("Gs_MQManager.Trim(): " + Gs_MQManager.Trim(), "Mensaje");
                 ls_msg = ls_msg + "";
             }
             if (Gs_MQQueueEscritura.Trim() == "")
             {
-                funcion.Escribe("Gs_MQQueueEscritura.Trim(): " + Gs_MQQueueEscritura.Trim(), "Mensaje");
                 ls_msg = ls_msg + "";
             }
             if (ls_msg == "")
             {
-                funcion.Escribe("ls_msg:  " + ls_msg, "Mensaje");
                 return true;
             }
             ps_MsgVal = ls_msg;
@@ -291,7 +288,7 @@ namespace ServicioMonitor.Processes
                 strQuery = strQuery + "WHERE status_envio = 0";
                 //strQuery = strQuery + "WHERE status_envio = 1 and CONVERT(DATETIME, fecha_ultimo_mant, 105) > '05-12-2016 00:00:00'"; //cambiar
 
-                funcion.Escribe("Ejecutando query: " + strQuery);
+                
 
                 DataTable rssRegistro = bd.ConsultaMQQUEUEFunc(strQuery);
 
@@ -409,9 +406,8 @@ namespace ServicioMonitor.Processes
 
                 if (mQ.blnConectado)
                 {
-                    funcion.Escribe(" mQ.DesconectarMQ(); Inicio", "Mensaje");
+                    funcion.Escribe("Desconectando MQ" , "Mensaje");
                     mQ.DesconectarMQ();
-                    funcion.Escribe(" mQ.DesconectarMQ(); Fin", "Mensaje");
                 }
 
                 if (NumeroMsgEnviados > 0)
@@ -485,7 +481,6 @@ namespace ServicioMonitor.Processes
                 strQuery = strQuery + "WHERE status_envio = 0";
                 //strQuery = strQuery + "WHERE status_envio = 1 AND CONVERT(DATETIME, fecha_operacion, 12) > '2020-01-01 00:00:00'"; //cambiar
 
-                funcion.Escribe("Ejecutando query: " + strQuery);
 
                 DataTable rssRegistro = bd.ConsultaMQQUEUEAuto(strQuery);
 
@@ -545,13 +540,10 @@ namespace ServicioMonitor.Processes
                             {
                                 funcion.Escribe("Mensaje Enviado: " + Ls_MensajeMQ, "Mensaje");
                                 if (mQ.EnviarMensajeMQ(Gs_MQQueueEscritura))
-                                {
-                                    funcion.Escribe("Paso 1", "mensaje");
+                                {                              
                                     funcion.Escribe($"las_Autorizaciones[{NumeroMsgEnviados}] = {ls_Operacion}", "mensaje");
-                                    las_Autorizaciones.Add(new MensajeEnviar { NumMensaje = NumeroMsgEnviados, Msj = ls_Operacion });
-                                    funcion.Escribe("Paso 2", "mensaje");
+                                    las_Autorizaciones.Add(new MensajeEnviar { NumMensaje = NumeroMsgEnviados, Msj = ls_Operacion });                              
                                     NumeroMsgEnviados = NumeroMsgEnviados + 1;
-                                    funcion.Escribe("Paso 3", "mensaje");
                                 }
                                 else
                                 {
@@ -598,9 +590,8 @@ namespace ServicioMonitor.Processes
                
                 if (mQ.blnConectado)
                 {
-                    funcion.Escribe(" mQ.DesconectarMQ(); Inicio", "Mensaje");
+                    funcion.Escribe("Desconecgtando MQ", "Mensaje");
                     mQ.DesconectarMQ();
-                    funcion.Escribe(" mQ.DesconectarMQ(); Fin", "Mensaje");
                 }
                 
 

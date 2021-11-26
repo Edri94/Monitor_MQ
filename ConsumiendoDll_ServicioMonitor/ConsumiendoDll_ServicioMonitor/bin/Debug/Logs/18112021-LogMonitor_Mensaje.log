@@ -57,3 +57,8 @@
 [18-11-2021 03:07:55]  Mensaje desde ProcesarMensajes:  Envio de solicitures TKT -> Host Terminado. ProcesoBDtoMQQUEUEFunc
 [18-11-2021 03:07:55]  Mensaje desde ProcesarMensajes:  Solicitudes enviadas a MQ: 0
 [18-11-2021 03:07:55]  Mensaje desde TmrBitacora:  Termina el acceso a la aplicación MensajesMQ. Función SQL: UPDFUNC
+[18-11-2021 05:14:03]  [INICIA PROGRAMA] desde TmrBitacora:  
+[18-11-2021 05:14:03]  Mensaje desde TmrBitacora:  Comienza la función MAIN de la aplicación MensajesMQ: 18/11/2021 Tipo Función: 'F'
+[18-11-2021 05:14:03]  Mensaje desde ProcesarMensajes:  ls_msg:  
+[18-11-2021 05:14:05]  Mensaje desde ProcesarMensajes:  Inicia el envío de mensajes a Host: 18/11/2021 05:14:03 p. m. Función: UPDFUNC
+[18-11-2021 05:14:17]  Mensaje desde ProcesarMensajes:  Ejecutando query: SELECTid_funcionario,centro_regional,numero_funcionario,producto,subproducto,CONVERT(char(11), fecha_alta, 105) + CONVERT(char(5), fecha_alta, 108) [fecha_alta],CONVERT(char(11), fecha_baja, 105) + CONVERT(char(5), fecha_baja, 108) [fecha_baja], CONVERT(char(11), fecha_ultimo_mant, 105) + CONVERT(char(6), fecha_ultimo_mant, 108) [fecha_ultimo_mant],tipo_peticion [tipo_peticion],status_envio [status_envio],CONVERT(char(8),getdate(),112) [columna_11],CONVERT(char(5),getdate(),108) [columna_12],id_transaccion,tipo FROM..TMP_FUNCIONARIOS_PUWHERE status_envio = 0
