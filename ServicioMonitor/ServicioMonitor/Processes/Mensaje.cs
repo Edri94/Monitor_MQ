@@ -718,6 +718,8 @@ namespace ServicioMonitor.Processes
             {
                 for (ln_indice = 0; ln_indice < (IDFuncionario.Count()); ln_indice++)
                 {
+                    funcion.Escribe("Actualizando donde  status_envio = 0 AND id_funcionario = " + IDFuncionario[ln_indice]);
+
                     strQueryUpDate = "UPDATE TMP_FUNCIONARIOS_PU" + (char)13;
                     strQueryUpDate = strQueryUpDate + "SET  status_envio = 1" + (char)13;
                     strQueryUpDate = strQueryUpDate + "--  ,fecha_ultimo_mant = GETDATE()," + (char)13;
@@ -747,6 +749,8 @@ namespace ServicioMonitor.Processes
 
                 for (ln_indice = 0; ln_indice < IDAutorizacion.Count(); ln_indice++)
                 {
+                    funcion.Escribe("Actualizando donde  status_envio = 0  AND operacion = " + IDAutorizacion[ln_indice]);
+
                     strQueryUpDate = "UPDATE " + mQ.gsNameDB + "..TMP_AUTORIZACIONES_PU " + (char)13;
                     strQueryUpDate = strQueryUpDate + "SET  status_envio = 1 " + (char)13;
                     strQueryUpDate = strQueryUpDate + "WHERE status_envio = 0 " + (char)13;
