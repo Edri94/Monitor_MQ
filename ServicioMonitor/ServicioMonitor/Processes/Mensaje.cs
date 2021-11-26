@@ -707,6 +707,7 @@ namespace ServicioMonitor.Processes
 
         private bool ActualizaRegistrosFunc(List<MensajeEnviar> IDFuncionario)
         {
+            funcion.Escribe("ActualizaRegistrosFunc() Registros: " + IDFuncionario.Count());
             bool ActualizaRegistrosFunc = false;
 
             string strQueryUpDate;
@@ -740,6 +741,7 @@ namespace ServicioMonitor.Processes
 
         private bool ActualizaRegistrosAuto(List<MensajeEnviar> IDAutorizacion)
         {
+            funcion.Escribe("ActualizaRegistrosAuto() Registros: " + IDAutorizacion.Count());
             bool ActualizaRegistrosAuto = false;
 
             try

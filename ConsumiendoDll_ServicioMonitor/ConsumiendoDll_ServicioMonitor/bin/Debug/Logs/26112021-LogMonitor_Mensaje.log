@@ -1,0 +1,17 @@
+[26-11-2021 12:17:40]  [INICIA PROGRAMA] desde TmrBitacora:  
+[26-11-2021 12:17:40]  Mensaje desde TmrBitacora:  Comienza la función MAIN de la aplicación MensajesMQ: 26/11/2021 Tipo Función: 'F'
+[26-11-2021 12:17:42]  Mensaje desde ProcesarMensajes:  Inicia el envío de mensajes a Host: 26/11/2021 12:17:40 p. m. Función: UPDFUNC
+[26-11-2021 12:40:06]  [INICIA PROGRAMA] desde TmrBitacora:  
+[26-11-2021 12:40:06]  Mensaje desde TmrBitacora:  Comienza la función MAIN de la aplicación MensajesMQ: 26/11/2021 Tipo Función: 'F'
+[26-11-2021 12:40:07]  Mensaje desde ProcesarMensajes:  Inicia el envío de mensajes a Host: 26/11/2021 12:40:06 p. m. Función: UPDFUNC
+[26-11-2021 12:40:08] *Error desde ProcesoBDtoMQQUEUEFunc:  MQRC_Q_MGR_NAME_ERROR *InnerException:  *Source: amqmdnet  *Data: System.Collections.ListDictionaryInternal  *HelpLink:   *StackTrace:    en IBM.WMQ.MQQueueManager.Connect(String queueManagerName)
+   en IBM.WMQ.MQQueueManager..ctor(String queueManagerName)
+   en ServicioMonitor.Mq.MqSeries.ConectarMQ(String strQueueManagerName) en C:\Users\MI05332\source\repos\Monitor\ServicioMonitor\ServicioMonitor\Mq\MqSeries.cs:línea 129  *HResult: -2146232832  *TargetSite: Void Connect(System.String)  
+[26-11-2021 12:40:31]  Mensaje desde TmrBitacora:  Termina el acceso a la aplicación MensajesMQ. Función SQL: UPDFUNC
+[26-11-2021 12:40:58]  [INICIA PROGRAMA] desde TmrBitacora:  
+[26-11-2021 12:40:58]  Mensaje desde TmrBitacora:  Comienza la función MAIN de la aplicación MensajesMQ: 26/11/2021 Tipo Función: 'F'
+[26-11-2021 12:41:09]  Mensaje desde ProcesarMensajes:  Inicia el envío de mensajes a Host: 26/11/2021 12:41:01 p. m. Función: UPDFUNC
+[26-11-2021 12:41:31]  [INICIA PROGRAMA] desde TmrBitacora:  
+[26-11-2021 12:41:31]  Mensaje desde TmrBitacora:  Comienza la función MAIN de la aplicación MensajesMQ: 26/11/2021 Tipo Función: 'F'
+[26-11-2021 12:41:39]  Mensaje desde ProcesarMensajes:  Inicia el envío de mensajes a Host: 26/11/2021 12:41:31 p. m. Función: UPDFUNC
+[26-11-2021 12:42:18]  Mensaje desde ProcesarMensajes:  Mensaje Enviado: QC1CDPL <IH>266000    0173    UCQGTKMD00000000TK14    0000205010TKNE</IH><ME>0126CUPDFUNC 202111261241B6366M101448 10000000000223-03-202131-12-208000073010000031824M                                           </ME>
