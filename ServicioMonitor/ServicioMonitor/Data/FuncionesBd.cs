@@ -174,6 +174,31 @@ namespace ServicioMonitor.Data
         }
 
         /// <summary>
+        /// Ejecutar un insert con un query dado
+        /// </summary>
+        /// <param name="query">query select</param>
+        /// <returns></returns>
+        public int ejecutarUpdate(string query)
+        {
+            try
+            {
+                cnnConexion.ActiveConnection = true;
+                cnnConexion.ParametersContains = false;
+                cnnConexion.CommandType = CommandType.Text;
+                cnnConexion.ActiveConnection = true;
+
+                int afectados = cnnConexion.ExecuteNonQuery(query);
+
+                return afectados;
+            }
+            catch (Exception ex)
+            {
+                funcion.Escribe(ex);
+                return -1;
+            }
+        }
+
+        /// <summary>
         /// Obtiene un datatable con la informacion del query
         /// </summary>
         /// <param name="query"></param>
