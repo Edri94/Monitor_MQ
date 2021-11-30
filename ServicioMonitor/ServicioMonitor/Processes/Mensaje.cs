@@ -350,7 +350,8 @@ namespace ServicioMonitor.Processes
 
                             if (Ls_MensajeMQ != "")
                             {
-                                funcion.Escribe("Mensaje Enviado: " + Ls_MensajeMQ, "Mensaje");
+                                funcion.Escribe("Mensaje Enviado: " + Ls_MensajeMQ, "Mensaje");                               
+                                funcion.Escribe("EnviarMensajeMQ: " + Gs_MQQueueEscritura);
                                 if (mQ.EnviarMensajeMQ(Gs_MQQueueEscritura))
                                 {
                                     //ReDim Preserve las_Funcionarios(NumeroMsgEnviados)
@@ -539,6 +540,7 @@ namespace ServicioMonitor.Processes
                             if (Ls_MensajeMQ != "")
                             {
                                 funcion.Escribe("Mensaje Enviado: " + Ls_MensajeMQ, "Mensaje");
+                                funcion.Escribe("EnviarMensajeMQ: " + Gs_MQQueueEscritura);
                                 if (mQ.EnviarMensajeMQ(Gs_MQQueueEscritura))
                                 {                              
                                     funcion.Escribe($"las_Autorizaciones[{NumeroMsgEnviados}] = {ls_Operacion}", "mensaje");
