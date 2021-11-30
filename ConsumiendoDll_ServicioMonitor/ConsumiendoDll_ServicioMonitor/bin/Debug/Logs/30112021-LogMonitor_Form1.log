@@ -1,0 +1,3 @@
+[30-11-2021 10:52:59] *Error desde Iniciar:  MQRC_Q_MGR_NAME_ERROR *InnerException:  *Source: amqmdnet  *Data: System.Collections.ListDictionaryInternal  *HelpLink:   *StackTrace:    en IBM.WMQ.MQQueueManager.Connect(String queueManagerName)
+   en IBM.WMQ.MQQueueManager..ctor(String queueManagerName)
+   en ServicioMonitor.Mq.MqSeries.ConectarMQ(String strQueueManagerName) en C:\Users\MI05332\source\repos\Monitor\ServicioMonitor\ServicioMonitor\Mq\MqSeries.cs:línea 129  *HResult: -2146232832  *TargetSite: Void Connect(System.String)  

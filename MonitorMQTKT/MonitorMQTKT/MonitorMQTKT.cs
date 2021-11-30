@@ -7,6 +7,7 @@ using System.Collections.Generic;
 using System.Diagnostics;
 using System.Linq;
 using System.ServiceProcess;
+using static ServicioMonitor.Mq.MqSeries;
 
 namespace MonitorMQTKT
 {
@@ -560,11 +561,13 @@ namespace MonitorMQTKT
 
             try
             {
-                lngMQOpen = (long)MqMonitorTicket.MQOPEN.MQOO_INQUIRE;
+                //lngMQOpen = (long)MQOPEN.MQOO_INQUIRE;
+                lngMQOpen = (long)MQOPEN.MQOO_OUTPUT;
 
 
                 funcion.Escribe("Ejecutar : AbrirColaMQ()");
                 funcion.Escribe($"Parametros en: RevisMQ({MQManager}, ${MQQLectura}, ${MQQEscritura}, {psOtros})");
+                
                 if (monitorTicket.AbrirColaMQ(MQManager, MqMonitorTicket.MQOPEN.MQOO_INQUIRE)) //cambiar
                 {
                     j = 1;
