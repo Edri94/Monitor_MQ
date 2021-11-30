@@ -15,8 +15,74 @@
     {
         "Entry"
         {
+        "MsmKey" = "8:_1B3378A1BB5992B23D12EA0CE0AA3E64"
+        "OwnerKey" = "8:_8AA9851CD9A64BD0B68FE47149F26B19"
+        "MsmSig" = "8:_UNDEFINED"
+        }
+        "Entry"
+        {
         "MsmKey" = "8:_8AA9851CD9A64BD0B68FE47149F26B19"
         "OwnerKey" = "8:_UNDEFINED"
+        "MsmSig" = "8:_UNDEFINED"
+        }
+        "Entry"
+        {
+        "MsmKey" = "8:_AA46DBBE56BABAEAB5ABB9E9FE5544CF"
+        "OwnerKey" = "8:_8AA9851CD9A64BD0B68FE47149F26B19"
+        "MsmSig" = "8:_UNDEFINED"
+        }
+        "Entry"
+        {
+        "MsmKey" = "8:_E141FFEC23213F831C60E2CFBF9C5C13"
+        "OwnerKey" = "8:_8AA9851CD9A64BD0B68FE47149F26B19"
+        "MsmSig" = "8:_UNDEFINED"
+        }
+        "Entry"
+        {
+        "MsmKey" = "8:_E141FFEC23213F831C60E2CFBF9C5C13"
+        "OwnerKey" = "8:_1B3378A1BB5992B23D12EA0CE0AA3E64"
+        "MsmSig" = "8:_UNDEFINED"
+        }
+        "Entry"
+        {
+        "MsmKey" = "8:_FF3BC6D861F03D5265CE7714858CDC65"
+        "OwnerKey" = "8:_8AA9851CD9A64BD0B68FE47149F26B19"
+        "MsmSig" = "8:_UNDEFINED"
+        }
+        "Entry"
+        {
+        "MsmKey" = "8:_FF3BC6D861F03D5265CE7714858CDC65"
+        "OwnerKey" = "8:_1B3378A1BB5992B23D12EA0CE0AA3E64"
+        "MsmSig" = "8:_UNDEFINED"
+        }
+        "Entry"
+        {
+        "MsmKey" = "8:_UNDEFINED"
+        "OwnerKey" = "8:_AA46DBBE56BABAEAB5ABB9E9FE5544CF"
+        "MsmSig" = "8:_UNDEFINED"
+        }
+        "Entry"
+        {
+        "MsmKey" = "8:_UNDEFINED"
+        "OwnerKey" = "8:_1B3378A1BB5992B23D12EA0CE0AA3E64"
+        "MsmSig" = "8:_UNDEFINED"
+        }
+        "Entry"
+        {
+        "MsmKey" = "8:_UNDEFINED"
+        "OwnerKey" = "8:_E141FFEC23213F831C60E2CFBF9C5C13"
+        "MsmSig" = "8:_UNDEFINED"
+        }
+        "Entry"
+        {
+        "MsmKey" = "8:_UNDEFINED"
+        "OwnerKey" = "8:_8AA9851CD9A64BD0B68FE47149F26B19"
+        "MsmSig" = "8:_UNDEFINED"
+        }
+        "Entry"
+        {
+        "MsmKey" = "8:_UNDEFINED"
+        "OwnerKey" = "8:_FF3BC6D861F03D5265CE7714858CDC65"
         "MsmSig" = "8:_UNDEFINED"
         }
     }
@@ -71,6 +137,9 @@
             "PrerequisitesLocation" = "2:1"
             "Url" = "8:"
             "ComponentsUrl" = "8:"
+                "Items"
+                {
+                }
             }
         }
     }
@@ -157,6 +226,130 @@
         }
         "File"
         {
+            "{9F6F8455-1EF1-4B85-886A-4223BCC8E7F7}:_1B3378A1BB5992B23D12EA0CE0AA3E64"
+            {
+            "AssemblyRegister" = "3:1"
+            "AssemblyIsInGAC" = "11:FALSE"
+            "AssemblyAsmDisplayName" = "8:ServicioMonitor, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL"
+                "ScatterAssemblies"
+                {
+                    "_1B3378A1BB5992B23D12EA0CE0AA3E64"
+                    {
+                    "Name" = "8:ServicioMonitor.dll"
+                    "Attributes" = "3:512"
+                    }
+                }
+            "SourcePath" = "8:ServicioMonitor.dll"
+            "TargetName" = "8:"
+            "Tag" = "8:"
+            "Folder" = "8:_C579747D056E4FDB91231CADC6598801"
+            "Condition" = "8:"
+            "Transitive" = "11:FALSE"
+            "Vital" = "11:TRUE"
+            "ReadOnly" = "11:FALSE"
+            "Hidden" = "11:FALSE"
+            "System" = "11:FALSE"
+            "Permanent" = "11:FALSE"
+            "SharedLegacy" = "11:FALSE"
+            "PackageAs" = "3:1"
+            "Register" = "3:1"
+            "Exclude" = "11:FALSE"
+            "IsDependency" = "11:TRUE"
+            "IsolateTo" = "8:"
+            }
+            "{9F6F8455-1EF1-4B85-886A-4223BCC8E7F7}:_AA46DBBE56BABAEAB5ABB9E9FE5544CF"
+            {
+            "AssemblyRegister" = "3:1"
+            "AssemblyIsInGAC" = "11:FALSE"
+            "AssemblyAsmDisplayName" = "8:System.Net.Http, Version=4.2.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a"
+                "ScatterAssemblies"
+                {
+                    "_AA46DBBE56BABAEAB5ABB9E9FE5544CF"
+                    {
+                    "Name" = "8:System.Net.Http.dll"
+                    "Attributes" = "3:512"
+                    }
+                }
+            "SourcePath" = "8:System.Net.Http.dll"
+            "TargetName" = "8:"
+            "Tag" = "8:"
+            "Folder" = "8:_C579747D056E4FDB91231CADC6598801"
+            "Condition" = "8:"
+            "Transitive" = "11:FALSE"
+            "Vital" = "11:TRUE"
+            "ReadOnly" = "11:FALSE"
+            "Hidden" = "11:FALSE"
+            "System" = "11:FALSE"
+            "Permanent" = "11:FALSE"
+            "SharedLegacy" = "11:FALSE"
+            "PackageAs" = "3:1"
+            "Register" = "3:1"
+            "Exclude" = "11:FALSE"
+            "IsDependency" = "11:TRUE"
+            "IsolateTo" = "8:"
+            }
+            "{9F6F8455-1EF1-4B85-886A-4223BCC8E7F7}:_E141FFEC23213F831C60E2CFBF9C5C13"
+            {
+            "AssemblyRegister" = "3:1"
+            "AssemblyIsInGAC" = "11:FALSE"
+            "AssemblyAsmDisplayName" = "8:ConexionBDSQL, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL"
+                "ScatterAssemblies"
+                {
+                    "_E141FFEC23213F831C60E2CFBF9C5C13"
+                    {
+                    "Name" = "8:ConexionBDSQL.dll"
+                    "Attributes" = "3:512"
+                    }
+                }
+            "SourcePath" = "8:ConexionBDSQL.dll"
+            "TargetName" = "8:"
+            "Tag" = "8:"
+            "Folder" = "8:_C579747D056E4FDB91231CADC6598801"
+            "Condition" = "8:"
+            "Transitive" = "11:FALSE"
+            "Vital" = "11:TRUE"
+            "ReadOnly" = "11:FALSE"
+            "Hidden" = "11:FALSE"
+            "System" = "11:FALSE"
+            "Permanent" = "11:FALSE"
+            "SharedLegacy" = "11:FALSE"
+            "PackageAs" = "3:1"
+            "Register" = "3:1"
+            "Exclude" = "11:FALSE"
+            "IsDependency" = "11:TRUE"
+            "IsolateTo" = "8:"
+            }
+            "{9F6F8455-1EF1-4B85-886A-4223BCC8E7F7}:_FF3BC6D861F03D5265CE7714858CDC65"
+            {
+            "AssemblyRegister" = "3:1"
+            "AssemblyIsInGAC" = "11:FALSE"
+            "AssemblyAsmDisplayName" = "8:amqmdnet, Version=8.0.0.12, Culture=neutral, PublicKeyToken=dd3cb1c9aae9ec97, processorArchitecture=MSIL"
+                "ScatterAssemblies"
+                {
+                    "_FF3BC6D861F03D5265CE7714858CDC65"
+                    {
+                    "Name" = "8:amqmdnet.dll"
+                    "Attributes" = "3:512"
+                    }
+                }
+            "SourcePath" = "8:amqmdnet.dll"
+            "TargetName" = "8:"
+            "Tag" = "8:"
+            "Folder" = "8:_C579747D056E4FDB91231CADC6598801"
+            "Condition" = "8:"
+            "Transitive" = "11:FALSE"
+            "Vital" = "11:TRUE"
+            "ReadOnly" = "11:FALSE"
+            "Hidden" = "11:FALSE"
+            "System" = "11:FALSE"
+            "Permanent" = "11:FALSE"
+            "SharedLegacy" = "11:FALSE"
+            "PackageAs" = "3:1"
+            "Register" = "3:1"
+            "Exclude" = "11:FALSE"
+            "IsDependency" = "11:TRUE"
+            "IsolateTo" = "8:"
+            }
         }
         "FileType"
         {
@@ -214,7 +407,7 @@
         "Name" = "8:Microsoft Visual Studio"
         "ProductName" = "8:MonitorMQTKT.installer"
         "ProductCode" = "8:{42E73D0C-EE94-4942-A6AC-7FD920EAB055}"
-        "PackageCode" = "8:{2A7C7ED2-67BC-4C65-B713-F203D5F41436}"
+        "PackageCode" = "8:{7BD32B7B-BE6C-4150-8FB8-8C59B19CAD79}"
         "UpgradeCode" = "8:{A0B32182-07D1-476B-9278-DF1D0E004B1A}"
         "AspNetVersion" = "8:4.0.30319.0"
         "RestartWWWService" = "11:FALSE"
@@ -763,7 +956,7 @@
             }
             "{5259A561-127C-4D43-A0A1-72F10C7B3BF8}:_8AA9851CD9A64BD0B68FE47149F26B19"
             {
-            "SourcePath" = "8:..\\MonitorMQTKT\\obj\\Debug\\MonitorMQTKT.exe"
+            "SourcePath" = "8:..\\MonitorMQTKT\\obj\\Release\\MonitorMQTKT.exe"
             "TargetName" = "8:"
             "Tag" = "8:"
             "Folder" = "8:_C579747D056E4FDB91231CADC6598801"
