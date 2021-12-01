@@ -500,6 +500,7 @@ namespace MonitorMQTKT
 
         private void TmrTKTMQ()
         {
+            funcion.Escribe("Ejecutando TmrTKTMQ()");
             double ln_MsgEncontrado;
             ln_MsgEncontrado = RevisaMQ(monitorTicket.strMQManager, monitorTicket.strMQQMonitorLectura, monitorTicket.strMQQMonitorEscritura, "0");
         }
@@ -561,8 +562,8 @@ namespace MonitorMQTKT
 
             try
             {
-                //lngMQOpen = (long)MQOPEN.MQOO_INQUIRE;
-                lngMQOpen = (long)MQOPEN.MQOO_OUTPUT;
+                lngMQOpen = (long)MQOPEN.MQOO_INQUIRE;
+                //lngMQOpen = (long)MQOPEN.MQOO_OUTPUT;
 
 
                 funcion.Escribe("Ejecutar : AbrirColaMQ()");
