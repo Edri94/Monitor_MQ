@@ -18,7 +18,6 @@ C:\Users\MI05332\source\repos\Monitor\ServicioMonitor\ServicioMonitor\obj\Releas
 D:\Monitores_cSchar\Monitor_MQ\ServicioMonitor\ServicioMonitor\bin\Release\ServicioMonitor.dll
 D:\Monitores_cSchar\Monitor_MQ\ServicioMonitor\ServicioMonitor\bin\Release\ServicioMonitor.pdb
 D:\Monitores_cSchar\Monitor_MQ\ServicioMonitor\ServicioMonitor\bin\Release\amqmdnet.dll
-D:\Monitores_cSchar\Monitor_MQ\ServicioMonitor\ServicioMonitor\bin\Release\ConexionBDSQL.pdb
 D:\Monitores_cSchar\Monitor_MQ\ServicioMonitor\ServicioMonitor\obj\Release\ServicioMonitor.csproj.AssemblyReference.cache
 D:\Monitores_cSchar\Monitor_MQ\ServicioMonitor\ServicioMonitor\obj\Release\ServicioMonitor.csproj.CoreCompileInputs.cache
 D:\Monitores_cSchar\Monitor_MQ\ServicioMonitor\ServicioMonitor\obj\Release\ServicioMonitor.dll
