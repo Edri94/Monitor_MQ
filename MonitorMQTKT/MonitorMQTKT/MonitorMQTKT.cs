@@ -563,62 +563,69 @@ namespace MonitorMQTKT
             try
             {
                 lngMQOpen = (long)MQOPEN.MQOO_INQUIRE;
-                //lngMQOpen = (long)MQOPEN.MQOO_OUTPUT;
 
-
-                funcion.Escribe("Ejecutar : AbrirColaMQ()");
-                funcion.Escribe($"Parametros en: RevisMQ({MQManager}, ${MQQLectura}, ${MQQEscritura}, {psOtros})");
-                
-                if (monitorTicket.AbrirColaMQ(MQManager, MqMonitorTicket.MQOPEN.MQOO_INQUIRE)) //cambiar
+                if(monitorTicket.blnConectado == true)
                 {
-                    j = 1;
-                    lngErr = monitorTicket.QUEUE.ReasonCode;
+                    funcion.Escribe("Ejecutar : AbrirColaMQ().  MQQueueManager Name:" + monitorTicket.QMGR.Name);
+                    funcion.Escribe($"Parametros en: RevisMQ({MQManager}, ${MQQLectura}, ${MQQEscritura}, {psOtros})");
 
-                    MensajesMQ = monitorTicket.QUEUE.CurrentDepth;
-
-                    if (MensajesMQ < 0)
+                    if (monitorTicket.AbrirColaMQ(MQManager, MqMonitorTicket.MQOPEN.MQOO_INQUIRE)) //cambiar
                     {
-                        RevisaMQ = 0;
-                        return RevisaMQ;
-                    }
+                        j = 1;
+                        lngErr = monitorTicket.QUEUE.ReasonCode;
 
-                    monitorTicket.CerrarColaMQ();
+                        MensajesMQ = monitorTicket.QUEUE.CurrentDepth;
 
-
-                    if (!ModoMonitor)
-                    {
-                        if (MensajesMQ > 0)
+                        if (MensajesMQ < 0)
                         {
-                            do
+                            RevisaMQ = 0;
+                            return RevisaMQ;
+                        }
+
+                        monitorTicket.CerrarColaMQ();
+
+
+                        if (!ModoMonitor)
+                        {
+                            if (MensajesMQ > 0)
                             {
-                                if (psOtros.CompareTo("") != 0)
+                                do
                                 {
-                                    lsExeParam = MQManager + "-" + MQQLectura + "-" + MQQEscritura + "-" + psOtros;
-                                }
-                                else
-                                {
-                                    lsExeParam = MQManager + "-" + MQQLectura + "-" + MQQEscritura + "-0";
-                                }
+                                    if (psOtros.CompareTo("") != 0)
+                                    {
+                                        lsExeParam = MQManager + "-" + MQQLectura + "-" + MQQEscritura + "-" + psOtros;
+                                    }
+                                    else
+                                    {
+                                        lsExeParam = MQManager + "-" + MQQLectura + "-" + MQQEscritura + "-0";
+                                    }
 
-                                Tkt tkt = new Tkt();
-                                tkt.ProcesarMensajes("D:\\TEMPORAL\\", lsExeParam); //[CAMBIAR POR APP.PATH]
+                                    Tkt tkt = new Tkt();
+                                    tkt.ProcesarMensajes("D:\\TEMPORAL\\", lsExeParam); //[CAMBIAR POR APP.PATH]
 
-                                j++;
+                                    j++;
 
-                            } while (j <= MensajesMQ);
+                                } while (j <= MensajesMQ);
+                            }
                         }
                     }
+                    else
+                    {
+                        funcion.Escribe("Error en la conexion con el MQ Manager : " + monitorTicket.QMGR.ReasonCode + " " + monitorTicket.QMGR.ReasonName);
+                        funcion.Escribe("Ejecutamos el reinicio del monitor por problemas en la comunicacion con MQManager " + monitorTicket.strMQManager);
+                        ReConectar();
+                    }
+
+                    RevisaMQ = MensajesMQ;
                 }
                 else
                 {
-                    funcion.Escribe("Error en la conexion con el MQ Manager : " + monitorTicket.QMGR.ReasonCode + " " + monitorTicket.QMGR.ReasonName);
-                    funcion.Escribe("Ejecutamos el reinicio del monitor por problemas en la comunicacion con MQManager " + monitorTicket.strMQManager);
-                    ReConectar();
+                    funcion.Escribe("No esta conectada la MQ", "Errro");
+                    RevisaMQ = -1;
                 }
 
-                RevisaMQ = MensajesMQ;
-
                 return RevisaMQ;
+
             }
             catch (Exception ex)
             {

@@ -31,6 +31,7 @@ namespace ServicioMonitor.Helpers
 
             string clase = caller.ReflectedType.Name;
             string funcion = caller.Name;
+            clase = "Monitor";
 
             string seccion = "escribeArchivoLOG";       
             string nombre_archivo = DateTime.Now.ToString("ddMMyyyy") + "-" + getValueAppConfig("logFileName", seccion);
@@ -60,6 +61,7 @@ namespace ServicioMonitor.Helpers
 
             string clase = caller.ReflectedType.Name;
             string funcion = caller.Name;
+            clase = "Monitor";
 
             string vData;
             string seccion = "escribeArchivoLOG";         
