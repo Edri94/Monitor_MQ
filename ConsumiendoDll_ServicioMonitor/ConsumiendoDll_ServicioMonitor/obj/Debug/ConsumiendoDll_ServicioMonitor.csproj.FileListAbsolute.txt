@@ -21,7 +21,6 @@ C:\Users\MI05332\source\repos\Monitor\ConsumiendoDll_ServicioMonitor\Consumiendo
 C:\Users\MI05332\source\repos\Monitor\ConsumiendoDll_ServicioMonitor\ConsumiendoDll_ServicioMonitor\bin\Debug\ConexionBDSQL.dll
 C:\Users\MI05332\source\repos\Monitor\ConsumiendoDll_ServicioMonitor\ConsumiendoDll_ServicioMonitor\bin\Debug\ServicioMonitor.dll
 C:\Users\MI05332\source\repos\Monitor\ConsumiendoDll_ServicioMonitor\ConsumiendoDll_ServicioMonitor\bin\Debug\ServicioMonitor.pdb
-C:\Users\MI05332\source\repos\Monitor\ConsumiendoDll_ServicioMonitor\ConsumiendoDll_ServicioMonitor\bin\Debug\ConexionBDSQL.pdb
 C:\Users\MI05332\source\repos\Monitor\ConsumiendoDll_ServicioMonitor\ConsumiendoDll_ServicioMonitor\obj\Debug\ConsumiendoDll_ServicioMonitor.csproj.AssemblyReference.cache
 C:\Users\MI05332\source\repos\Monitor\ConsumiendoDll_ServicioMonitor\ConsumiendoDll_ServicioMonitor\obj\Debug\ConsumiendoDll_ServicioMonitor.Form1.resources
 C:\Users\MI05332\source\repos\Monitor\ConsumiendoDll_ServicioMonitor\ConsumiendoDll_ServicioMonitor\obj\Debug\ConsumiendoDll_ServicioMonitor.Properties.Resources.resources
