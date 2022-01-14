@@ -171,6 +171,8 @@ namespace ServicioMonitor.Mq
 
             dirBitacora = funcion.getValueAppConfig("RutaBitacora", "");
             Bitacora = funcion.getValueAppConfig("Bitacora", "");
+
+            FechaRestar = funcion.getValueAppConfig("RestarMonitor", "");
         }
         public bool Inicia()
         {

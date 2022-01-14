@@ -364,10 +364,15 @@ namespace MonitorMQTKT
                     monitorTicket.FechaRestar = monitorTicket.date.AddDays(1).ToString();
                 }
                 funcion.Escribe("(2)Escribiendo en AppSettings: " + monitorTicket.FechaRestar);
+
                 if (!funcion.UpdateAppSettings("RestarMonitor", monitorTicket.FechaRestar))
                 {
-                    funcion.Escribe("No se encontro el archivo");
+                    funcion.Escribe("Iniciar() No se encontro el archivo");
                     //this.Close();
+                }
+                else
+                {
+                    funcion.Escribe("Iniciar() Se actulizo [FechaRestar] en el archivo App.Settings " + monitorTicket.FechaRestar);
                 }
 
             }
@@ -488,7 +493,16 @@ namespace MonitorMQTKT
 
                 monitorTicket.FechaRestar = monitorTicket.date.ToString();
 
-                funcion.UpdateAppSettings("RestarMonitor", monitorTicket.FechaRestar);
+                
+                if (!funcion.UpdateAppSettings("RestarMonitor", monitorTicket.FechaRestar))
+                {
+                    funcion.Escribe("tmrRestar_Tick() No se encontro el archivo");
+                    //this.Close();
+                }
+                else
+                {
+                    funcion.Escribe("tmrRestar_Tick() Se actulizo [FechaRestar] en el archivo App.Settings " + monitorTicket.FechaRestar);
+                }
 
                 funcion.Escribe("Aplicación Monitor iniciado : " + monitorTicket.currentDate, "Mensaje");
                 funcion.Escribe("Monitor iniciado en modo de procesamiento: " + monitorTicket.currentDate, "Mensaje");
