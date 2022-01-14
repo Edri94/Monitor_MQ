@@ -9,7 +9,6 @@ D:\Monitores_cSchar\Monitor_MQ\MonitorMQTKT\MonitorMQTKT\obj\Release\MonitorMQTK
 D:\Monitores_cSchar\Monitor_MQ\MonitorMQTKT\MonitorMQTKT\obj\Release\MonitorMQTKT.ProjectInstaller.resources
 D:\Monitores_cSchar\Monitor_MQ\MonitorMQTKT\MonitorMQTKT\obj\Release\MonitorMQTKT.csproj.GenerateResource.cache
 D:\Monitores_cSchar\Monitor_MQ\MonitorMQTKT\MonitorMQTKT\obj\Release\MonitorMQTKT.csproj.CoreCompileInputs.cache
-D:\Monitores_cSchar\Monitor_MQ\MonitorMQTKT\MonitorMQTKT\obj\Release\MonitorMQTKT.csproj.CopyComplete
 D:\Monitores_cSchar\Monitor_MQ\MonitorMQTKT\MonitorMQTKT\obj\Release\MonitorMQTKT.exe
 D:\Monitores_cSchar\Monitor_MQ\MonitorMQTKT\MonitorMQTKT\obj\Release\MonitorMQTKT.pdb
 C:\Users\MI05332\source\repos\Monitor\MonitorMQTKT\MonitorMQTKT\bin\Release\MonitorMQTKT.exe.config

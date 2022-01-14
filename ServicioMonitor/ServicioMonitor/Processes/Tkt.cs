@@ -234,7 +234,7 @@ namespace ServicioMonitor.Processes
                 if (mqSeries.RevisaQueueMq(Ms_MQLeer, (MqSeries.MQOPEN)lngMQOpen) == 0)
                 {                                     
                     mqSeries.DesconectarMQ();
-                    funcion.Escribe("Termina TKTMQ Recepción de Solicitudes. Al revisar la QUEUE no encontramos mensajes ", "Mensaje");
+                        funcion.Escribe("Termina TKTMQ Recepción de Solicitudes. Al revisar la QUEUE no encontramos mensajes ", "Mensaje");
                     funcion.Escribe("", "Mensaje");
                     lngMQOpen = 0;
                     return;       //Sale de la Función Principal ProcesarMensajes

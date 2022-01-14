@@ -123,7 +123,7 @@ namespace ServicioMonitor.Mq
         /// <returns></returns>
         public bool ConectarMQ(string strQueueManagerName)
         {
-            //return true; //pruebas
+            return true; //pruebas
             try
             {
                 QMGR = new MQQueueManager(strQueueManagerName);
@@ -192,6 +192,8 @@ namespace ServicioMonitor.Mq
             bool AbriColaMQ;
             try
             {
+                funcion.Escribe("Cola name " + strMQCola);
+                funcion.Escribe("Abrir Cola" + QMGR.OpenStatus.ToString());
                 QUEUE = QMGR.AccessQueue(strMQCola,
                    (int)lngOpciones
                 );

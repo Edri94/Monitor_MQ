@@ -567,9 +567,9 @@ namespace MonitorMQTKT
                 if(monitorTicket.blnConectado == true)
                 {
                     funcion.Escribe("Ejecutar : AbrirColaMQ().  MQQueueManager Name:" + monitorTicket.QMGR.Name);
-                    funcion.Escribe($"Parametros en: RevisMQ({MQManager}, ${MQQLectura}, ${MQQEscritura}, {psOtros})");
+                    funcion.Escribe($"Parametros en: RevisMQ({MQManager}, {MQQLectura}, {MQQEscritura}, {psOtros})");
 
-                    if (monitorTicket.AbrirColaMQ(MQManager, MqMonitorTicket.MQOPEN.MQOO_INQUIRE)) //cambiar
+                    if (monitorTicket.AbrirColaMQ(MQQLectura, MqMonitorTicket.MQOPEN.MQOO_INQUIRE)) //cambiar
                     {
                         j = 1;
                         lngErr = monitorTicket.QUEUE.ReasonCode;
