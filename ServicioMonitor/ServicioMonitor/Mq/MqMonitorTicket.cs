@@ -68,7 +68,6 @@ namespace ServicioMonitor.Mq
         public int intTiempoFuncionarios;
         public int intTiempoAutorizaciones;
 
-        public static string RestarMonitor;
         public static string LogPath;
         public static string LogFile;
         public static string LogActivo;
@@ -130,8 +129,7 @@ namespace ServicioMonitor.Mq
             TiempoMensajes = funcion.getValueAppConfig("TiempoMensajes", "");
             Tiempofuncionarios = funcion.getValueAppConfig("Tiempofuncionarios", "");
             TiempoAutorizacion = funcion.getValueAppConfig("TiempoAutorizacion", "");
-
-            RestarMonitor = funcion.getValueAppConfig("RestarMonitor", "");
+       
 
             String CadenaRsultante, strPathServicio;
             strPathServicio = System.Reflection.Assembly.GetEntryAssembly().Location;
@@ -221,7 +219,7 @@ namespace ServicioMonitor.Mq
             strFormatoTiempoAutorizaciones = Temporal[0];
             intTiempoAutorizaciones = Convert.ToInt32(Temporal[1]);
 
-            FechaRestar = RestarMonitor;
+            //FechaRestar = RestarMonitor;
             StrlogName = LogFile;
             StrLogPath = LogPath;
             StrlogActivo = LogActivo;
