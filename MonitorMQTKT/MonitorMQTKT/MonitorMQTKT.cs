@@ -358,11 +358,14 @@ namespace MonitorMQTKT
                 tmrRestar.Enabled = true;
                 tmrRestar.Interval = monitorTicket.intgtmrRestar * 1000;
 
-                TimeSpan Diff_dates = Convert.ToDateTime(monitorTicket.FechaRestar).Subtract(monitorTicket.date);
-                if (Diff_dates.Days != 1)
+                TimeSpan Diff_dates = Convert.ToDateTime(monitorTicket.FechaRestar).Subtract(monitorTicket.date); //opcion 1
+                int dias_diferiencia = (monitorTicket.date - Convert.ToDateTime(monitorTicket.FechaRestar)).Days; //opcion 2
+                
+                if (dias_diferiencia >= 1)
                 {
                     monitorTicket.FechaRestar = monitorTicket.date.AddDays(1).ToString();
                 }
+
                 funcion.Escribe("(2)Escribiendo en AppSettings: " + monitorTicket.FechaRestar);
 
                 if (!funcion.UpdateAppSettings("RestarMonitor", monitorTicket.FechaRestar))
@@ -806,6 +809,9 @@ namespace MonitorMQTKT
             funcion.Escribe("valor de Convert.ToDateTime(ModFunciones.FechaRestar: " + Convert.ToDateTime(monitorTicket.FechaRestar.ToString()));
             funcion.Escribe("****************************************************");
             funcion.Escribe("****************************************************");
+
+
+            
             if (monitorTicket.date > Convert.ToDateTime(monitorTicket.FechaRestar))
             {
                 ResetMonitor();
