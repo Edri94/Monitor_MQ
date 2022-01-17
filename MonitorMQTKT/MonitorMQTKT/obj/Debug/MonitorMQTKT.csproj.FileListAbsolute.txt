@@ -105,3 +105,4 @@ D:\Monitores_cSchar\Monitor_MQ\MonitorMQTKT\MonitorMQTKT\obj\Debug\MonitorMQTKT.
 D:\Monitores_cSchar\Monitor_MQ\MonitorMQTKT\MonitorMQTKT\obj\Debug\MonitorMQTKT.csproj.CopyComplete
 D:\Monitores_cSchar\Monitor_MQ\MonitorMQTKT\MonitorMQTKT\obj\Debug\MonitorMQTKT.exe
 D:\Monitores_cSchar\Monitor_MQ\MonitorMQTKT\MonitorMQTKT\obj\Debug\MonitorMQTKT.pdb
+C:\Users\MI05332\source\repos\Monitor\MonitorMQTKT\MonitorMQTKT\obj\Debug\MonitorMQTKT.exe.config

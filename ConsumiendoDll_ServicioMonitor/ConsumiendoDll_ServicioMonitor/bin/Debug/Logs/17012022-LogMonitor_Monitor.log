@@ -1,0 +1,92 @@
+[17-01-2022 02:28:16]  Mensaje desde OnLoad:  Carga de formulario FrmMonitor_Load
+[17-01-2022 02:28:16]  entro a Inicia desde Form1_Load:  
+[17-01-2022 02:28:16]  Mensaje desde OnLoad:  Entro al IF FrmMonitor_Load
+[17-01-2022 02:28:16]  Mensaje desde OnLoad:  Aplicación Monitor iniciado : 17/01/2022
+[17-01-2022 02:28:19]  Mensaje desde Form1_Load:  Seguimiento: funcion Iniciar() 
+[17-01-2022 02:28:19]  Mensaje desde Form1_Load:  Monitor iniciado en modo de procesamiento: 17/01/2022
+[17-01-2022 02:28:19]  Mensaje desde Form1_Load:  (2)Escribiendo en AppSettings: 18/01/2022 02:16:21 p. m.
+[17-01-2022 02:28:19]  Mensaje desde Form1_Load:  Iniciar() Se actulizo [FechaRestar] en el archivo App.Settings 18/01/2022 02:16:21 p. m.
+[17-01-2022 02:28:19]  Mensaje desde OnTick:  Ejecución del Timer tmrMonitorMQTKT_Tick : 17/01/2022 02:28:13 p. m.
+[17-01-2022 02:28:19]  Mensaje desde OnTick:  Valor de intgMonitor : 1
+[17-01-2022 02:28:19]  Mensaje desde OnTick:  Valor de strFormatoTiempoBitacoras : M
+[17-01-2022 02:28:19]  Mensaje desde OnTick:  valor de dblCiclosBitacoras : 10
+[17-01-2022 02:28:19]  Mensaje desde OnTick:  Valor de intTiempoBitacoras : 1
+[17-01-2022 02:28:19]  Mensaje desde OnTick:  Ejecución del Timer tmrMonitorMQTKT_Tick : 17/01/2022 02:28:13 p. m.
+[17-01-2022 02:28:19]  Mensaje desde OnTick:  Valor de intgMonitor : 1
+[17-01-2022 02:28:19]  Mensaje desde OnTick:  Valor de strFormatoTiempoBitacoras : M
+[17-01-2022 02:28:19]  Mensaje desde OnTick:  valor de dblCiclosBitacoras : 20
+[17-01-2022 02:28:19]  Mensaje desde OnTick:  Valor de intTiempoBitacoras : 1
+[17-01-2022 02:28:19]  Mensaje desde OnTick:  Ejecución del Timer tmrMonitorMQTKT_Tick : 17/01/2022 02:28:13 p. m.
+[17-01-2022 02:28:19]  Mensaje desde OnTick:  Valor de intgMonitor : 1
+[17-01-2022 02:28:19]  Mensaje desde OnTick:  Valor de strFormatoTiempoBitacoras : M
+[17-01-2022 02:28:19]  Mensaje desde OnTick:  valor de dblCiclosBitacoras : 30
+[17-01-2022 02:28:19]  Mensaje desde OnTick:  Valor de intTiempoBitacoras : 1
+[17-01-2022 02:28:20]  Mensaje desde OnTick:  Ejecución del Timer tmrMonitorMQTKT_Tick : 17/01/2022 02:28:13 p. m.
+[17-01-2022 02:28:20]  Mensaje desde OnTick:  Valor de intgMonitor : 1
+[17-01-2022 02:28:20]  Mensaje desde OnTick:  Valor de strFormatoTiempoBitacoras : M
+[17-01-2022 02:28:20]  Mensaje desde OnTick:  valor de dblCiclosBitacoras : 40
+[17-01-2022 02:28:20]  Mensaje desde OnTick:  Valor de intTiempoBitacoras : 1
+[17-01-2022 02:28:20]  Mensaje desde OnTick:  Ejecución del Timer tmrMonitorMQTKT_Tick : 17/01/2022 02:28:13 p. m.
+[17-01-2022 02:28:20]  Mensaje desde OnTick:  Valor de intgMonitor : 1
+[17-01-2022 02:28:20]  Mensaje desde OnTick:  Valor de strFormatoTiempoBitacoras : M
+[17-01-2022 02:28:20]  Mensaje desde OnTick:  valor de dblCiclosBitacoras : 50
+[17-01-2022 02:28:20]  Mensaje desde OnTick:  Valor de intTiempoBitacoras : 1
+[17-01-2022 02:28:20]  Mensaje desde OnTick:  Ejecución del Timer tmrMonitorMQTKT_Tick : 17/01/2022 02:28:13 p. m.
+[17-01-2022 02:28:20]  Mensaje desde OnTick:  Valor de intgMonitor : 1
+[17-01-2022 02:28:20]  Mensaje desde OnTick:  Valor de strFormatoTiempoBitacoras : M
+[17-01-2022 02:28:20]  Mensaje desde OnTick:  valor de dblCiclosBitacoras : 60
+[17-01-2022 02:28:20]  Mensaje desde OnTick:  Valor de intTiempoBitacoras : 1
+[17-01-2022 02:28:20]  Mensaje desde OnTick:  Ejecutando TmrBitacora()... 
+[17-01-2022 02:28:35]  Mensaje desde tmrMonitorMQTKT_Tick:  La operación: Log Apertura de Cuentas no esta habilitada para este día 17/01/2022
+[17-01-2022 02:28:35]  Mensaje desde tmrMonitorMQTKT_Tick:  La operación: Log Ordenes de Pago no esta habilitada para este día 17/01/2022
+[17-01-2022 02:28:35]  Mensaje desde tmrMonitorMQTKT_Tick:  La operación: Log Operaciones CED no esta habilitada para este día 17/01/2022
+[17-01-2022 02:28:35]  Mensaje desde OnTick:  Ejecutando ActivarEnvioFuncAuto(F)... 
+[17-01-2022 02:28:35]  Mensaje desde tmrMonitorMQTKT_Tick:  Entre  a ActivarEnvioFuncAuto(F)
+[17-01-2022 02:28:35]  Mensaje desde tmrMonitorMQTKT_Tick:  La operación: Funcionarios no esta habilitada para este día 17/01/2022
+[17-01-2022 02:28:35]  Mensaje desde OnTick:  Ejecutando ActivarEnvioFuncAuto(A)... 
+[17-01-2022 02:28:35]  Mensaje desde tmrMonitorMQTKT_Tick:  Entre  a ActivarEnvioFuncAuto(A)
+[17-01-2022 02:28:35]  Mensaje desde tmrMonitorMQTKT_Tick:  La operación: Autorizaciones Operatoria no esta habilitada para este día 17/01/2022
+[17-01-2022 02:28:35]  Mensaje desde OnTick:  Ejecución del Timer tmrMonitorMQTKT_Tick : 17/01/2022 02:28:13 p. m.
+[17-01-2022 02:28:35]  Mensaje desde OnTick:  Valor de intgMonitor : 1
+[17-01-2022 02:28:35]  Mensaje desde OnTick:  Valor de strFormatoTiempoBitacoras : M
+[17-01-2022 02:28:35]  Mensaje desde OnTick:  valor de dblCiclosBitacoras : 10
+[17-01-2022 02:28:35]  Mensaje desde OnTick:  Valor de intTiempoBitacoras : 1
+[17-01-2022 02:28:35]  Mensaje desde OnTick:  ****************************************************
+[17-01-2022 02:28:35]  Mensaje desde OnTick:  ****************************************************
+[17-01-2022 02:28:35]  Mensaje desde OnTick:  Ejecución del Timer tmrRestar : 17/01/2022 02:28:13 p. m.
+[17-01-2022 02:28:35]  Mensaje desde OnTick:  valor de Modfunciones.date: 17/01/2022 02:28:13 p. m.
+[17-01-2022 02:28:35]  Mensaje desde OnTick:  valor de ModFunciones.FechaRestar: 18/01/2022 02:16:21 p. m.
+[17-01-2022 02:28:35]  Mensaje desde OnTick:  valor de Convert.ToDateTime(ModFunciones.FechaRestar: 18/01/2022 02:16:21 p. m.
+[17-01-2022 02:28:35]  Mensaje desde OnTick:  ****************************************************
+[17-01-2022 02:28:35]  Mensaje desde OnTick:  ****************************************************
+[17-01-2022 02:28:35]  Mensaje desde OnTick:  Ejecución del Timer tmrMonitorMQTKT_Tick : 17/01/2022 02:28:13 p. m.
+[17-01-2022 02:28:35]  Mensaje desde OnTick:  Valor de intgMonitor : 1
+[17-01-2022 02:28:35]  Mensaje desde OnTick:  Valor de strFormatoTiempoBitacoras : M
+[17-01-2022 02:28:35]  Mensaje desde OnTick:  valor de dblCiclosBitacoras : 20
+[17-01-2022 02:28:35]  Mensaje desde OnTick:  Valor de intTiempoBitacoras : 1
+[17-01-2022 02:28:35]  Mensaje desde OnTick:  Ejecución del Timer tmrMonitorMQTKT_Tick : 17/01/2022 02:28:13 p. m.
+[17-01-2022 02:28:35]  Mensaje desde OnTick:  Valor de intgMonitor : 1
+[17-01-2022 02:28:35]  Mensaje desde OnTick:  Valor de strFormatoTiempoBitacoras : M
+[17-01-2022 02:28:35]  Mensaje desde OnTick:  valor de dblCiclosBitacoras : 30
+[17-01-2022 02:28:35]  Mensaje desde OnTick:  Valor de intTiempoBitacoras : 1
+[17-01-2022 02:28:35]  Mensaje desde OnTick:  Ejecución del Timer tmrMonitorMQTKT_Tick : 17/01/2022 02:28:13 p. m.
+[17-01-2022 02:28:35]  Mensaje desde OnTick:  Valor de intgMonitor : 1
+[17-01-2022 02:28:35]  Mensaje desde OnTick:  Valor de strFormatoTiempoBitacoras : M
+[17-01-2022 02:28:35]  Mensaje desde OnTick:  valor de dblCiclosBitacoras : 40
+[17-01-2022 02:28:35]  Mensaje desde OnTick:  Valor de intTiempoBitacoras : 1
+[17-01-2022 02:28:35]  Mensaje desde OnTick:  Ejecución del Timer tmrMonitorMQTKT_Tick : 17/01/2022 02:28:13 p. m.
+[17-01-2022 02:28:35]  Mensaje desde OnTick:  Valor de intgMonitor : 1
+[17-01-2022 02:28:35]  Mensaje desde OnTick:  Valor de strFormatoTiempoBitacoras : M
+[17-01-2022 02:28:35]  Mensaje desde OnTick:  valor de dblCiclosBitacoras : 50
+[17-01-2022 02:28:35]  Mensaje desde OnTick:  Valor de intTiempoBitacoras : 1
+[17-01-2022 02:28:35]  Mensaje desde OnTick:  Ejecución del Timer tmrMonitorMQTKT_Tick : 17/01/2022 02:28:13 p. m.
+[17-01-2022 02:28:35]  Mensaje desde OnTick:  Valor de intgMonitor : 1
+[17-01-2022 02:28:35]  Mensaje desde OnTick:  Valor de strFormatoTiempoBitacoras : M
+[17-01-2022 02:28:35]  Mensaje desde OnTick:  valor de dblCiclosBitacoras : 60
+[17-01-2022 02:28:35]  Mensaje desde OnTick:  Valor de intTiempoBitacoras : 1
+[17-01-2022 02:28:35]  Mensaje desde OnTick:  Ejecutando TmrBitacora()... 
+[17-01-2022 02:28:37]  Mensaje desde tmrMonitorMQTKT_Tick:  La operación: Log Apertura de Cuentas no esta habilitada para este día 17/01/2022
+[17-01-2022 02:28:37]  Mensaje desde tmrMonitorMQTKT_Tick:  La operación: Log Ordenes de Pago no esta habilitada para este día 17/01/2022
+[17-01-2022 02:28:37]  Mensaje desde tmrMonitorMQTKT_Tick:  La operación: Log Operaciones CED no esta habilitada para este día 17/01/2022
+[17-01-2022 02:28:37]  Mensaje desde OnTick:  Ejecutando TmrTKTMQ()... 
+[17-01-2022 02:28:37]  Mensaje desde tmrMonitorMQTKT_Tick:  Estoy en... TmrTKTMQ()

@@ -361,7 +361,7 @@ namespace MonitorMQTKT
                 TimeSpan Diff_dates = Convert.ToDateTime(monitorTicket.FechaRestar).Subtract(monitorTicket.date); //opcion 1
                 int dias_diferiencia = (monitorTicket.date - Convert.ToDateTime(monitorTicket.FechaRestar)).Days; //opcion 2
                 
-                if (dias_diferiencia >= 1)
+                if (dias_diferiencia != 0)
                 {
                     monitorTicket.FechaRestar = monitorTicket.date.AddDays(1).ToString();
                 }
