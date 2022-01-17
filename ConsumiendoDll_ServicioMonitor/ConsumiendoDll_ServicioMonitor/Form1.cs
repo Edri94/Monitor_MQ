@@ -203,20 +203,27 @@ namespace ConsumiendoDll_ServicioMonitor
                 {
                     funcion.Escribe("Monitor iniciado en modo de procesamiento: " + funcion.ObtenFechaFormato(1));
                 }
-
                 tmrRestar.Enabled = true;
                 tmrRestar.Interval = monitorTicket.intgtmrRestar * 1000;
 
-                TimeSpan Diff_dates = Convert.ToDateTime(monitorTicket.FechaRestar).Subtract(monitorTicket.date);
-                if (Diff_dates.Days != 1)
+                TimeSpan Diff_dates = Convert.ToDateTime(monitorTicket.FechaRestar).Subtract(monitorTicket.date); //opcion 1
+                int dias_diferiencia = (monitorTicket.date - Convert.ToDateTime(monitorTicket.FechaRestar)).Days; //opcion 2
+
+                if (dias_diferiencia != 0)
                 {
                     monitorTicket.FechaRestar = monitorTicket.date.AddDays(1).ToString();
                 }
+
                 funcion.Escribe("(2)Escribiendo en AppSettings: " + monitorTicket.FechaRestar);
+
                 if (!funcion.UpdateAppSettings("RestarMonitor", monitorTicket.FechaRestar))
                 {
-                    funcion.Escribe("No se encontro el archivo");
-                    this.Close();
+                    funcion.Escribe("Iniciar() No se encontro el archivo");
+                    //this.Close();
+                }
+                else
+                {
+                    funcion.Escribe("Iniciar() Se actulizo [FechaRestar] en el archivo App.Settings " + monitorTicket.FechaRestar);
                 }
 
             }

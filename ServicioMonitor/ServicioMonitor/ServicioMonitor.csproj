@@ -33,7 +33,7 @@
   <ItemGroup>
     <Reference Include="amqmdnet, Version=9.1.0.7, Culture=neutral, PublicKeyToken=dd3cb1c9aae9ec97, processorArchitecture=MSIL">
       <SpecificVersion>False</SpecificVersion>
-      <HintPath>C:\Program Files\IBM\WebSphere MQ\bin\amqmdnet.dll</HintPath>
+      <HintPath>..\..\..\..\..\..\..\Program Files\IBM\MQ\bin\amqmdnet.dll</HintPath>
     </Reference>
     <Reference Include="ConexionBDSQL">
       <HintPath>..\..\..\..\Documents\practicas\c sharp\ConexionBDSQL\ConexionBDSQL\bin\Debug\ConexionBDSQL.dll</HintPath>

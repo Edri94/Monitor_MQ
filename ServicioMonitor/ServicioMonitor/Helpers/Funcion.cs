@@ -119,9 +119,9 @@ namespace ServicioMonitor.Helpers
                 switch (formato)
                 {
                     case 1:
-                        return new DateTime().ToString("dd/MM/yyyy");
+                        return DateTime.Now.ToString("dd/MM/yyyy");
                     default:
-                        return new DateTime().ToString("dd/MM/yyyy");
+                        return DateTime.Now.ToString("dd/MM/yyyy");
                 }
             }
             catch (Exception error)

@@ -1,54 +1,0 @@
-[12-01-2022 02:48:35]  [INICIA PROGRAMA] desde TmrBitacora:  
-[12-01-2022 02:48:35]  Mensaje desde TmrBitacora:  Comienza la función MAIN de la aplicación MensajesMQ: 12/01/2022 Tipo Función: 'F'
-[12-01-2022 02:48:35]  Mensaje desde ProcesarMensajes:  Inicia el envío de mensajes a Host: 12/01/2022 02:48:35 p. m. Función: UPDFUNC
-[12-01-2022 02:48:39]  Mensaje desde ProcesarMensajes:  No existen registros en la consulta de los datos de tabla TMP_FUNCIONARIOS_PU. ProcesoBDtoMQQUEUEFunc
-[12-01-2022 02:48:40]  Mensaje desde ProcesarMensajes:  Envio de solicitures TKT -> Host Terminado. ProcesoBDtoMQQUEUEFunc
-[12-01-2022 02:48:40]  Mensaje desde ProcesarMensajes:  Solicitudes enviadas a MQ: 0
-[12-01-2022 02:48:40]  Mensaje desde TmrBitacora:  Termina el acceso a la aplicación MensajesMQ. Función SQL: UPDFUNC
-[12-01-2022 02:48:40]  [INICIA PROGRAMA] desde TmrBitacora:  
-[12-01-2022 02:48:40]  Mensaje desde TmrBitacora:  Comienza la función MAIN de la aplicación MensajesMQ: 12/01/2022 Tipo Función: 'F'
-[12-01-2022 02:48:40]  Mensaje desde ProcesarMensajes:  Inicia el envío de mensajes a Host: 12/01/2022 02:48:40 p. m. Función: UPDFUNC
-[12-01-2022 02:48:41]  Mensaje desde ProcesarMensajes:  No existen registros en la consulta de los datos de tabla TMP_FUNCIONARIOS_PU. ProcesoBDtoMQQUEUEFunc
-[12-01-2022 02:48:41]  Mensaje desde ProcesarMensajes:  Envio de solicitures TKT -> Host Terminado. ProcesoBDtoMQQUEUEFunc
-[12-01-2022 02:48:41]  Mensaje desde ProcesarMensajes:  Solicitudes enviadas a MQ: 0
-[12-01-2022 02:48:41]  Mensaje desde TmrBitacora:  Termina el acceso a la aplicación MensajesMQ. Función SQL: UPDFUNC
-[12-01-2022 02:48:41]  [INICIA PROGRAMA] desde TmrBitacora:  
-[12-01-2022 02:48:41]  Mensaje desde TmrBitacora:  Comienza la función MAIN de la aplicación MensajesMQ: 12/01/2022 Tipo Función: 'F'
-[12-01-2022 02:48:41]  Mensaje desde ProcesarMensajes:  Inicia el envío de mensajes a Host: 12/01/2022 02:48:41 p. m. Función: UPDFUNC
-[12-01-2022 02:48:42]  Mensaje desde ProcesarMensajes:  No existen registros en la consulta de los datos de tabla TMP_FUNCIONARIOS_PU. ProcesoBDtoMQQUEUEFunc
-[12-01-2022 02:48:42]  Mensaje desde ProcesarMensajes:  Envio de solicitures TKT -> Host Terminado. ProcesoBDtoMQQUEUEFunc
-[12-01-2022 02:48:42]  Mensaje desde ProcesarMensajes:  Solicitudes enviadas a MQ: 0
-[12-01-2022 02:48:42]  Mensaje desde TmrBitacora:  Termina el acceso a la aplicación MensajesMQ. Función SQL: UPDFUNC
-[12-01-2022 02:48:42]  [INICIA PROGRAMA] desde ActivarEnvioFuncAuto:  
-[12-01-2022 02:48:42]  Mensaje desde ActivarEnvioFuncAuto:  Comienza la función MAIN de la aplicación MensajesMQ: 12/01/2022 Tipo Función: 'F'
-[12-01-2022 02:48:42]  Mensaje desde ProcesarMensajes:  Inicia el envío de mensajes a Host: 12/01/2022 02:48:42 p. m. Función: UPDFUNC
-[12-01-2022 02:48:44]  Mensaje desde ProcesarMensajes:  No existen registros en la consulta de los datos de tabla TMP_FUNCIONARIOS_PU. ProcesoBDtoMQQUEUEFunc
-[12-01-2022 02:48:45]  Mensaje desde ProcesarMensajes:  Envio de solicitures TKT -> Host Terminado. ProcesoBDtoMQQUEUEFunc
-[12-01-2022 02:48:45]  Mensaje desde ProcesarMensajes:  Solicitudes enviadas a MQ: 0
-[12-01-2022 02:48:45]  Mensaje desde ActivarEnvioFuncAuto:  Termina el acceso a la aplicación MensajesMQ. Función SQL: UPDFUNC
-[12-01-2022 02:48:45]  [INICIA PROGRAMA] desde ActivarEnvioFuncAuto:  
-[12-01-2022 02:48:45]  Mensaje desde ActivarEnvioFuncAuto:  Comienza la función MAIN de la aplicación MensajesMQ: 12/01/2022 Tipo Función: 'A'
-[12-01-2022 02:48:45]  Mensaje desde ProcesarMensajes:  Inicia el envío de mensajes a Host: 12/01/2022 02:48:45 p. m. Función: INAUTPU
-[12-01-2022 02:48:45]  Mensaje desde ProcesarMensajes:  Cero registros en la consulta de los datos, tabla TMP_AUTORIZACIONES_PU. ProcesoBDtoMQQUEUEAuto
-[12-01-2022 02:48:45]  Mensaje desde ActivarEnvioFuncAuto:  Termina el acceso a la aplicación MensajesMQ. Función SQL: INAUTPU
-[12-01-2022 02:48:46]  [INICIA PROGRAMA] desde TmrBitacora:  
-[12-01-2022 02:48:46]  Mensaje desde TmrBitacora:  Comienza la función MAIN de la aplicación MensajesMQ: 12/01/2022 Tipo Función: 'F'
-[12-01-2022 02:48:46]  Mensaje desde ProcesarMensajes:  Inicia el envío de mensajes a Host: 12/01/2022 02:48:46 p. m. Función: UPDFUNC
-[12-01-2022 02:48:48]  Mensaje desde ProcesarMensajes:  No existen registros en la consulta de los datos de tabla TMP_FUNCIONARIOS_PU. ProcesoBDtoMQQUEUEFunc
-[12-01-2022 02:48:48]  Mensaje desde ProcesarMensajes:  Envio de solicitures TKT -> Host Terminado. ProcesoBDtoMQQUEUEFunc
-[12-01-2022 02:48:48]  Mensaje desde ProcesarMensajes:  Solicitudes enviadas a MQ: 0
-[12-01-2022 02:48:48]  Mensaje desde TmrBitacora:  Termina el acceso a la aplicación MensajesMQ. Función SQL: UPDFUNC
-[12-01-2022 02:48:48]  [INICIA PROGRAMA] desde TmrBitacora:  
-[12-01-2022 02:48:48]  Mensaje desde TmrBitacora:  Comienza la función MAIN de la aplicación MensajesMQ: 12/01/2022 Tipo Función: 'F'
-[12-01-2022 02:48:48]  Mensaje desde ProcesarMensajes:  Inicia el envío de mensajes a Host: 12/01/2022 02:48:48 p. m. Función: UPDFUNC
-[12-01-2022 02:48:49]  Mensaje desde ProcesarMensajes:  No existen registros en la consulta de los datos de tabla TMP_FUNCIONARIOS_PU. ProcesoBDtoMQQUEUEFunc
-[12-01-2022 02:48:50]  Mensaje desde ProcesarMensajes:  Envio de solicitures TKT -> Host Terminado. ProcesoBDtoMQQUEUEFunc
-[12-01-2022 02:48:50]  Mensaje desde ProcesarMensajes:  Solicitudes enviadas a MQ: 0
-[12-01-2022 02:48:50]  Mensaje desde TmrBitacora:  Termina el acceso a la aplicación MensajesMQ. Función SQL: UPDFUNC
-[12-01-2022 02:48:50]  [INICIA PROGRAMA] desde TmrBitacora:  
-[12-01-2022 02:48:50]  Mensaje desde TmrBitacora:  Comienza la función MAIN de la aplicación MensajesMQ: 12/01/2022 Tipo Función: 'F'
-[12-01-2022 02:48:50]  Mensaje desde ProcesarMensajes:  Inicia el envío de mensajes a Host: 12/01/2022 02:48:50 p. m. Función: UPDFUNC
-[12-01-2022 02:48:51]  Mensaje desde ProcesarMensajes:  No existen registros en la consulta de los datos de tabla TMP_FUNCIONARIOS_PU. ProcesoBDtoMQQUEUEFunc
-[12-01-2022 02:48:51]  Mensaje desde ProcesarMensajes:  Envio de solicitures TKT -> Host Terminado. ProcesoBDtoMQQUEUEFunc
-[12-01-2022 02:48:51]  Mensaje desde ProcesarMensajes:  Solicitudes enviadas a MQ: 0
-[12-01-2022 02:48:51]  Mensaje desde TmrBitacora:  Termina el acceso a la aplicación MensajesMQ. Función SQL: UPDFUNC
