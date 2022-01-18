@@ -725,7 +725,7 @@ namespace MonitorMQTKT
                     sValor = funcion.getValueAppConfig("PROCESO" + iRow);
                     sParametros = sValor.Split(',');
 
-                    for (intCuenta = 1; intCuenta < Int32.Parse(sParametros[9]); intCuenta++)
+                    for (intCuenta = 0; intCuenta <= Int32.Parse(sParametros[9]); intCuenta++)
                     {
                         if (Int32.Parse(sParametros[0]) == 1 && sParametros[1] == psBitacora)
                         {

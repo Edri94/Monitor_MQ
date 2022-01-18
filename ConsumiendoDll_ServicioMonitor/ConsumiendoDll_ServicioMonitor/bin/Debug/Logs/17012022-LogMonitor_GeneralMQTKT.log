@@ -1,1 +1,4 @@
 [17-01-2022 02:28:37]  Mensaje desde RevisaMQ:  Cola name QLT.CEDTK.RESP
+[17-01-2022 05:45:31]  Mensaje desde RevisaMQ:  Cola name QLT.CEDTK.RESP
+[17-01-2022 05:45:31] *Error desde RevisaMQ:  Referencia a objeto no establecida como instancia de un objeto. *InnerException:  *Source: ServicioMonitor  *Data: System.Collections.ListDictionaryInternal  *HelpLink:   *StackTrace:    en ServicioMonitor.Mq.MqSeries.AbrirColaMQ(String strMQCola, MQOPEN lngOpciones) en C:\Users\MI05332\source\repos\Monitor\ServicioMonitor\ServicioMonitor\Mq\MqSeries.cs:línea 196  *HResult: -2147467261  *TargetSite: Boolean AbrirColaMQ(System.String, MQOPEN)  
+[17-01-2022 05:56:36]  Mensaje desde RevisaMQ:  Cola name QLT.CEDTK.RESP
