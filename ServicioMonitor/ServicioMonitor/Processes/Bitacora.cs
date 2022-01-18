@@ -54,6 +54,11 @@ namespace ServicioMonitor.Processes
 
         public void ProcesarBitacora(string ruta, string strParametros)
         {
+            funcion.Escribe("_______________________________________________________________________");
+            funcion.Escribe("********** Inicia Bitacoras **********");
+            funcion.Escribe("_______________________________________________________________________");
+
+
             string[] parametros;
             string ls_MsgVal = "";
 
