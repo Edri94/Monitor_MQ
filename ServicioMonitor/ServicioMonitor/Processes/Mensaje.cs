@@ -84,6 +84,11 @@ namespace ServicioMonitor.Processes
 
         public void ProcesarMensajes(string strRutaIni, string strParametros = "")
         {
+
+            funcion.Escribe("_______________________________________________________________________");
+            funcion.Escribe("********** Inicia Mensajes **********");
+            funcion.Escribe("_______________________________________________________________________");
+
             string[] Parametros;       // Arreglo para almacenar los parametros via línea de comando
             string Ls_MsgVal = "";       // Mensaje con el resultado de la validación
             float LnDiferencia;       // Minutos transcurridos desde el último intento de acceso

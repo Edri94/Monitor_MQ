@@ -19,7 +19,7 @@ namespace ServicioMonitor.Helpers
             StackFrame frame = trace.GetFrame(0);
             MethodBase caller = frame.GetMethod();
 
-            string clase = "Tkt";
+            string clase = "TKTMQ";
             string funcion = caller.Name;
 
             string seccion = "escribeArchivoLOG";
@@ -48,7 +48,7 @@ namespace ServicioMonitor.Helpers
             StackFrame frame = trace.GetFrame(0);
             MethodBase caller = frame.GetMethod();
 
-            string clase = "Tkt";
+            string clase = "TKTMQ";
             string funcion = caller.Name;
 
             string vData;

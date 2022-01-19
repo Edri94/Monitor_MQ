@@ -17,7 +17,7 @@ namespace ServicioMonitor.Helpers
             StackFrame frame = trace.GetFrame(0);
             MethodBase caller = frame.GetMethod();
 
-            string clase = "Mensaje";
+            string clase = "MensajesMQ";
             string funcion = caller.Name;
 
             string seccion = "escribeArchivoLOG";
@@ -46,7 +46,7 @@ namespace ServicioMonitor.Helpers
             StackFrame frame = trace.GetFrame(0);
             MethodBase caller = frame.GetMethod();
 
-            string clase = "Mensaje";
+            string clase = "MensajesMQ";
             string funcion = caller.Name;
 
             string vData;

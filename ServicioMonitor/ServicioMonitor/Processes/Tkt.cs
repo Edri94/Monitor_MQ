@@ -175,6 +175,10 @@ namespace ServicioMonitor.Processes
 
         public void ProcesarMensajes(string strRutaIni, string strParametros)
         {
+            funcion.Escribe("_______________________________________________________________________");
+            funcion.Escribe("********** Inicia Monitor Tkt **********");
+            funcion.Escribe("_______________________________________________________________________");
+
             //string strFuncion;
             //int Li_TotReg;
             //int intLongBia;
