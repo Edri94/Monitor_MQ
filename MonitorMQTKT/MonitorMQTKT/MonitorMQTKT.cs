@@ -15,6 +15,7 @@ namespace MonitorMQTKT
     {
         bool blBandera = false;
         bool blDetener = false;
+        bool blServicioIni = false;
 
         private bool ErrorEjecucion;
         private bool ActivoProcFuncAuto;        // Variable para determinar si se desea ejecutar el proceso del Monitoreo
@@ -47,6 +48,7 @@ namespace MonitorMQTKT
         protected override void OnStart(string[] args)
         {
             // TODO: agregar código aquí para iniciar el servicio.
+            blServicioIni = true;
             tmrMonitorMQTKT.Start();
         }
 
@@ -195,15 +197,19 @@ namespace MonitorMQTKT
 
         private void GuardarLog()
         {
-            funcion.Escribe("El siguiente reporte se genera a partir del botón 'Guardar el Registro de Operaciones' o cuando ha cambiado el dia de monitoreo o cuando se ha pulsado el botón 'Salir' del Monitor.");
-            funcion.Escribe("---------  Reporte del estado de los procesos  ---------");
-            funcion.Escribe("*********  Registro de operaciones procesadas  *********");
-            funcion.Escribe("   Respuestas (HOST->NT) registradas proceso de Monitoreo");
-            //'Escribe "       > Duración del CICLO[seg] : " & IntRecepResMonitor
-            funcion.Escribe("   Solicitudes (NT->HOST) registradas proceso de Funcionarios y Autorizaciones");
-            //'Escribe( "       > Duración del CICLO[min] : " & IntEnvioMsgMonitor
-            funcion.Escribe("---------  Fin del reporte del estado de los procesos  ---------");
-            funcion.Escribe("");
+            if (blServicioIni == true)
+            {
+                funcion.Escribe("El siguiente reporte se genera a partir del botón 'Guardar el Registro de Operaciones' o cuando ha cambiado el dia de monitoreo o cuando se ha pulsado el botón 'Salir' del Monitor.");
+                funcion.Escribe("---------  Reporte del estado de los procesos  ---------");
+                funcion.Escribe("*********  Registro de operaciones procesadas  *********");
+                funcion.Escribe("   Respuestas (HOST->NT) registradas proceso de Monitoreo");
+                //'Escribe "       > Duración del CICLO[seg] : " & IntRecepResMonitor
+                funcion.Escribe("   Solicitudes (NT->HOST) registradas proceso de Funcionarios y Autorizaciones");
+                //'Escribe( "       > Duración del CICLO[min] : " & IntEnvioMsgMonitor
+                funcion.Escribe("---------  Fin del reporte del estado de los procesos  ---------");
+                funcion.Escribe("");
+                blServicioIni = false;
+            }
         }
 
         private bool ResetMonitor()
