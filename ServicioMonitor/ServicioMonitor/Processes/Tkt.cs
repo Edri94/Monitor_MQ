@@ -280,7 +280,7 @@ namespace ServicioMonitor.Processes
                     return;       //Sale de la Función Principal ProcesarMensajes
                 }
 
-                funcion.Escribe("Mensaje recuperado de la Queue: " + strReturn, "Mensaje");
+                funcion.Escribe("Mensaje recuperado de la Queue: " + mqSeries.strReturn, "Mensaje");
                 Gs_MsgRes = "";
                
                 //Procesa el mensaje                 //if (!mqSeries.ProcesMessage(ref mqSeries.mqsMsglectura))
@@ -327,7 +327,7 @@ namespace ServicioMonitor.Processes
                     funcion.Escribe("2 Valida si el Mensaje fue completado:", "Mensaje");
                     if (!OpNoCompletada)
                     {
-                        funcion.Escribe("2 el Mensaje NO fue completado:", "Mensaje");
+                        funcion.Escribe("2 el Mensaje NO fue completado", "Mensaje");
                         mqSeries.DesconectarMQ();
                         //se desconecta de la BD
                         Desconectar();
@@ -337,7 +337,7 @@ namespace ServicioMonitor.Processes
                     }
                     else
                     {
-                        funcion.Escribe("2 el Mensaje NO fue completado:", "Mensaje");
+                        funcion.Escribe("2 el Mensaje NO fue completado", "Mensaje");
                         if (Gs_MsgRes == "ENCABEZADO")
                         {
                             funcion.Escribe("Termina TKTMQ Recepción de Solicitudes.", "Mensaje");
@@ -355,7 +355,7 @@ namespace ServicioMonitor.Processes
                 }
                 else
                 {
-                    funcion.Escribe("el Mensaje NO fue completado:", "Mensaje");
+                    funcion.Escribe("el Mensaje NO fue completado", "Mensaje");
                     if (Gs_MsgRes == "ENCABEZADO")
                     {
                         funcion.Escribe("Termina TKTMQ Recepción de Solicitudes.", "Mensaje");
