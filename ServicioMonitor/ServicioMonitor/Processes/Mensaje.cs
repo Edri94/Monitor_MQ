@@ -12,9 +12,6 @@ namespace ServicioMonitor.Processes
 {
     public class Mensaje
     {
-        private string Archivo;
-        private string ArchivoIni;
-        private string Ls_Archivo;
         private string lsCommandLine;
 
         // Variables para el registro de los valores del header IH
@@ -82,7 +79,7 @@ namespace ServicioMonitor.Processes
             bd = new MensajeBd();
         }
 
-        public void ProcesarMensajes(string strRutaIni, string strParametros = "")
+        public void ProcesarMensajes(string strParametros = "")
         {
 
             funcion.Escribe("_______________________________________________________________________");
@@ -90,8 +87,7 @@ namespace ServicioMonitor.Processes
             funcion.Escribe("_______________________________________________________________________");
 
             string[] Parametros;       // Arreglo para almacenar los parametros via línea de comando
-            string Ls_MsgVal = "";       // Mensaje con el resultado de la validación
-            float LnDiferencia;       // Minutos transcurridos desde el último intento de acceso
+            string Ls_MsgVal = "";       // Mensaje con el resultado de la validación        
 
             //ArchivoIni = strRutaIni + @"\MensajesMQ.ini";
             //gstrRutaIni = ArchivoIni;
@@ -248,7 +244,6 @@ namespace ServicioMonitor.Processes
         {
             string Ls_MensajeMQ;       // Cadena con el mensaje armado con los registros de la base de datos
             string Ls_MsgColector;       // Cadena para almecenar el COLECTOR
-            string Ls_HeaderMsg;       // Cadena para almacenar el HEADER del mensaje
             int NumeroMsgEnviados;      // Contador para almacenar el número de mensajes procesados
             List<MensajeEnviar> las_Funcionarios = new List<MensajeEnviar>();       // Arreglo para ingresar todos los registros que han sido enviados correctamente
                                                                                     // Para el armado de la solicitud
@@ -440,8 +435,7 @@ namespace ServicioMonitor.Processes
         private void ProcesoBDtoMQQUEUEAuto()
         {
             string Ls_MensajeMQ;       // Cadena con el mensaje armado con los registros de la base de datos
-            string Ls_MsgColector;       // Cadena para almecenar el COLECTOR
-            string Ls_HeaderMsg;      // Cadena para almacenar el HEADER del mensaje
+            string Ls_MsgColector;       // Cadena para almecenar el COLECTOR     
             string strQuery;       // Cadena para almacenar el Query a ejecutarse en la base de datos
             int NumeroMsgEnviados;      // Contador para almacenar el número de mensajes procesados
             List<MensajeEnviar> las_Autorizaciones = new List<MensajeEnviar>(); ;    // Arreglo para ingresar todos los registros que han sido enviados correctamente

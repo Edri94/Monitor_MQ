@@ -11,10 +11,6 @@ namespace ServicioMonitor.Processes
 {
     public class Tkt
     {
-        private string Archivo;
-        private string ArchivoIni;
-        private string Ls_Archivo;
-        private string lsCommandLine;
 
         public string Ms_MQMngL;         //'MQManager de Lectura
         public string Ms_MQLeer;         //'MQQueue   de Lectura
@@ -37,46 +33,7 @@ namespace ServicioMonitor.Processes
         public Autorizacion laAutoriz;
 
 
-        // Variables para el registro de los valores del header IH
-        private string strFuncionHost; // Valor que indica el programa que invocara el CICSBRIDGE
-        private string strHeaderTagIni; // Bandera que indica el comienzo del Header
-        private string strIDProtocol; // Identificador  del protocolo (PS9)
-        private string strLogical; // Terminal Lógico Asigna Arquitectura ASTA
-        private string strAccount; // Terminal Contable (CR Contable)
-        private string strUser; // Usuario. Debe ser diferente de espacios
-        private string strSeqNumber; // Número de Secuencia (indicador de paginación)
-        private string strTXCode; // Función específica Asigna Arquitectura Central
-        private string strUserOption; // Tecla de función (no aplica)
-        private string strCommit; // Indicador de commit: Permite realizar commit
-        private string strMsgType; // Tipo de mensaje: Nuevo requerimiento
-        private string strProcessType; // Tipo de proceso: on line
-        private string strChannel; // Canal Asigna Arquitectura Central
-        private string strPreFormat; // Indicador de preformateo: Arquitectura no deberá de preformatear los datos
-        private string strLenguage; // Idioma: Español
-        private string strHeaderTagEnd; // Bandera que indica el final del header
-
-        // Variables para el registro de los valores del header ME
-        private string strMETAGINI; // Bandera que indica el comienzo del mensaje
-                                    // Private strMsgColecMax          As String 'Longitud del layout  del colector
-        private string strMsgTypeCole; // Tipo de mensaje: Copy
-                                       // Private strMaxMsgCole           As String 'Máximo X(30641)
-        private string strMETAGEND; // Bandera que indica el fin del mensaje
-
-        // Variables para el registro de los valores Default
-        private string strFechaBaja; // fecha_baja
-        private string strColectorMaxLeng; // Maxima longitud del COLECTOR
-        private string strMsgMaxLeng; // Maxima longitud del del bloque ME
-        private string strPS9MaxLeng; // Maxima longitud del formato PS9
-        private string strReplyToMQ; // MQueue de respuesta para HOST
         private string strFuncionSQL; // Funcion a ejecutar al recibir la respuesta
-        private string strRndLogTerm; // Indica que el atributo Logical Terminal es random
-
-        // Variables para el manejo de los parametros de la base de datos
-        // Public gsSeccRegWdw             As String
-
-        // VARIABLES NUVAS PARA EL ENVIO DE MENSAJE
-        private string sPersistencia;
-        private string sExpirar;
 
         private string Gs_MQManager;       // MQManager de Escritura
         private string Gs_MQQueueEscritura;       // MQQueue de Escritura
@@ -173,7 +130,7 @@ namespace ServicioMonitor.Processes
         // ***************************************
         // ***************************************
 
-        public void ProcesarMensajes(string strRutaIni, string strParametros)
+        public void ProcesarMensajes(string strParametros)
         {
             funcion.Escribe("_______________________________________________________________________");
             funcion.Escribe("********** Inicia Monitor Tkt **********");

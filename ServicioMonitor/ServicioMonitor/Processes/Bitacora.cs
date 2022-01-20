@@ -5,7 +5,6 @@ namespace ServicioMonitor.Processes
 {
     public class Bitacora
     {
-        private string ArchivoIni;
         private string lsCommandLine;
 
         // Variables para el registro de los valores del header IH
@@ -52,7 +51,7 @@ namespace ServicioMonitor.Processes
             funcion = new Funcion_Bitacora();
         }
 
-        public void ProcesarBitacora(string ruta, string strParametros)
+        public void ProcesarBitacora(string strParametros)
         {
             funcion.Escribe("_______________________________________________________________________");
             funcion.Escribe("********** Inicia Bitacoras **********");
@@ -107,10 +106,8 @@ namespace ServicioMonitor.Processes
 
         private void ConfiguraFileLog(string section)
         {
-            string strlogFileName = funcion.getValueAppConfig("logFileName", section);
-            string strlogFilePath = funcion.getValueAppConfig("logFilePath", section);
-
-            bool Mb_GrabaLog = true;
+            //string strlogFileName = funcion.getValueAppConfig("logFileName", section);
+            //string strlogFilePath = funcion.getValueAppConfig("logFilePath", section);
         }
 
         private void ObtenerInfoMq()

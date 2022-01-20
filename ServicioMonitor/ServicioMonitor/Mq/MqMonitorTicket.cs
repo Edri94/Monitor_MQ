@@ -10,7 +10,6 @@ namespace ServicioMonitor.Mq
         private static readonly TripleDESCryptoServiceProvider DES = new TripleDESCryptoServiceProvider();
         private static readonly MD5CryptoServiceProvider MD5 = new MD5CryptoServiceProvider();
 
-        private readonly string strArchivoIni;
         public string ArchivoLog;
         public string dateFormat = "yyyyMMdd";
         public string dateFormatHora = "yyyy-MM-dd HHmmss";

@@ -114,6 +114,7 @@ namespace ServicioMonitor.Data
             catch (Exception ex)
             {
                 funcion.Escribe("Se presentó un error durante la conexión a la base de datos: ", "Mensaje");
+                funcion.Escribe(ex);
                 return 0;
             }
 
@@ -121,7 +122,6 @@ namespace ServicioMonitor.Data
 
         public int Insertar(string sqlquery)
         {
-            SqlCommand comando;
             int i = 0;
             try
             {
@@ -286,7 +286,7 @@ namespace ServicioMonitor.Data
 
                 return sqlRecord;
             }
-            catch (Exception ex)
+            catch (Exception)
             {
                 return null;
                 throw;

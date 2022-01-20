@@ -14,21 +14,16 @@ namespace MonitorMQTKT
     public partial class MonitorMQTKT : ServiceBase
     {
         bool blBandera = false;
-        bool blDetener = false;
         bool blServicioIni = false;
 
-        private bool ErrorEjecucion;
+
         private bool ActivoProcFuncAuto;        // Variable para determinar si se desea ejecutar el proceso del Monitoreo
         private bool ModoMonitor;               // Variable para determinar el modo de operacion del monitor
-        private bool DetallesShow;              // Variable para determinar el status de los detalles
-        private bool bCambioManual;
+
 
         // ***** Para realizar el monitoreo de bitacoras
-        private int miTipoMonitoreo;
         private int miTotalMonitor;
-        private int ItemProceso;
-        private int ItemSeleccion;
-        private int intlBitacoras;
+
 
         private double MensajesMQ;
 
@@ -261,7 +256,6 @@ namespace MonitorMQTKT
             if (monitorTicket.Inicia())
             {
                 funcion.Escribe("Entro al IF FrmMonitor_Load");
-                bCambioManual = false;
 
 
                 ModoMonitor = (monitorTicket.intgModoMonitor == 1) ? true : false;
@@ -534,8 +528,6 @@ namespace MonitorMQTKT
             funcion.Escribe("Entre  a ActivarEnvioFuncAuto(" + psMonitor + ")");
             Mensaje mensaje; ;
 
-            double Ld_CodigoExecNTHOST;
-            string EjecutableMSG;
             string LsProceso = "";
             string sMensaje;
 
@@ -564,7 +556,7 @@ namespace MonitorMQTKT
                 if (fValidaEjecucion(sMensaje))
                 {
                     mensaje = new Mensaje();
-                    mensaje.ProcesarMensajes("D:\\TEMPORAL\\", monitorTicket.strMQManager + "-" + monitorTicket.strMQQMonitorEscritura + "-" + psMonitor);
+                    mensaje.ProcesarMensajes(monitorTicket.strMQManager + "-" + monitorTicket.strMQQMonitorEscritura + "-" + psMonitor);
                     mensaje = null;
                 }
                 else
@@ -579,13 +571,13 @@ namespace MonitorMQTKT
         {
             long lngErr;
             int j;
-            long lngMQOpen;
+            //long lngMQOpen;
             string lsExeParam;
             double RevisaMQ;
 
             try
             {
-                lngMQOpen = (long)MQOPEN.MQOO_INQUIRE;
+                //lngMQOpen = (long)MQOPEN.MQOO_INQUIRE;
 
                 if(monitorTicket.blnConectado == true)
                 {
@@ -624,7 +616,7 @@ namespace MonitorMQTKT
                                     }
 
                                     Tkt tkt = new Tkt();
-                                    tkt.ProcesarMensajes("D:\\TEMPORAL\\", lsExeParam); //[CAMBIAR POR APP.PATH]
+                                    tkt.ProcesarMensajes(lsExeParam); //[CAMBIAR POR APP.PATH]
 
                                     j++;
 
@@ -661,9 +653,6 @@ namespace MonitorMQTKT
 
         private void TmrBitacora()
         {
-            double Ld_CodigoExecNTHOST;
-            string EjecutableMSG;
-            int icont;
             string Ejecutable;
             List<string> Parametro = new List<string>();
             int intlBitacoras;
@@ -685,24 +674,16 @@ namespace MonitorMQTKT
 
                         if (Ejecutable == "M")
                         {
-                            //Dim MensajesMQ As Object
-                            //Set MensajesMQ = CreateObject("MensajesMQ.cMensajes")
                             Mensaje mensajes_MQ = new Mensaje();
 
-                            //MensajesMQ.ProcesarMensajes App.Path, strMQManager & "-" & strMQQMonitorEscritura & "-" & "1" & "-" & Parametro(1)
-                            //mensajes_MQ.ProcesarMensajes("D:\\TEMPORAL\\", "QMDCEDTK-QRT.CEDTK.ENVIO.MQD8-F-INAUTPU");
-                            mensajes_MQ.ProcesarMensajes("D:\\TEMPORAL\\", monitorTicket.strMQManager + "-" + monitorTicket.strMQQMonitorEscritura + "-1-" + Parametro[1]);
+                            mensajes_MQ.ProcesarMensajes(monitorTicket.strMQManager + "-" + monitorTicket.strMQQMonitorEscritura + "-1-" + Parametro[1]);
 
                         }
                         else
                         {
-                            //Dim MensajesMQ As Object
-                            //Set MensajesMQ = CreateObject("MensajesMQ.cMensajes")
-
                             Bitacora bitacoras_MQ = new Bitacora();
 
-                            //Bitacoras.ProcesarBitacora App.Path, strMQManager & "-" & strMQQMonitorEscritura & "-" & "1" & "-" & Parametro(1)
-                            bitacoras_MQ.ProcesarBitacora("D:\\TEMPORAL\\", monitorTicket.strMQManager + "-" + monitorTicket.strMQQMonitorEscritura + "-1-" + Parametro[1]);
+                            bitacoras_MQ.ProcesarBitacora(monitorTicket.strMQManager + "-" + monitorTicket.strMQQMonitorEscritura + "-1-" + Parametro[1]);
 
                         }
                     }

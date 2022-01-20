@@ -52,7 +52,7 @@ namespace ServicioMonitor.Mq
 
                 return afectados;
             }
-            catch (Exception ex)
+            catch (Exception)
             {
                 return -1;
             }

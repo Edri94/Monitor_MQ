@@ -29,7 +29,7 @@ namespace ServicioMonitor.Mq
                 MQRevisaQueue = QUEUE.CurrentDepth;
                 return MQRevisaQueue;
             }
-            catch (MQException ex)
+            catch (MQException)
             {
                 //bMQAbrirCola = false;
                 MQRevisaQueue = 0;
