@@ -91,6 +91,7 @@ D:\Proyectos_GIT\Monitor_MQ\MonitorMQTKT\MonitorMQTKT\bin\Debug\amqmdnet.dll
 D:\Proyectos_GIT\Monitor_MQ\MonitorMQTKT\MonitorMQTKT\bin\Debug\ServicioMonitor.dll
 D:\Proyectos_GIT\Monitor_MQ\MonitorMQTKT\MonitorMQTKT\bin\Debug\ServicioMonitor.pdb
 D:\Proyectos_GIT\Monitor_MQ\MonitorMQTKT\MonitorMQTKT\obj\Debug\MonitorMQTKT.csproj.CopyComplete
+C:\Users\MI05332\source\repos\Monitor\MonitorMQTKT\MonitorMQTKT\obj\Debug\MonitorMQTKT.exe.config
 D:\Monitores_cSchar\Monitor_MQ\MonitorMQTKT\MonitorMQTKT\bin\Debug\MonitorMQTKT.exe.config
 D:\Monitores_cSchar\Monitor_MQ\MonitorMQTKT\MonitorMQTKT\bin\Debug\MonitorMQTKT.exe
 D:\Monitores_cSchar\Monitor_MQ\MonitorMQTKT\MonitorMQTKT\bin\Debug\MonitorMQTKT.pdb
@@ -102,7 +103,5 @@ D:\Monitores_cSchar\Monitor_MQ\MonitorMQTKT\MonitorMQTKT\obj\Debug\MonitorMQTKT.
 D:\Monitores_cSchar\Monitor_MQ\MonitorMQTKT\MonitorMQTKT\obj\Debug\MonitorMQTKT.ProjectInstaller.resources
 D:\Monitores_cSchar\Monitor_MQ\MonitorMQTKT\MonitorMQTKT\obj\Debug\MonitorMQTKT.csproj.GenerateResource.cache
 D:\Monitores_cSchar\Monitor_MQ\MonitorMQTKT\MonitorMQTKT\obj\Debug\MonitorMQTKT.csproj.CoreCompileInputs.cache
-D:\Monitores_cSchar\Monitor_MQ\MonitorMQTKT\MonitorMQTKT\obj\Debug\MonitorMQTKT.csproj.CopyComplete
 D:\Monitores_cSchar\Monitor_MQ\MonitorMQTKT\MonitorMQTKT\obj\Debug\MonitorMQTKT.exe
 D:\Monitores_cSchar\Monitor_MQ\MonitorMQTKT\MonitorMQTKT\obj\Debug\MonitorMQTKT.pdb
-C:\Users\MI05332\source\repos\Monitor\MonitorMQTKT\MonitorMQTKT\obj\Debug\MonitorMQTKT.exe.config
