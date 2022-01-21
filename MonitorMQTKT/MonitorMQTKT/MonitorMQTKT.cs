@@ -72,22 +72,14 @@ namespace MonitorMQTKT
                 monitorTicket.dblCiclosFuncionarios += 10;
                 monitorTicket.dblCiclosAutorizaciones += 10;
 
-                //Borrar despues****************************************************************************
-                funcion.Escribe("Ejecución del Timer tmrMonitorMQTKT_Tick : " + monitorTicket.currentDate);
-                funcion.Escribe("Valor de intgMonitor : " + monitorTicket.intgMonitor);
-                funcion.Escribe("Valor de strFormatoTiempoBitacoras : " + monitorTicket.strFormatoTiempoBitacoras);
-                funcion.Escribe("valor de dblCiclosBitacoras : " + monitorTicket.dblCiclosBitacoras);
-                funcion.Escribe("Valor de intTiempoBitacoras : " + monitorTicket.intTiempoBitacoras);
-                //****************************************************************************Borrar despues
+           
 
                 if (monitorTicket.intgMonitor == 1)
                 {
                     if (monitorTicket.strFormatoTiempoBitacoras != "S")
                     {
                         if (monitorTicket.dblCiclosBitacoras >= (monitorTicket.intTiempoBitacoras * 60))
-                        {
-
-                            funcion.Escribe("Ejecutando if TmrBitacora()... ");
+                        { 
                             TmrBitacora();
                             monitorTicket.dblCiclosBitacoras = 0;
                         }
@@ -97,7 +89,6 @@ namespace MonitorMQTKT
                         if (monitorTicket.dblCiclosBitacoras >= monitorTicket.intTiempoBitacoras)
                         {
 
-                            funcion.Escribe("Ejecutando else TmrBitacora()... ");
                             TmrBitacora();
                             monitorTicket.dblCiclosBitacoras = 0;
                         }
@@ -250,12 +241,10 @@ namespace MonitorMQTKT
         }
 
         private void FrmMonitor_Load()
-        {
-            //strArchivoIni = App.Path & "\MonitorMQTKT.ini"
-            funcion.Escribe("Carga de formulario FrmMonitor_Load");
+        {        
             if (monitorTicket.Inicia())
             {
-                funcion.Escribe("Entro al IF FrmMonitor_Load");
+               
 
 
                 ModoMonitor = (monitorTicket.intgModoMonitor == 1) ? true : false;
@@ -325,7 +314,6 @@ namespace MonitorMQTKT
         {
             try
             {
-                funcion.Escribe("Seguimiento: funcion Iniciar() ");
                 if (monitorTicket.ConectarMQ(monitorTicket.strMQManager))//cambiar
                 {
                     monitorTicket.blnConectado = true;
