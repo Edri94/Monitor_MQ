@@ -402,19 +402,13 @@ namespace ServicioMonitor.Processes
             string psTipo;
             string sBodyMsg;
             string sAux;
-            //string lsMsgErr;
             bool sMensajeBloque;
-            //double Ld_CodigoExecNTHOST;
-            //string EjecutableMSG;
-            //variable contador de emensaje
             int iMensaje;
             bool lbYaProcesado;
             int ipiLenMensaje;
             bool bNEXTOC;
 
-            //ProcesMessage = False
             sMensajeBloque = false;
-            //se maneja como variable privada y en falso
             mbFuncionBloque = false;
             psBodyMsg = "";
             psLongitud = "";
@@ -423,88 +417,69 @@ namespace ServicioMonitor.Processes
             ipiLenMensaje = 0;
             bNEXTOC = false;
             lsQuery = "";
-            //funcion.Escribe("======================================", "Mensaje");
+          
             funcion.Escribe("Entro a la función: ProcesMessage", "Mensaje");
-            //Obtenemos el mensaje contenido en el objeto Mensaje
-            //ls_mensaje = objMsgLeido.MessageData;
             ls_mensaje = MsgLeido;
-            //funcion.Escribe("Mensaje recibido: " + ls_mensaje, "Mensaje");
-            //'Esta línea revisa si el mensaje que solo es el encabezado y no contaban con cuerpo. El procesamiento marcaba un error que era escrito en el archivo .log
-            // InStr(1, ls_mensaje, "<OC>", vbTextCompare) = 0
-            //busca la cadena "<OC>" en ls_mensaje.
-            //asigna la posición en la que se encuentra a iInicia, si no existe retorna -1
-            //int iIniciaOC = ls_mensaje.IndexOf("<OC>") + "<OC>".Length;
+            
             int iIniciaOC = ls_mensaje.IndexOf("<OC>");
 
-            //if ( string.Compare(ls_mensaje, "<OC>") == 0 )
+          
             if (iIniciaOC == -1)
             {
                 Gs_MsgRes = "ENCABEZADO";
                 return false;
             }
-            //iIniciaOC += "</OC>".Length;
+          
             int iFinOC = ls_mensaje.IndexOf("</OC>") + "</OC>".Length;
 
-            //funcion.Escribe("--> iIniciaOC: " + iIniciaOC, "Mensaje");
-            //funcion.Escribe("--> iFinOC: " + iFinOC, "Mensaje");
-            //sBodyMsg = ls_mensaje.Substring(string.Compare(ls_mensaje, "<OC>"), ls_mensaje.Length);
+           
             sBodyMsg = ls_mensaje.Substring(iIniciaOC, iFinOC - iIniciaOC);
-            //sBodyMsg = Mid(ls_mensaje, InStr(1, ls_mensaje, "<OC>", vbTextCompare), Len(ls_mensaje))
+           
             iMensaje = 0;
             funcion.Escribe("sBodyMsg:" + sBodyMsg, "Mensaje");
-            //funcion.Escribe("Entra al DO para procesar contenido del sBodyMsg", "Mensaje");
+            
             do
             {
                 lbYaProcesado = false;
-                //sAux = sBodyMsg.Substring(1, string.Compare(sBodyMsg, "<OC>") + 4);
+               
                 sAux = sBodyMsg;
-                //funcion.Escribe("sAux: " + sAux, "Mensaje");
-
-                //funcion.Escribe("Llamando a la función: psMsgAStructPS9", "Mensaje");
-                //'Descompone el mensaje en una estructura PS9
+               
                 psMsgAStructPS9(sAux, psBodyMsg, ref psLongitud, psTipo);
 
-                //funcion.Escribe("SE REGRESO psLongitud: " + psLongitud, "Mensaje");
-
-                //laAutoriz.FuncionSQL = psBodyMsg.Substring(1, 8);
-                //funcion.Escribe("psLongitud.Substring(0, 8): " + psLongitud.Substring(0, 8), "Mensaje");
+               
                 laAutoriz.FuncionSQL = psLongitud.Substring(0, 8);
                 funcion.Escribe("laAutoriz.FuncionSQL: " + laAutoriz.FuncionSQL, "Mensaje");
 
-                //funcion.Escribe("--> Llamando a la función: 1 Fl_ObtieneServicio", "Mensaje");
+               
                 Ls_Servicio = Fl_ObtieneServicio(laAutoriz.FuncionSQL, "SinProcesar", "EntraLog0", 1);
 
-                //funcion.Escribe("<-- Saliendo de la función: 1 Fl_ObtieneServicio", "Mensaje");
-
-                //funcion.Escribe("1 Ls_Servicio recuperado: " + Ls_Servicio, "Mensaje");
-
-                //funcion.Escribe("Validando longitud de Ls_Servicio:" + Ls_Servicio.Length, "Mensaje");
+               
                 if (Ls_Servicio.Length != 0)
                 {
-                    //funcion.Escribe("Entro al IF Validando longitud de Ls_Servicio.", "Mensaje");
+                   
                     lsDatos = laAutoriz.DatosTemp;
-                    //funcion.Escribe("lsDatos: " + lsDatos, "Mensaje");
+                   
 
-                    funcion.Escribe("---> Llamando a la función: ReArmaPS9", "Mensaje");
+                  
                     ReArmaPS9(lsDatos, ls_mensaje, psBodyMsg, ref lsNewMsg, psTipo);
-                    funcion.Escribe("<--- Saliendo de la función: ReArmaPS9", "Mensaje");
+                   
 
                     Gs_MsgRes = lsNewMsg;
-                    funcion.Escribe("lsNewMsg: " + lsNewMsg, "Mensaje");
-                    funcion.Escribe("Gs_MsgRes: " + Gs_MsgRes, "Mensaje");
+                    //funcion.Escribe("lsNewMsg: " + lsNewMsg, "Mensaje");
+                    //funcion.Escribe("Gs_MsgRes: " + Gs_MsgRes, "Mensaje");
                     //funcion.Escribe("La funcion pertenece al bloque de pruebas (no procesar): " + laAutoriz.FuncionSQL, "Mensaje");
                     return false;   //sale de la función como FALSO
                 }
 
-                funcion.Escribe("--> Llamando a la función: 2 Fl_ObtieneServicio", "Mensaje");
+              
                 Ls_Servicio = Fl_ObtieneServicio(laAutoriz.FuncionSQL, "Servicios", "Servicio3", 2);
-                funcion.Escribe("<-- Saliendo de la función: 2 Fl_ObtieneServicio", "Mensaje");
+               
 
-                funcion.Escribe("2 Ls_Servicio: " + Ls_Servicio, "Mensaje");
+                //funcion.Escribe("2 Ls_Servicio: " + Ls_Servicio, "Mensaje");
                 if (Ls_Servicio.Length == 0)
                 {
                     Ls_Servicio = Fl_ObtieneServicio(laAutoriz.FuncionSQL, "FuncionBloques", "Servicio0", 2);
-                    funcion.Escribe("2a Ls_Servicio: " + Ls_Servicio, "Mensaje");
+                    //funcion.Escribe("2a Ls_Servicio: " + Ls_Servicio, "Mensaje");
                     if (Ls_Servicio.Length != 0)
                     {
                         sMensajeBloque = true;
@@ -536,7 +511,7 @@ namespace ServicioMonitor.Processes
                     ipiLenMensaje = Convert.ToInt32(psLongitud);
                     //ipiLenMensaje = 0;
                 }
-                funcion.Escribe("Valida layout: tktMQ.fValidaLayout", "Mensaje");
+                //funcion.Escribe("Valida layout: tktMQ.fValidaLayout", "Mensaje");
                 if (!fValidaLayout(laAutoriz.FuncionSQL, ipiLenMensaje, psBodyMsg))
                 {
                     //int Resp = tktMQ.psInsertaSQL(4, "La longitud de los parametros en el mansaje, no es compatible con la longuitud de los parametros para generar la ejecución del sp", "TKT", "ProcesMessage");
@@ -696,7 +671,7 @@ namespace ServicioMonitor.Processes
             string section = psBloque;
             string llave = psLlave;
 
-            funcion.Escribe("Entro a la función: Fl_ObtieneServicio", "Mensaje");
+            //funcion.Escribe("Entro a la función: Fl_ObtieneServicio", "Mensaje");
             //funcion.Escribe("--> arreglo: " + arreglo, "Mensaje");
             //funcion.Escribe("--> section: " + section, "Mensaje");
             //funcion.Escribe("--> llave: " + llave, "Mensaje");

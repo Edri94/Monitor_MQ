@@ -350,8 +350,8 @@ namespace ServicioMonitor.Processes
 
                             if (Ls_MensajeMQ != "")
                             {
-                                funcion.Escribe("Mensaje Enviado: " + Ls_MensajeMQ, "Mensaje");                               
-                                funcion.Escribe("EnviarMensajeMQ: " + Gs_MQQueueEscritura);
+                                //funcion.Escribe("Mensaje Enviado: " + Ls_MensajeMQ, "Mensaje");                               
+                                //funcion.Escribe("EnviarMensajeMQ: " + Gs_MQQueueEscritura);
                                 if (mQ.EnviarMensajeMQ(Gs_MQQueueEscritura))
                                 {
                                     //ReDim Preserve las_Funcionarios(NumeroMsgEnviados)
@@ -708,7 +708,6 @@ namespace ServicioMonitor.Processes
 
         private bool ActualizaRegistrosFunc(List<MensajeEnviar> IDFuncionario)
         {
-            funcion.Escribe("ActualizaRegistrosFunc() Registros: " + IDFuncionario.Count());
             bool ActualizaRegistrosFunc = false;
 
             string strQueryUpDate;
@@ -743,7 +742,6 @@ namespace ServicioMonitor.Processes
 
         private bool ActualizaRegistrosAuto(List<MensajeEnviar> IDAutorizacion)
         {
-            funcion.Escribe("ActualizaRegistrosAuto() Registros: " + IDAutorizacion.Count());
             bool ActualizaRegistrosAuto = false;
 
             try
