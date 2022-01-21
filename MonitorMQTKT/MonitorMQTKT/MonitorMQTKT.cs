@@ -78,22 +78,14 @@ namespace MonitorMQTKT
                 monitorTicket.dblCiclosFuncionarios += 10;
                 monitorTicket.dblCiclosAutorizaciones += 10;
 
-                //Borrar despues****************************************************************************
-                funcion.Escribe("Ejecución del Timer tmrMonitorMQTKT_Tick : " + monitorTicket.currentDate);
-                funcion.Escribe("Valor de intgMonitor : " + monitorTicket.intgMonitor);
-                funcion.Escribe("Valor de strFormatoTiempoBitacoras : " + monitorTicket.strFormatoTiempoBitacoras);
-                funcion.Escribe("valor de dblCiclosBitacoras : " + monitorTicket.dblCiclosBitacoras);
-                funcion.Escribe("Valor de intTiempoBitacoras : " + monitorTicket.intTiempoBitacoras);
-                //****************************************************************************Borrar despues
+           
 
                 if (monitorTicket.intgMonitor == 1)
                 {
                     if (monitorTicket.strFormatoTiempoBitacoras != "S")
                     {
                         if (monitorTicket.dblCiclosBitacoras >= (monitorTicket.intTiempoBitacoras * 60))
-                        {
-
-                            funcion.Escribe("Ejecutando if TmrBitacora()... ");
+                        { 
                             TmrBitacora();
                             monitorTicket.dblCiclosBitacoras = 0;
                         }
@@ -103,7 +95,6 @@ namespace MonitorMQTKT
                         if (monitorTicket.dblCiclosBitacoras >= monitorTicket.intTiempoBitacoras)
                         {
 
-                            funcion.Escribe("Ejecutando else TmrBitacora()... ");
                             TmrBitacora();
                             monitorTicket.dblCiclosBitacoras = 0;
                         }
@@ -256,12 +247,10 @@ namespace MonitorMQTKT
         }
 
         private void FrmMonitor_Load()
-        {
-            //strArchivoIni = App.Path & "\MonitorMQTKT.ini"
-            funcion.Escribe("Carga de formulario FrmMonitor_Load");
+        {        
             if (monitorTicket.Inicia())
             {
-                funcion.Escribe("Entro al IF FrmMonitor_Load");
+               
 
 
                 ModoMonitor = (monitorTicket.intgModoMonitor == 1) ? true : false;
@@ -331,7 +320,6 @@ namespace MonitorMQTKT
         {
             try
             {
-                funcion.Escribe("Seguimiento: funcion Iniciar() ");
                 if (monitorTicket.ConectarMQ(monitorTicket.strMQManager))//cambiar
                 {
                     monitorTicket.blnConectado = true;
@@ -372,7 +360,6 @@ namespace MonitorMQTKT
                     monitorTicket.FechaRestar = monitorTicket.date.AddDays(1).ToString();
                 }
 
-                funcion.Escribe("(2)Escribiendo en AppSettings: " + monitorTicket.FechaRestar);
                 
                 if (!funcion.UpdateAppSettings("RestarMonitor", monitorTicket.FechaRestar))
                 {
@@ -398,13 +385,6 @@ namespace MonitorMQTKT
             monitorTicket.dblCiclosFuncionarios += 10;
             monitorTicket.dblCiclosAutorizaciones += 10;
 
-            //Borrar despues****************************************************************************
-            funcion.Escribe("Ejecución del Timer tmrMonitorMQTKT_Tick : " + monitorTicket.currentDate);
-            funcion.Escribe("Valor de intgMonitor : " + monitorTicket.intgMonitor);
-            funcion.Escribe("Valor de strFormatoTiempoBitacoras : " + monitorTicket.strFormatoTiempoBitacoras);
-            funcion.Escribe("valor de dblCiclosBitacoras : " + monitorTicket.dblCiclosBitacoras);
-            funcion.Escribe("Valor de intTiempoBitacoras : " + monitorTicket.intTiempoBitacoras);
-            //****************************************************************************Borrar despues
 
             if (monitorTicket.intgMonitor == 1)
             {
@@ -412,8 +392,6 @@ namespace MonitorMQTKT
                 {
                     if (monitorTicket.dblCiclosBitacoras >= (monitorTicket.intTiempoBitacoras * 60))
                     {
-
-                        funcion.Escribe("Ejecutando if TmrBitacora()... ");
                         TmrBitacora();
                         monitorTicket.dblCiclosBitacoras = 0;
                     }
@@ -423,7 +401,6 @@ namespace MonitorMQTKT
                     if (monitorTicket.dblCiclosBitacoras >= monitorTicket.intTiempoBitacoras)
                     {
 
-                        funcion.Escribe("Ejecutando else TmrBitacora()... ");
                         TmrBitacora();
                         monitorTicket.dblCiclosBitacoras = 0;
                     }
@@ -489,14 +466,7 @@ namespace MonitorMQTKT
         {
             tmrRestar.Enabled = false;
 
-            funcion.Escribe("****************************************************");
-            funcion.Escribe("****************************************************");
-            funcion.Escribe("Ejecución del Timer tmrRestar : " + monitorTicket.currentDate.ToString());
-            funcion.Escribe("valor de Modfunciones.date: " + monitorTicket.date.ToString());
-            funcion.Escribe("valor de ModFunciones.FechaRestar: " + monitorTicket.FechaRestar.ToString());
-            funcion.Escribe("valor de Convert.ToDateTime(ModFunciones.FechaRestar: " + Convert.ToDateTime(monitorTicket.FechaRestar.ToString()));
-            funcion.Escribe("****************************************************");
-            funcion.Escribe("****************************************************");
+   
             if (monitorTicket.date > Convert.ToDateTime(monitorTicket.FechaRestar))
             {
                 ResetMonitor();
@@ -524,15 +494,12 @@ namespace MonitorMQTKT
 
         private void TmrTKTMQ()
         {
-            funcion.Escribe("Ejecutando TmrTKTMQ()");
             double ln_MsgEncontrado;
             ln_MsgEncontrado = RevisaMQ(monitorTicket.strMQManager, monitorTicket.strMQQMonitorLectura, monitorTicket.strMQQMonitorEscritura, "0");
         }
 
         private void ActivarEnvioFuncAuto(string psMonitor)
         {
-
-            funcion.Escribe("Entre  a ActivarEnvioFuncAuto(" + psMonitor + ")");
             Mensaje mensaje; ;
 
             string LsProceso = "";
@@ -588,9 +555,6 @@ namespace MonitorMQTKT
 
                 if(monitorTicket.blnConectado == true)
                 {
-                    funcion.Escribe("Ejecutar : AbrirColaMQ().  MQQueueManager Name:" + monitorTicket.QMGR.Name);
-                    funcion.Escribe($"Parametros en: RevisMQ({MQManager}, {MQQLectura}, {MQQEscritura}, {psOtros})");
-
                     if (monitorTicket.AbrirColaMQ(MQQLectura, MqMonitorTicket.MQOPEN.MQOO_INQUIRE)) //cambiar
                     {
                         j = 1;
@@ -783,28 +747,15 @@ namespace MonitorMQTKT
         private void btnTest_Click(object sender, EventArgs e)
         {
             double ln_MsgEncontrados;
-            funcion.Escribe("Prueba por boton.");
-            funcion.Escribe("manda a llamar a RevisaMQ");
+
             RevisaMQ(monitorTicket.strMQManager, monitorTicket.strMQQMonitorLectura, monitorTicket.strMQQMonitorEscritura, "0");
             ln_MsgEncontrados = monitorTicket.dblRevisaMQ;
-            funcion.Escribe("Mensajes en la Queue: " + ln_MsgEncontrados.ToString());
-            funcion.Escribe("salio bien de RevisaMQ");
+
         }
 
         private void tmrRestar_Elapsed(object sender, System.Timers.ElapsedEventArgs e)
         {
             tmrRestar.Enabled = false;
-
-            funcion.Escribe("****************************************************");
-            funcion.Escribe("****************************************************");
-            funcion.Escribe("Ejecución del Timer tmrRestar : " + monitorTicket.currentDate.ToString());
-            funcion.Escribe("valor de Modfunciones.date: " + monitorTicket.date.ToString());
-            funcion.Escribe("valor de ModFunciones.FechaRestar: " + monitorTicket.FechaRestar.ToString());
-            funcion.Escribe("valor de Convert.ToDateTime(ModFunciones.FechaRestar: " + Convert.ToDateTime(monitorTicket.FechaRestar.ToString()));
-            funcion.Escribe("****************************************************");
-            funcion.Escribe("****************************************************");
-
-
             
             if (monitorTicket.date > Convert.ToDateTime(monitorTicket.FechaRestar))
             {
