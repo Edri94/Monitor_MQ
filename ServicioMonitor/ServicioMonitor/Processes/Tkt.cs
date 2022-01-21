@@ -130,12 +130,15 @@ namespace ServicioMonitor.Processes
         // ***************************************
         // ***************************************
 
-        public void ProcesarMensajes(string strParametros)
+        public void ProcesarMensajes(string strParametros, ref bool blIniTKTMQ) //SGGG - 21-01-2022 - Sea grega nuevo parametro para la bancwera de inicio de servicio
         {
-            funcion.Escribe("_______________________________________________________________________");
-            funcion.Escribe("********** Inicia Monitor Tkt **********");
-            funcion.Escribe("_______________________________________________________________________");
-
+            if (blIniTKTMQ == true) //SGGG 21-01-2022 - Se agrega validación para que sólo imprima al iniciarse el servicio
+            {
+                funcion.Escribe("_______________________________________________________________________");
+                funcion.Escribe("********** Inicia Monitor Tkt **********");
+                funcion.Escribe("_______________________________________________________________________");
+                blIniTKTMQ = false; //SGGG 21-01-2022 - Se apaga la bandera para que no imprima en cada timer
+            }
             //string strFuncion;
             //int Li_TotReg;
             //int intLongBia;

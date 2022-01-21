@@ -14,7 +14,10 @@ namespace MonitorMQTKT
     public partial class MonitorMQTKT : ServiceBase
     {
         bool blBandera = false;
-        bool blServicioIni = false;
+        bool blIniMonitorMQTKT = false; //SGGG 20-01-2022 - Se Genera bandera para imprimir en bitacora inicio del servicio
+        bool blIniMensajesMQ = false;   //SGGG 21-01-2022 - Se Genera bandera para imprimir en bitacora inicio del servicio    
+        bool blIniTKTMQ = false;        //SGGG 21-01-2022 - Se Genera bandera para imprimir en bitacora inicio del servicio
+        bool blIniBitaora = false;      //SGGG 21-01-2022 - Se Genera bandera para imprimir en bitacora inicio del servicio
 
 
         private bool ActivoProcFuncAuto;        // Variable para determinar si se desea ejecutar el proceso del Monitoreo
@@ -43,7 +46,10 @@ namespace MonitorMQTKT
         protected override void OnStart(string[] args)
         {
             // TODO: agregar código aquí para iniciar el servicio.
-            blServicioIni = true;
+            blIniMonitorMQTKT = true;   //SGGG 20-01-2022 - Se inicializa bandera al iniciarse el servicio MonitorMQTKT
+            blIniMensajesMQ = true;     //SGGG 21-01-2022 - Se inicializa bandera al iniciarse el servicio MEnsajesMQ
+            blIniTKTMQ = true;          //SGGG 21-01-2022 - Se inicializa bandera al iniciarse el servicio TKTMQ
+            blIniBitaora = true;        //SGGG 21-01-2022 - Se inicializa bandera al iniciarse el servicio Bitacora
             tmrMonitorMQTKT.Start();
         }
 
@@ -192,7 +198,7 @@ namespace MonitorMQTKT
 
         private void GuardarLog()
         {
-            if (blServicioIni == true)
+            if (blIniMonitorMQTKT == true)  //SGGG 20-01-2022 - Se agrega validación para que sólo imprima al iniciarse el servicio
             {
                 funcion.Escribe("El siguiente reporte se genera a partir del botón 'Guardar el Registro de Operaciones' o cuando ha cambiado el dia de monitoreo o cuando se ha pulsado el botón 'Salir' del Monitor.");
                 funcion.Escribe("---------  Reporte del estado de los procesos  ---------");
@@ -203,7 +209,7 @@ namespace MonitorMQTKT
                 //'Escribe( "       > Duración del CICLO[min] : " & IntEnvioMsgMonitor
                 funcion.Escribe("---------  Fin del reporte del estado de los procesos  ---------");
                 funcion.Escribe("");
-                blServicioIni = false;
+                blIniMonitorMQTKT = false; //SGGG 20-01-2022 - Se apaga la bandera para que no imprima en cada timer
             }
         }
 
@@ -425,6 +431,7 @@ namespace MonitorMQTKT
             }
 
 
+
             if (monitorTicket.strFormatoTiempoTKTMQ != "S")
             {
                 if (monitorTicket.dblCiclosTKTMQ >= (monitorTicket.intTiempoTKTMQ * 60))
@@ -556,7 +563,7 @@ namespace MonitorMQTKT
                 if (fValidaEjecucion(sMensaje))
                 {
                     mensaje = new Mensaje();
-                    mensaje.ProcesarMensajes(monitorTicket.strMQManager + "-" + monitorTicket.strMQQMonitorEscritura + "-" + psMonitor);
+                    mensaje.ProcesarMensajes(ref blIniMensajesMQ,monitorTicket.strMQManager + "-" + monitorTicket.strMQQMonitorEscritura + "-" + psMonitor); //SGGG - 21-01-2022 - Sea grega nuevo parametro para la bancwera de inicio de servicio
                     mensaje = null;
                 }
                 else
@@ -616,7 +623,7 @@ namespace MonitorMQTKT
                                     }
 
                                     Tkt tkt = new Tkt();
-                                    tkt.ProcesarMensajes(lsExeParam); //[CAMBIAR POR APP.PATH]
+                                    tkt.ProcesarMensajes(lsExeParam, ref blIniTKTMQ); //[CAMBIAR POR APP.PATH]  //SGGG - 21-01-2022 - Sea grega nuevo parametro para la bancwera de inicio de servicio
 
                                     j++;
 
@@ -676,14 +683,14 @@ namespace MonitorMQTKT
                         {
                             Mensaje mensajes_MQ = new Mensaje();
 
-                            mensajes_MQ.ProcesarMensajes(monitorTicket.strMQManager + "-" + monitorTicket.strMQQMonitorEscritura + "-1-" + Parametro[1]);
+                            mensajes_MQ.ProcesarMensajes(ref blIniMensajesMQ,monitorTicket.strMQManager + "-" + monitorTicket.strMQQMonitorEscritura + "-1-" + Parametro[1]); //SGGG - 21-01-2022 - Sea grega nuevo parametro para la bancwera de inicio de servicio
 
                         }
                         else
                         {
                             Bitacora bitacoras_MQ = new Bitacora();
 
-                            bitacoras_MQ.ProcesarBitacora(monitorTicket.strMQManager + "-" + monitorTicket.strMQQMonitorEscritura + "-1-" + Parametro[1]);
+                            bitacoras_MQ.ProcesarBitacora(monitorTicket.strMQManager + "-" + monitorTicket.strMQQMonitorEscritura + "-1-" + Parametro[1], ref blIniBitaora); //SGGG - 21-01-2022 - Sea grega nuevo parametro para la bancwera de inicio de servicio
 
                         }
                     }

@@ -51,12 +51,15 @@ namespace ServicioMonitor.Processes
             funcion = new Funcion_Bitacora();
         }
 
-        public void ProcesarBitacora(string strParametros)
+        public void ProcesarBitacora(string strParametros, ref bool blIniBitacora)  //SGGG - 21-01-2022 - Sea grega nuevo parametro para la bancwera de inicio de servicio
         {
-            funcion.Escribe("_______________________________________________________________________");
-            funcion.Escribe("********** Inicia Bitacoras **********");
-            funcion.Escribe("_______________________________________________________________________");
-
+            if (blIniBitacora == true)   //SGGG 21-01-2022 - Se agrega validación para que sólo imprima al iniciarse el servicio
+            {
+                funcion.Escribe("_______________________________________________________________________");
+                funcion.Escribe("********** Inicia Bitacoras **********");
+                funcion.Escribe("_______________________________________________________________________");
+                blIniBitacora = false;  //SGGG 21-01-2022 - Se apaga la bandera para que no imprima en cada timer
+            }
 
             string[] parametros;
             string ls_MsgVal = "";

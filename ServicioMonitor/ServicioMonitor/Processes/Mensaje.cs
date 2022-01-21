@@ -79,12 +79,15 @@ namespace ServicioMonitor.Processes
             bd = new MensajeBd();
         }
 
-        public void ProcesarMensajes(string strParametros = "")
+        public void ProcesarMensajes(ref bool blIniMensajesMQ, string strParametros = "")  //SGGG - 21-01-2022 - Sea grega nuevo parametro para la bancwera de inicio de servicio
         {
-
-            funcion.Escribe("_______________________________________________________________________");
-            funcion.Escribe("********** Inicia Mensajes **********");
-            funcion.Escribe("_______________________________________________________________________");
+            if (blIniMensajesMQ == true)    //SGGG 21-01-2022 - Se agrega validación para que sólo imprima al iniciarse el servicio
+            {
+                funcion.Escribe("_______________________________________________________________________");
+                funcion.Escribe("********** Inicia Mensajes **********");
+                funcion.Escribe("_______________________________________________________________________");
+                blIniMensajesMQ = false;    //SGGG 21-01-2022 - Se apaga la bandera para que no imprima en cada timer
+            }
 
             string[] Parametros;       // Arreglo para almacenar los parametros via línea de comando
             string Ls_MsgVal = "";       // Mensaje con el resultado de la validación        
