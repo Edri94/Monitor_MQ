@@ -200,7 +200,7 @@ namespace MonitorMQTKT
                 //'Escribe( "       > Duración del CICLO[min] : " & IntEnvioMsgMonitor
                 funcion.Escribe("---------  Fin del reporte del estado de los procesos  ---------");
                 funcion.Escribe("");
-                blIniMonitorMQTKT = false; //SGGG 20-01-2022 - Se apaga la bandera para que no imprima en cada timer
+                
             }
         }
 
@@ -484,8 +484,12 @@ namespace MonitorMQTKT
                     funcion.Escribe("tmrRestar_Tick() Se actulizo [FechaRestar] en el archivo App.Settings " + monitorTicket.FechaRestar);
                 }
 
-                funcion.Escribe("Aplicación Monitor iniciado : " + monitorTicket.currentDate, "Mensaje");
-                funcion.Escribe("Monitor iniciado en modo de procesamiento: " + monitorTicket.currentDate, "Mensaje");
+                if (blIniMonitorMQTKT == true)  //SGGG 20-01-2022 - Se agrega validación para que sólo imprima al iniciarse el servicio
+                {
+                    funcion.Escribe("Aplicación Monitor iniciado : " + monitorTicket.currentDate, "Mensaje");
+                    funcion.Escribe("Monitor iniciado en modo de procesamiento: " + monitorTicket.currentDate, "Mensaje");
+                    blIniMonitorMQTKT = false; //SGGG 20-01-2022 - Se apaga la bandera para que no imprima en cada timer
+                }
             }
 
             tmrRestar.Enabled = true;
