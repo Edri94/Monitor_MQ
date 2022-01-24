@@ -753,23 +753,23 @@ namespace MonitorMQTKT
 
         }
 
-        private void tmrRestar_Elapsed(object sender, System.Timers.ElapsedEventArgs e)
-        {
-            tmrRestar.Enabled = false;
+        //private void tmrRestar_Elapsed(object sender, System.Timers.ElapsedEventArgs e)
+        //{
+        //    tmrRestar.Enabled = false;
             
-            if (monitorTicket.date > Convert.ToDateTime(monitorTicket.FechaRestar))
-            {
-                ResetMonitor();
+        //    if (monitorTicket.date > Convert.ToDateTime(monitorTicket.FechaRestar))
+        //    {
+        //        ResetMonitor();
 
-                monitorTicket.FechaRestar = monitorTicket.date.ToString();
+        //        monitorTicket.FechaRestar = monitorTicket.date.ToString();
 
-                funcion.UpdateAppSettings("RestarMonitor", monitorTicket.FechaRestar);
+        //        funcion.UpdateAppSettings("RestarMonitor", monitorTicket.FechaRestar);
 
-                funcion.Escribe("Aplicación Monitor iniciado : " + monitorTicket.currentDate, "Mensaje");
-                funcion.Escribe("Monitor iniciado en modo de procesamiento: " + monitorTicket.currentDate, "Mensaje");
-            }
+        //        funcion.Escribe("Aplicación Monitor iniciado : " + monitorTicket.currentDate, "Mensaje");
+        //        funcion.Escribe("Monitor iniciado en modo de procesamiento: " + monitorTicket.currentDate, "Mensaje");
+        //    }
 
-            tmrRestar.Enabled = true;
-        }
+        //    tmrRestar.Enabled = true;
+        //}
     }
 }
