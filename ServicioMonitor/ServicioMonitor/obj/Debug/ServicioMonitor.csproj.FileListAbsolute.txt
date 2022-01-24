@@ -22,4 +22,3 @@ D:\Monitores_cSchar\Monitor_MQ\ServicioMonitor\ServicioMonitor\obj\Debug\Servici
 D:\Monitores_cSchar\Monitor_MQ\ServicioMonitor\ServicioMonitor\obj\Debug\ServicioMonitor.csproj.CopyComplete
 D:\Monitores_cSchar\Monitor_MQ\ServicioMonitor\ServicioMonitor\obj\Debug\ServicioMonitor.dll
 D:\Monitores_cSchar\Monitor_MQ\ServicioMonitor\ServicioMonitor\obj\Debug\ServicioMonitor.pdb
-C:\Users\MI05332\source\repos\Monitor\ServicioMonitor\ServicioMonitor\obj\Debug\ServicioMonitor.csproj.AssemblyReference.cache

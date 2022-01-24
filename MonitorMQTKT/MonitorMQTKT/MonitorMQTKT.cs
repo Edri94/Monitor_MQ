@@ -455,34 +455,7 @@ namespace MonitorMQTKT
             }
         }
 
-        private void tmrRestar_Tick(object sender, EventArgs e)
-        {
-            tmrRestar.Enabled = false;
-
-   
-            if (monitorTicket.date > Convert.ToDateTime(monitorTicket.FechaRestar))
-            {
-                ResetMonitor();
-
-                monitorTicket.FechaRestar = monitorTicket.date.ToString();
-
-                
-                if (!funcion.UpdateAppSettings("RestarMonitor", monitorTicket.FechaRestar))
-                {
-                    funcion.Escribe("tmrRestar_Tick() No se encontro el archivo");
-                    //this.Close();
-                }
-                else
-                {
-                    funcion.Escribe("tmrRestar_Tick() Se actulizo [FechaRestar] en el archivo App.Settings " + monitorTicket.FechaRestar);
-                }
-
-                funcion.Escribe("Aplicación Monitor iniciado : " + monitorTicket.currentDate, "Mensaje");
-                funcion.Escribe("Monitor iniciado en modo de procesamiento: " + monitorTicket.currentDate, "Mensaje");
-            }
-
-            tmrRestar.Enabled = true;
-        }
+      
 
 
         private void TmrTKTMQ()
@@ -746,17 +719,46 @@ namespace MonitorMQTKT
 
         }
 
-        //private void tmrRestar_Elapsed(object sender, System.Timers.ElapsedEventArgs e)
+        private void tmrRestar_Elapsed(object sender, System.Timers.ElapsedEventArgs e)
+        {
+            tmrRestar.Enabled = false;
+
+            if (monitorTicket.date > Convert.ToDateTime(monitorTicket.FechaRestar))
+            {
+                ResetMonitor();
+
+                monitorTicket.FechaRestar = monitorTicket.date.ToString();
+
+                funcion.UpdateAppSettings("RestarMonitor", monitorTicket.FechaRestar);
+
+                funcion.Escribe("Aplicación Monitor iniciado : " + monitorTicket.currentDate, "Mensaje");
+                funcion.Escribe("Monitor iniciado en modo de procesamiento: " + monitorTicket.currentDate, "Mensaje");
+            }
+
+            tmrRestar.Enabled = true;
+        }
+
+        //private void tmrRestar_Tick(object sender, EventArgs e)
         //{
         //    tmrRestar.Enabled = false;
-            
+
+
         //    if (monitorTicket.date > Convert.ToDateTime(monitorTicket.FechaRestar))
         //    {
         //        ResetMonitor();
 
         //        monitorTicket.FechaRestar = monitorTicket.date.ToString();
 
-        //        funcion.UpdateAppSettings("RestarMonitor", monitorTicket.FechaRestar);
+
+        //        if (!funcion.UpdateAppSettings("RestarMonitor", monitorTicket.FechaRestar))
+        //        {
+        //            funcion.Escribe("tmrRestar_Tick() No se encontro el archivo");
+        //            //this.Close();
+        //        }
+        //        else
+        //        {
+        //            funcion.Escribe("tmrRestar_Tick() Se actulizo [FechaRestar] en el archivo App.Settings " + monitorTicket.FechaRestar);
+        //        }
 
         //        funcion.Escribe("Aplicación Monitor iniciado : " + monitorTicket.currentDate, "Mensaje");
         //        funcion.Escribe("Monitor iniciado en modo de procesamiento: " + monitorTicket.currentDate, "Mensaje");
