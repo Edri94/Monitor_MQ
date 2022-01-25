@@ -192,8 +192,6 @@ namespace ServicioMonitor.Mq
             bool AbriColaMQ;
             try
             {
-                funcion.Escribe("Cola name " + strMQCola);
-                funcion.Escribe("Abrir Cola" + QMGR.OpenStatus.ToString());
                 QUEUE = QMGR.AccessQueue(strMQCola,
                    (int)lngOpciones
                 );
