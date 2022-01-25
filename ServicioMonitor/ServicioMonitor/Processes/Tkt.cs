@@ -92,8 +92,6 @@ namespace ServicioMonitor.Processes
 
                 DataTable Tabla = new DataTable();
                 Tabla = dsRegistro.Tables[0];
-            
-                funcion.Escribe("Cierra la conexion a la BD", "Mensaje");
                 sql_conn.Close();
 
                 if ((dsRegistro.Tables[0].Rows[0] == null) || (dsRegistro.Tables[0].Rows[0].ToString() == "") || (Convert.ToInt32(dsRegistro.Tables[0].Rows[0]) == 0))
@@ -125,10 +123,6 @@ namespace ServicioMonitor.Processes
             //return true;
         }
 
-
-        // ***************************************        
-        // ***************************************
-        // ***************************************
 
         public void ProcesarMensajes(string strParametros, ref bool blIniTKTMQ) //SGGG - 21-01-2022 - Sea grega nuevo parametro para la bancwera de inicio de servicio
         {
@@ -215,7 +209,6 @@ namespace ServicioMonitor.Processes
                 //Recupera el mensaje de la queue
                 string strReturn = "";
                 //if (mqSeries.MQRecibir(mqSeries.mqsManager, Ms_MQLeer, mqSeries.mqsLectura, mqSeries.mqsMsglectura, (MqSeries.MQOPEN)lngMQOpen, ref strReturn))
-                funcion.Escribe(" ---> llamando a funcion: mqSeries.MQRecibir", "Mensaje");
                 if (mqSeries.RecibirMq(Ms_MQLeer))
                 {
                     funcion.Escribe(" Desconectando del MQ", "Mensaje");
@@ -253,7 +246,7 @@ namespace ServicioMonitor.Processes
                
                 if (!OpNoCompletada)
                 {
-                    funcion.Escribe("el Mensaje SI fue completado:", "Mensaje");
+                    funcion.Escribe("el Mensaje SI fue completado", "Mensaje");
                     if (Ms_BanRetorno == "0" || mbFuncionBloque)
                     {
                         funcion.Escribe("Termina el acceso a la aplicación MensajesMQ. Función SQL: " + strFuncionSQL, "Mensaje");

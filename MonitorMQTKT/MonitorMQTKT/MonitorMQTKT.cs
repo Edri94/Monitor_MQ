@@ -60,8 +60,9 @@ namespace MonitorMQTKT
             // TODO: agregar código aquí para realizar cualquier anulación necesaria para detener el servicio.
             tmrMonitorMQTKT.Stop();
         }
+     
 
-      
+
         private void tmrMonitorMQTKT_Elapsed(object sender, System.Timers.ElapsedEventArgs e)
         {
 
@@ -380,88 +381,7 @@ namespace MonitorMQTKT
                 funcion.Escribe(ex);
             }
         }
-        private void tmrMonitorMQTKT_Tick(object sender, EventArgs e)
-        {
-            monitorTicket.dblCiclosBitacoras += 10;
-            monitorTicket.dblCiclosTKTMQ += 10;
-            monitorTicket.dblCiclosFuncionarios += 10;
-            monitorTicket.dblCiclosAutorizaciones += 10;
-
-
-            if (monitorTicket.intgMonitor == 1)
-            {
-                if (monitorTicket.strFormatoTiempoBitacoras != "S")
-                {
-                    if (monitorTicket.dblCiclosBitacoras >= (monitorTicket.intTiempoBitacoras * 60))
-                    {
-                        TmrBitacora();
-                        monitorTicket.dblCiclosBitacoras = 0;
-                    }
-                }
-                else
-                {
-                    if (monitorTicket.dblCiclosBitacoras >= monitorTicket.intTiempoBitacoras)
-                    {
-
-                        TmrBitacora();
-                        monitorTicket.dblCiclosBitacoras = 0;
-                    }
-                }
-            }
-
-
-            if (monitorTicket.strFormatoTiempoTKTMQ != "S")
-            {
-                if (monitorTicket.dblCiclosTKTMQ >= (monitorTicket.intTiempoTKTMQ * 60))
-                {
-                    TmrTKTMQ();
-                    monitorTicket.dblCiclosTKTMQ = 0;
-                }
-            }
-            else
-            {
-                if (monitorTicket.dblCiclosTKTMQ >= monitorTicket.intTiempoTKTMQ)
-                {
-                    TmrTKTMQ();
-                    monitorTicket.dblCiclosTKTMQ = 0;
-                }
-            }
-
-            if (monitorTicket.strFormatoTiempoFuncionarios != "S")
-            {
-                if (monitorTicket.dblCiclosFuncionarios >= (monitorTicket.intTiempoFuncionarios * 60))
-                {
-                    ActivarEnvioFuncAuto("F");
-                    monitorTicket.dblCiclosFuncionarios = 0;
-                }
-            }
-            else
-            {
-                if (monitorTicket.dblCiclosFuncionarios >= monitorTicket.intTiempoFuncionarios)
-                {
-                    ActivarEnvioFuncAuto("F");
-                    monitorTicket.dblCiclosFuncionarios = 0;
-                }
-            }
-
-
-            if (monitorTicket.strFormatoTiempoAutorizaciones != "S")
-            {
-                if (monitorTicket.dblCiclosAutorizaciones >= (monitorTicket.intTiempoAutorizaciones * 60))
-                {
-                    ActivarEnvioFuncAuto("A");
-                    monitorTicket.dblCiclosAutorizaciones = 0;
-                }
-            }
-            else
-            {
-                if (monitorTicket.dblCiclosAutorizaciones >= monitorTicket.intTiempoAutorizaciones)
-                {
-                    ActivarEnvioFuncAuto("A");
-                    monitorTicket.dblCiclosAutorizaciones = 0;
-                }
-            }
-        }
+       
 
       
 
@@ -650,19 +570,29 @@ namespace MonitorMQTKT
             bool fValidaEjecucion = false;
             try
             {
-                iTotalProcesos = funcion.getValueAppConfig("PROCESOS");
+                iTotalProcesos = funcion.getValueAppConfig("PROCESOS"); 
+
+                funcion.Escribe("iTotalProcesos:" + iTotalProcesos); //[PRUEBAS]
 
                 for (iRow = 1; iRow <= Int32.Parse(iTotalProcesos); iRow++)
                 {
+                    funcion.Escribe("iRow:" + iRow); //[PRUEBAS]
                     sValor = funcion.getValueAppConfig("PROCESO" + iRow);
+
                     sParametros = sValor.Split(',');
 
+                    funcion.Escribe("sParametros[9]:" + sParametros[9]); //[PRUEBAS]
                     for (intCuenta = 0; intCuenta <= Int32.Parse(sParametros[9]); intCuenta++)
                     {
+                        funcion.Escribe("intCuenta:" + intCuenta); //[PRUEBAS]
+                        funcion.Escribe("si (sParametros[0]:" + sParametros[0] + " es igual a 1) y ( sParametros[1]:" + sParametros[1] + " es igual a psBitacora:" + psBitacora + ")"); //[PRUEBAS]
+                        
                         if (Int32.Parse(sParametros[0]) == 1 && sParametros[1] == psBitacora)
                         {
+                            funcion.Escribe("si (sParametros[intCuenta + 2]:" + sParametros[intCuenta + 2] + " es igual a SI"); //[PRUEBAS]
                             if (sParametros[intCuenta + 2] == "Si")
                             {
+                                funcion.Escribe("si ((int)DateTime.Now.DayOfWeek: " + (int)DateTime.Now.DayOfWeek + " es igual a intCuenta + 1:" + intCuenta + 1); //[PRUEBAS]
                                 if ((int)DateTime.Now.DayOfWeek == intCuenta + 1)
                                 {
                                     fValidaEjecucion = true;
@@ -750,33 +680,5 @@ namespace MonitorMQTKT
             tmrRestar.Enabled = true;
         }
 
-        //private void tmrRestar_Tick(object sender, EventArgs e)
-        //{
-        //    tmrRestar.Enabled = false;
-
-
-        //    if (monitorTicket.date > Convert.ToDateTime(monitorTicket.FechaRestar))
-        //    {
-        //        ResetMonitor();
-
-        //        monitorTicket.FechaRestar = monitorTicket.date.ToString();
-
-
-        //        if (!funcion.UpdateAppSettings("RestarMonitor", monitorTicket.FechaRestar))
-        //        {
-        //            funcion.Escribe("tmrRestar_Tick() No se encontro el archivo");
-        //            //this.Close();
-        //        }
-        //        else
-        //        {
-        //            funcion.Escribe("tmrRestar_Tick() Se actulizo [FechaRestar] en el archivo App.Settings " + monitorTicket.FechaRestar);
-        //        }
-
-        //        funcion.Escribe("Aplicación Monitor iniciado : " + monitorTicket.currentDate, "Mensaje");
-        //        funcion.Escribe("Monitor iniciado en modo de procesamiento: " + monitorTicket.currentDate, "Mensaje");
-        //    }
-
-        //    tmrRestar.Enabled = true;
-        //}
     }
 }
