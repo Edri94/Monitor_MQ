@@ -422,7 +422,7 @@ namespace MonitorMQTKT
                 sMensaje = funcion.Mid(a, 3, funcion.InStr(3, b, ",") - 3);
 
 
-                funcion.Escribe("EJECUTANDO fValidaEjecucion()");  //[PRUEBAS]
+                funcion.Escribe("EJECUTANDO fValidaEjecucion(): " + sMensaje);  //[PRUEBAS]
 
                 if (fValidaEjecucion(sMensaje))
                 {
@@ -536,8 +536,12 @@ namespace MonitorMQTKT
 
                 if (Int32.Parse(vntBitacora[0]) == 1)
                 {
+                    funcion.Escribe("EJECUTANDO fValidaEjecucion(): " + vntBitacora[1]);  //[PRUEBAS]
+
                     if (fValidaEjecucion(vntBitacora[1]))
                     {
+                        funcion.Escribe("La operación: " + vntBitacora[1] + " SI esta habilitada para este día " + funcion.ObtenFechaFormato(1));  //[PRUEBAS]
+
                         Parametro = funcion.getValueAppConfig(vntBitacora[1]).Split(',').ToList();
                         Ejecutable = Parametro[0];
 
@@ -558,7 +562,7 @@ namespace MonitorMQTKT
                     }
                     else
                     {
-                        funcion.Escribe("La operación: " + vntBitacora[1] + " no esta habilitada para este día " + funcion.ObtenFechaFormato(1));
+                        funcion.Escribe("La operación: " + vntBitacora[1] + " NO esta habilitada para este día " + funcion.ObtenFechaFormato(1));  //[PRUEBAS]
                     }
                 }
             }
@@ -596,12 +600,13 @@ namespace MonitorMQTKT
                             funcion.Escribe("si (sParametros[intCuenta + 2]:" + sParametros[intCuenta + 2] + " es igual a SI"); //[PRUEBAS]
                             if (sParametros[intCuenta + 2] == "Si")
                             {
-                                funcion.Escribe("si ((int)DateTime.Now.DayOfWeek: " + (int)DateTime.Now.DayOfWeek + " es igual a intCuenta + 1:" + intCuenta + 1); //[PRUEBAS]
+                                funcion.Escribe("si ((int)DateTime.Now.DayOfWeek: " + (int)DateTime.Now.DayOfWeek + " es igual a intCuenta + 1:" + (intCuenta + 1)); //[PRUEBAS]
                                 if ((int)DateTime.Now.DayOfWeek == intCuenta + 1)
                                 {
                                     fValidaEjecucion = true;
                                     intCuenta = Int32.Parse(sParametros[9]);
                                     iRow = Int32.Parse(iTotalProcesos);
+                                    break;
                                 }
                             }
                         }
