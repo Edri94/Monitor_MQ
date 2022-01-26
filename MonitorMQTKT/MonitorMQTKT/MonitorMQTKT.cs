@@ -422,7 +422,7 @@ namespace MonitorMQTKT
                 sMensaje = funcion.Mid(a, 3, funcion.InStr(3, b, ",") - 3);
 
 
-                funcion.Escribe("EJECUTANDO fValidaEjecucion(): " + sMensaje);  //[PRUEBAS]
+                //funcion.Escribe("EJECUTANDO fValidaEjecucion(): " + sMensaje);  //[PRUEBAS]
 
                 if (fValidaEjecucion(sMensaje))
                 {
@@ -536,11 +536,11 @@ namespace MonitorMQTKT
 
                 if (Int32.Parse(vntBitacora[0]) == 1)
                 {
-                    funcion.Escribe("EJECUTANDO fValidaEjecucion(): " + vntBitacora[1]);  //[PRUEBAS]
+                    //funcion.Escribe("EJECUTANDO fValidaEjecucion(): " + vntBitacora[1]);  //[PRUEBAS]
 
                     if (fValidaEjecucion(vntBitacora[1]))
                     {
-                        funcion.Escribe("La operación: " + vntBitacora[1] + " SI esta habilitada para este día " + funcion.ObtenFechaFormato(1));  //[PRUEBAS]
+                        funcion.Escribe("La operación: " + vntBitacora[1] + " SI esta habilitada para este día " + funcion.ObtenFechaFormato(1));  
 
                         Parametro = funcion.getValueAppConfig(vntBitacora[1]).Split(',').ToList();
                         Ejecutable = Parametro[0];
@@ -562,7 +562,7 @@ namespace MonitorMQTKT
                     }
                     else
                     {
-                        funcion.Escribe("La operación: " + vntBitacora[1] + " NO esta habilitada para este día " + funcion.ObtenFechaFormato(1));  //[PRUEBAS]
+                        funcion.Escribe("La operación: " + vntBitacora[1] + " NO esta habilitada para este día " + funcion.ObtenFechaFormato(1));  
                     }
                 }
             }
@@ -580,7 +580,7 @@ namespace MonitorMQTKT
             {
                 iTotalProcesos = funcion.getValueAppConfig("PROCESOS"); 
 
-                funcion.Escribe("iTotalProcesos:" + iTotalProcesos); //[PRUEBAS]
+                //funcion.Escribe("iTotalProcesos:" + iTotalProcesos); //[PRUEBAS]
 
                 for (iRow = 1; iRow <= Int32.Parse(iTotalProcesos); iRow++)
                 {
@@ -589,18 +589,18 @@ namespace MonitorMQTKT
 
                     sParametros = sValor.Split(',');
 
-                    funcion.Escribe("sParametros[9]:" + sParametros[9]); //[PRUEBAS]
+                    //funcion.Escribe("sParametros[9]:" + sParametros[9]); //[PRUEBAS]
                     for (intCuenta = 0; intCuenta <= Int32.Parse(sParametros[9]); intCuenta++)
                     {
-                        funcion.Escribe("intCuenta:" + intCuenta); //[PRUEBAS]
+                        //funcion.Escribe("intCuenta:" + intCuenta); //[PRUEBAS]
                         
-                        funcion.Escribe("si (sParametros[0]:" + sParametros[0] + " es igual a 1) y ( sParametros[1]:" + sParametros[1] + " es igual a psBitacora:" + psBitacora + ")"); //[PRUEBAS]                      
+                        //funcion.Escribe("si (sParametros[0]:" + sParametros[0] + " es igual a 1) y ( sParametros[1]:" + sParametros[1] + " es igual a psBitacora:" + psBitacora + ")"); //[PRUEBAS]                      
                         if (Int32.Parse(sParametros[0]) == 1 && sParametros[1] == psBitacora)
                         {
-                            funcion.Escribe("si (sParametros[intCuenta + 2]:" + sParametros[intCuenta + 2] + " es igual a SI"); //[PRUEBAS]
+                            //funcion.Escribe("si (sParametros[intCuenta + 2]:" + sParametros[intCuenta + 2] + " es igual a SI"); //[PRUEBAS]
                             if (sParametros[intCuenta + 2] == "Si")
                             {
-                                funcion.Escribe("si ((int)DateTime.Now.DayOfWeek: " + (int)DateTime.Now.DayOfWeek + " es igual a intCuenta + 1:" + (intCuenta + 1)); //[PRUEBAS]
+                                //funcion.Escribe("si ((int)DateTime.Now.DayOfWeek: " + (int)DateTime.Now.DayOfWeek + " es igual a intCuenta + 1:" + (intCuenta + 1)); //[PRUEBAS]
                                 if ((int)DateTime.Now.DayOfWeek == intCuenta + 1)
                                 {
                                     fValidaEjecucion = true;
