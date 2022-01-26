@@ -104,3 +104,4 @@ D:\Monitores_cSchar\Monitor_MQ\MonitorMQTKT\MonitorMQTKT\obj\Debug\MonitorMQTKT.
 D:\Monitores_cSchar\Monitor_MQ\MonitorMQTKT\MonitorMQTKT\obj\Debug\MonitorMQTKT.csproj.CoreCompileInputs.cache
 D:\Monitores_cSchar\Monitor_MQ\MonitorMQTKT\MonitorMQTKT\obj\Debug\MonitorMQTKT.exe
 D:\Monitores_cSchar\Monitor_MQ\MonitorMQTKT\MonitorMQTKT\obj\Debug\MonitorMQTKT.pdb
+D:\Monitores_cSchar\Monitor_MQ\MonitorMQTKT\MonitorMQTKT\obj\Debug\MonitorMQTKT.csproj.CopyComplete
