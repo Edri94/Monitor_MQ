@@ -584,7 +584,7 @@ namespace MonitorMQTKT
 
                 for (iRow = 1; iRow <= Int32.Parse(iTotalProcesos); iRow++)
                 {
-                    funcion.Escribe("iRow:" + iRow); //[PRUEBAS]
+                    //funcion.Escribe("iRow:" + iRow); //[PRUEBAS]
                     sValor = funcion.getValueAppConfig("PROCESO" + iRow);
 
                     sParametros = sValor.Split(',');
