@@ -421,15 +421,19 @@ namespace MonitorMQTKT
 
                 sMensaje = funcion.Mid(a, 3, funcion.InStr(3, b, ",") - 3);
 
+
+                funcion.Escribe("EJECUTANDO fValidaEjecucion()");  //[PRUEBAS]
+
                 if (fValidaEjecucion(sMensaje))
                 {
+                    funcion.Escribe("La operación: " + sMensaje + " SI esta habilitada para este día " + funcion.ObtenFechaFormato(1));  //[PRUEBAS]
                     mensaje = new Mensaje();
                     mensaje.ProcesarMensajes(ref blIniMensajesMQ, monitorTicket.strMQManager + "-" + monitorTicket.strMQQMonitorEscritura + "-" + psMonitor); //SGGG - 21-01-2022 - Sea grega nuevo parametro para la bancwera de inicio de servicio
                     mensaje = null;
                 }
                 else
                 {
-                    funcion.Escribe("La operación: " + sMensaje + " no esta habilitada para este día " + funcion.ObtenFechaFormato(1));
+                    funcion.Escribe("La operación: " + sMensaje + " NO esta habilitada para este día " + funcion.ObtenFechaFormato(1));
                 }
             }
         }
@@ -585,8 +589,8 @@ namespace MonitorMQTKT
                     for (intCuenta = 0; intCuenta <= Int32.Parse(sParametros[9]); intCuenta++)
                     {
                         funcion.Escribe("intCuenta:" + intCuenta); //[PRUEBAS]
-                        funcion.Escribe("si (sParametros[0]:" + sParametros[0] + " es igual a 1) y ( sParametros[1]:" + sParametros[1] + " es igual a psBitacora:" + psBitacora + ")"); //[PRUEBAS]
                         
+                        funcion.Escribe("si (sParametros[0]:" + sParametros[0] + " es igual a 1) y ( sParametros[1]:" + sParametros[1] + " es igual a psBitacora:" + psBitacora + ")"); //[PRUEBAS]                      
                         if (Int32.Parse(sParametros[0]) == 1 && sParametros[1] == psBitacora)
                         {
                             funcion.Escribe("si (sParametros[intCuenta + 2]:" + sParametros[intCuenta + 2] + " es igual a SI"); //[PRUEBAS]
