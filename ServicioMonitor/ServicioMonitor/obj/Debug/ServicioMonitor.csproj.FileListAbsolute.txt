@@ -17,9 +17,8 @@ C:\Users\MI05332\source\repos\Monitor\ServicioMonitor\ServicioMonitor\obj\Debug\
 D:\Monitores_cSchar\Monitor_MQ\ServicioMonitor\ServicioMonitor\bin\Debug\ServicioMonitor.dll
 D:\Monitores_cSchar\Monitor_MQ\ServicioMonitor\ServicioMonitor\bin\Debug\ServicioMonitor.pdb
 D:\Monitores_cSchar\Monitor_MQ\ServicioMonitor\ServicioMonitor\bin\Debug\amqmdnet.dll
+D:\Monitores_cSchar\Monitor_MQ\ServicioMonitor\ServicioMonitor\obj\Debug\ServicioMonitor.csproj.AssemblyReference.cache
 D:\Monitores_cSchar\Monitor_MQ\ServicioMonitor\ServicioMonitor\obj\Debug\ServicioMonitor.csproj.CoreCompileInputs.cache
 D:\Monitores_cSchar\Monitor_MQ\ServicioMonitor\ServicioMonitor\obj\Debug\ServicioMonitor.csproj.CopyComplete
 D:\Monitores_cSchar\Monitor_MQ\ServicioMonitor\ServicioMonitor\obj\Debug\ServicioMonitor.dll
 D:\Monitores_cSchar\Monitor_MQ\ServicioMonitor\ServicioMonitor\obj\Debug\ServicioMonitor.pdb
-D:\Monitores_cSchar\Monitor_MQ\ServicioMonitor\ServicioMonitor\obj\Debug\ServicioMonitor.csproj.AssemblyReference.cache
-C:\Users\MI05332\source\repos\Monitor\ServicioMonitor\ServicioMonitor\obj\Debug\ServicioMonitor.csproj.AssemblyReference.cache
