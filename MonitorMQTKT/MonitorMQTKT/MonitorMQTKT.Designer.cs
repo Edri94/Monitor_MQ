@@ -37,7 +37,7 @@ namespace MonitorMQTKT
             // tmrMonitorMQTKT
             // 
             this.tmrMonitorMQTKT.Enabled = true;
-            this.tmrMonitorMQTKT.Interval = 150000D;
+            this.tmrMonitorMQTKT.Interval = 10000D;
             this.tmrMonitorMQTKT.Elapsed += new System.Timers.ElapsedEventHandler(this.tmrMonitorMQTKT_Elapsed);
             // 
             // tmrRestar
